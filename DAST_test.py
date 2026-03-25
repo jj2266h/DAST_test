@@ -8,8 +8,7 @@ import csv
 import json
 from datetime import datetime
 from DAST_Network import DAST
-
-
+import time
 
 def load_array(path, key):
     return sio.loadmat(path)[key]
@@ -108,7 +107,7 @@ def main():
             torch.save(model.state_dict(), f'dast_{DATASET}_best.pth')
 
     # ── 儲存模型 ────────────────────────────────────────────
-    torch.save(model.state_dict(), f'{model_path}/dast_{DATASET}.pth')
+    torch.save(model.state_dict(), f'{model_path}/dast_{DATASET}_{time.strftime("%Y-%m-%d_%H-%M-%S")}.pth')
     model.to(device)
     print("模型已儲存")
 
