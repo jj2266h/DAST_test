@@ -9,9 +9,7 @@ import json
 from datetime import datetime
 from DAST_Network import DAST
 
-dataset_name = "cmapss_fd001"
-train_dataset='train_dataset'
-model_path = os.path.join("model_mytrain", "dast_fd001_batch256.pth")
+
 
 def load_array(path, key):
     return sio.loadmat(path)[key]
@@ -35,8 +33,14 @@ def main():
     EPOCHS     = 10
     LR         = 1e-3
     DEC_SEQ    = 10
+    optimizer = torch.optim.RAdam(model.parameters(), lr=LR)
+    loss_fn = torch.nn.MSELoss()
+    best_rmse=2000
     device     = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     print(f"使用裝置: {device}")
+    dataset_name = "cmapss_fd001"
+    train_dataset='train_dataset'
+    model_path = 'train_model'
     
     # ── 資料載入與處理 ─────────────────────────────────────
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -74,11 +78,8 @@ def main():
         n_decoder_layers=1,
         n_heads=4,
         dropout=0.2,
-    )
+    ).to(device)
 
-    optimizer = torch.optim.RAdam(model.parameters(), lr=LR)
-    loss_fn = torch.nn.MSELoss()
-    best_rmse=2000
     loss_history = {"train_loss": [], "test_loss": [], "rmse": [], "score": []}
     # ── 訓練迴圈 ────────────────────────────────────────────
     for epoch in range(1, EPOCHS + 1):
@@ -107,7 +108,8 @@ def main():
             torch.save(model.state_dict(), f'dast_{DATASET}_best.pth')
 
     # ── 儲存模型 ────────────────────────────────────────────
-    torch.save(model.state_dict(), f'dast_{DATASET}.pth')
+    torch.save(model.state_dict(), f'{model_path}/dast_{DATASET}.pth')
+    model.to(device)
     print("模型已儲存")
 
 if __name__ == '__main__':

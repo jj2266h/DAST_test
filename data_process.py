@@ -18,15 +18,16 @@ from numpy import *
 
 min_max_scaler = preprocessing.MinMaxScaler()
 
-
+DATASET = 'FD001'
+dataset_path = f'train_dataset'
 #Import dataset
-RUL_F001 = np.loadtxt('Cmapss_data/RUL_FD001.txt')
-train_F001 = np.loadtxt('Cmapss_data/train_FD001.txt')
-test_F001 = np.loadtxt('Cmapss_data/test_FD001.txt')
-train_F001[:, 2:] = min_max_scaler.fit_transform(train_F001[:, 2:])
-test_F001[:, 2:] = min_max_scaler.transform(test_F001[:, 2:])
-train_01_nor = train_F001
-test_01_nor = test_F001
+RUL_DATASET = np.loadtxt(f'Cmapss_data/RUL_{DATASET}.txt')
+train_dataset = np.loadtxt(f'Cmapss_data/train_{DATASET}.txt')
+test_dataset = np.loadtxt(f'Cmapss_data/test_{DATASET}.txt')
+train_dataset[:, 2:] = min_max_scaler.fit_transform(train_dataset[:,2:])
+test_dataset[:, 2:] = min_max_scaler.transform(test_dataset[:,2:])
+train_01_nor = train_dataset
+test_01_nor = test_dataset
 
 #Delete worthless sensors
 # Here, 1 means the original sensor index 0 in the sensor block [s1, ..., s21].
@@ -36,6 +37,7 @@ train_01_nor = np.delete(train_01_nor, sensor_cols_to_delete, axis=1)
 test_01_nor = np.delete(test_01_nor, sensor_cols_to_delete, axis=1)
 
 #parameters of data process
+# if FD001 and FD003, window_Size=40; if FD002 and FD004, window_Size=60
 RUL_max = 125.0  
 window_Size = 40 
 
@@ -94,11 +96,11 @@ for i in range(1, int(np.max(test_01_nor[:, 0])) + 1):
         testX = data_temp
     else:
         testX = np.concatenate((testX, data_temp), axis=0)
-    if RUL_F001[i - 1] > RUL_max:
+    if RUL_DATASET[i - 1] > RUL_max:
         testY.append(RUL_max)
         #testY_bu.append(0.0)
     else:
-        testY.append(RUL_F001[i - 1])    
+        testY.append(RUL_DATASET[i - 1])    
         
         
 #All data processing of test set
@@ -106,7 +108,7 @@ for i in range(1, int(np.max(test_01_nor[:, 0])) + 1):
     ind = np.where(test_01_nor[:, 0] == i)
     ind = ind[0]
     data_temp = test_01_nor[ind, :]
-    data_RUL = RUL_F001[i - 1] 
+    data_RUL = RUL_DATASET[i - 1] 
     test_len.append(len(data_temp) - window_Size + 1) 
     for j in range(len(data_temp) - window_Size + 1):
         testX_all.append(data_temp[j:j + window_Size, 2:].tolist())
@@ -128,7 +130,7 @@ testX_all = np.array(testX_all)
 testY_all = np.array(testY_all)
 
 
-sio.savemat('F001_window_size_trainX.mat', {"train1X": trainX})
-sio.savemat('F001_window_size_trainY.mat', {"train1Y": trainY})
-sio.savemat('F001_window_size_testX.mat', {"test1X": testX})
-sio.savemat('F001_window_size_testY.mat', {"test1Y": testY})
+sio.savemat(f'{dataset_path}/{DATASET}_window_size_trainX.mat', {"train1X": trainX})
+sio.savemat(f'{dataset_path}/{DATASET}_window_size_trainY.mat', {"train1Y": trainY})
+sio.savemat(f'{dataset_path}/{DATASET}_window_size_testX.mat', {"test1X": testX})
+sio.savemat(f'{dataset_path}/{DATASET}_window_size_testY.mat', {"test1Y": testY})

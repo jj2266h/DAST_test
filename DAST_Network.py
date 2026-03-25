@@ -71,20 +71,32 @@ class DAST(torch.nn.Module):
         self.dec_seq_len = dec_seq_len
         self.dropout = nn.Dropout(dropout)
         
-        #Initiate Sensors encoder
-        self.sensor_encoder = []
-        for i in range(n_encoder_layers):
-            self.sensor_encoder.append(Sensors_EncoderLayer(dim_val_s, dim_attn_s, n_heads))
+        # CPU 版本
+        # #Initiate Sensors encoder
+        # self.sensor_encoder = []
+        # for i in range(n_encoder_layers):
+        #     self.sensor_encoder.append(Sensors_EncoderLayer(dim_val_s, dim_attn_s, n_heads))
                 
-        #Initiate Time_step encoder
-        self.time_encoder = []    
-        for i in range(n_encoder_layers):
-            self.time_encoder.append(Time_step_EncoderLayer(dim_val_t, dim_attn_t, n_heads))        
+        # #Initiate Time_step encoder
+        # self.time_encoder = []    
+        # for i in range(n_encoder_layers):
+        #     self.time_encoder.append(Time_step_EncoderLayer(dim_val_t, dim_attn_t, n_heads))        
                 
-        #Initiate Decoder
-        self.decoder = []
-        for i in range(n_decoder_layers):
-            self.decoder.append(DecoderLayer(dim_val, dim_attn, n_heads))
+        # #Initiate Decoder
+        # self.decoder = []
+        # for i in range(n_decoder_layers):
+        #     self.decoder.append(DecoderLayer(dim_val, dim_attn, n_heads))
+
+        # GPU 版本
+        self.sensor_encoder = nn.ModuleList(
+            [Sensors_EncoderLayer(dim_val_s, dim_attn_s, n_heads) for _ in range(n_encoder_layers)]
+        )
+        self.time_encoder = nn.ModuleList(
+            [Time_step_EncoderLayer(dim_val_t, dim_attn_t, n_heads) for _ in range(n_encoder_layers)]
+        )
+        self.decoder = nn.ModuleList(
+            [DecoderLayer(dim_val, dim_attn, n_heads) for _ in range(n_decoder_layers)]
+        )
                     
         self.pos_s = PositionalEncoding(dim_val_s)  
         self.pos_t = PositionalEncoding(dim_val_t)   
