@@ -18,7 +18,7 @@ from numpy import *
 
 min_max_scaler = preprocessing.MinMaxScaler()
 
-DATASET = 'FD001'
+DATASET = 'FD004'  # 改成 FD001 / FD002 / FD004
 dataset_path = f'train_dataset'
 #Import dataset
 RUL_DATASET = np.loadtxt(f'Cmapss_data/RUL_{DATASET}.txt')
@@ -39,7 +39,7 @@ test_01_nor = np.delete(test_01_nor, sensor_cols_to_delete, axis=1)
 #parameters of data process
 # if FD001 and FD003, window_Size=40; if FD002 and FD004, window_Size=60
 RUL_max = 125.0  
-window_Size = 40 
+window_Size = 60 
 
 trainX = []
 trainY = []
@@ -104,6 +104,7 @@ for i in range(1, int(np.max(test_01_nor[:, 0])) + 1):
         
         
 #All data processing of test set
+#the sliding stride=1.
 for i in range(1, int(np.max(test_01_nor[:, 0])) + 1):
     ind = np.where(test_01_nor[:, 0] == i)
     ind = ind[0]

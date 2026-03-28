@@ -27,17 +27,14 @@ def calculate_score(pred, true):
      
 def main():
     # ── 超參數 ──────────────────────────────────────────────
-    DATASET    = 'FD001'       # 改成 FD002 / FD003 / FD004
+    DATASET    = 'FD004'       # 改成 FD002 / FD003 / FD004
     BATCH_SIZE = 256
-    EPOCHS     = 10
+    EPOCHS     = 100
     LR         = 1e-3
-    DEC_SEQ    = 10
-    optimizer = torch.optim.RAdam(model.parameters(), lr=LR)
-    loss_fn = torch.nn.MSELoss()
-    best_rmse=2000
+    RUL_max    = 125.0
+    
     device     = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     print(f"使用裝置: {device}")
-    dataset_name = "cmapss_fd001"
     train_dataset='train_dataset'
     model_path = 'train_model'
     
@@ -79,6 +76,9 @@ def main():
         dropout=0.2,
     ).to(device)
 
+    optimizer = torch.optim.RAdam(model.parameters(), lr=LR)
+    loss_fn = torch.nn.MSELoss()
+    best_rmse=2000
     loss_history = {"train_loss": [], "test_loss": [], "rmse": [], "score": []}
     # ── 訓練迴圈 ────────────────────────────────────────────
     for epoch in range(1, EPOCHS + 1):
@@ -98,8 +98,8 @@ def main():
         model.eval()
         with torch.no_grad():
             pred_np = model(testX.to(device)).squeeze().cpu().numpy()
-        rmse  = np.sqrt(np.mean((pred_np - testY_np) ** 2))
-        score_value = calculate_score(pred_np, testY_np)
+        rmse  = np.sqrt(np.mean((pred_np - testY_np) ** 2))*RUL_max
+        score_value = calculate_score(pred_np*RUL_max, testY_np*RUL_max)
         print(f"Epoch {epoch:3d} | Train Loss: {total_loss/len(train_loader):.4f} "
                 f"| Test RMSE: {rmse:.4f} | Score: {score_value:.1f}")
         if rmse < best_rmse:
@@ -113,3 +113,5 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+# python data_process.py
