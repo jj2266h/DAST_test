@@ -1,0 +1,39 @@
+{
+  "dataset_type": "cmapss",
+
+  "cmapss": {
+    "dataset": "FD001",
+    "data_path": "Cmapss_data",
+    "output_path": "train_dataset",
+    "window_size": 40,
+    "rul_max": 125.0,
+    "feature_len": 14
+  },
+
+  "femto": {
+    "femto_path": "phm2012_dataset",
+    "output_path": "femto_dataset/",
+    "window_size": 60,
+    "feature_len": 16,
+    "condition": "1"
+  },
+
+  "training": {
+    "batch_size": 256,
+    "epochs": 100,
+    "learning_rate": 0.001,
+    "model_save_path": "model"
+  },
+
+  "model": {
+    "dec_seq_len": 10,
+    "out_seq_len": 1,
+    "dim_val": 64,
+    "dim_attn": 64,
+    "n_encoder_layers": 1,
+    "n_decoder_layers": 1,
+    "n_heads": 4,
+    "dropout": 0.1,
+    "use_full_features_for_time_encoder": false
+  }
+}
