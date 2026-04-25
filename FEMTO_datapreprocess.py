@@ -60,7 +60,7 @@ class FEMTOPreprocessor:
         正規化後輸出：HI(0) ≈ 1（健康），HI(n_files-1) ≈ 0（失效）。
         """
         if not convergence:
-            convergence = n_files - 1
+            convergence = n_files * 0.035
 
         a = 1.0
         tau = fsolve(lambda t: self._hi_formula(convergence, a, t), x0=0.0)[0]
@@ -166,7 +166,7 @@ class FEMTOPreprocessor:
             bearing_dir = os.path.join(self.FEMTO, folder)
             accs = sorted(f for f in os.listdir(bearing_dir) if f.startswith('acc'))
             n_files = len(accs)
-            print(f"{folder}: {n_files} files  is_train={is_train}  convergence={convergence or n_files-1}")
+            print(f"{folder}: {n_files} files  is_train={is_train}  convergence={convergence or n_files*0.035}")
 
             # 特徵 → scale
             raw = np.array(
@@ -212,25 +212,24 @@ if __name__ == "__main__":
     # None → 自動使用各軸承的總壽命（整段都算入退化區間）。
     # 也可手動填入具體數值來調整 HI 曲線形狀。
     DATASET = [
-        # Learning_set（訓練集，完整壽命）
-        ("Learning_set/Bearing1_1", True,  None),
-        ("Learning_set/Bearing1_2", True,  None),
-        ("Learning_set/Bearing2_1", True,  None),
-        ("Learning_set/Bearing2_2", True,  None),
-        ("Learning_set/Bearing3_1", True,  None),
-        ("Learning_set/Bearing3_2", True,  None),
-        # Full_Test_Set（完整壽命，作為驗證/測試集）
-        ("Full_Test_Set/Bearing1_3", False, None),
-        ("Full_Test_Set/Bearing1_4", False, None),
-        ("Full_Test_Set/Bearing1_5", False, None),
-        ("Full_Test_Set/Bearing1_6", False, None),
-        ("Full_Test_Set/Bearing1_7", False, None),
-        ("Full_Test_Set/Bearing2_3", False, None),
-        ("Full_Test_Set/Bearing2_4", False, None),
-        ("Full_Test_Set/Bearing2_5", False, None),
-        ("Full_Test_Set/Bearing2_6", False, None),
-        ("Full_Test_Set/Bearing2_7", False, None),
-        ("Full_Test_Set/Bearing3_3", False, None),
+         ('Learning_set/Bearing1_1', True,  100),  # 訓練集 (Condition 1)
+        ('Learning_set/Bearing1_2', True,  30),   # 訓練集 (Condition 1)
+        ('Learning_set/Bearing2_1', True,  30),   # 訓練集 (Condition 2)
+        ('Learning_set/Bearing2_2', True,  30),   # 訓練集 (Condition 2)
+        ('Learning_set/Bearing3_1', True,  17),   # 訓練集 (Condition 3)
+        ('Learning_set/Bearing3_2', True,  50),   # 訓練集 (Condition 3)
+       
+        ('Full_Test_Set/Bearing1_3', False, 80),   # 測試集
+        ('Full_Test_Set/Bearing1_4', False, 50),   # 測試集
+        ('Full_Test_Set/Bearing1_5', False, 90),   # 測試集
+        ('Full_Test_Set/Bearing1_6', False, 90),   # 測試集
+        ('Full_Test_Set/Bearing1_7', False, 80),   # 測試集
+        ('Full_Test_Set/Bearing2_3', False, 70),   # 測試集
+        ('Full_Test_Set/Bearing2_4', False, 27),   # 測試集
+        ('Full_Test_Set/Bearing2_5', False, 84),   # 測試集
+        ('Full_Test_Set/Bearing2_6', False, 25),   # 測試集
+        ('Full_Test_Set/Bearing2_7', False, 8),    # 測試集
+        ('Full_Test_Set/Bearing3_3', False, 15),   # 測試集
     ]
 
     preprocessor = FEMTOPreprocessor(
