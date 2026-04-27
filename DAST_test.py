@@ -9,6 +9,8 @@ import json
 from datetime import datetime
 from DAST_Network import DAST
 import time
+import matplotlib.pyplot as plt
+import matplotlib.gridspec as gridspec
 
 def load_array(path, key):
     return sio.loadmat(path)[key]
@@ -24,34 +26,95 @@ def append_experiment_log(csv_path, row):
 def calculate_score(pred, true):
     diff = pred - true
     return float(np.sum(np.where(diff < 0, np.exp(-diff/13)-1, np.exp(diff/10)-1)))
+
+def plot_training_results(history, pred_np, testY_np, RUL_max, dataset, save_dir):
+    epochs = range(1, len(history["train_loss"]) + 1)
+    timestamp = time.strftime("%Y-%m-%d_%H-%M-%S")
+    os.makedirs(save_dir, exist_ok=True)
+
+    fig = plt.figure(figsize=(16, 10))
+    fig.suptitle(f"DAST Training Results — {dataset}", fontsize=14, fontweight="bold")
+    gs = gridspec.GridSpec(2, 3, figure=fig, hspace=0.4, wspace=0.35)
+
+    # Train Loss
+    ax1 = fig.add_subplot(gs[0, 0])
+    ax1.plot(epochs, history["train_loss"], marker="o", color="steelblue")
+    ax1.set_title("Train Loss")
+    ax1.set_xlabel("Epoch")
+    ax1.set_ylabel("MSE Loss")
+    ax1.grid(True, linestyle="--", alpha=0.5)
+
+    # RMSE
+    ax2 = fig.add_subplot(gs[0, 1])
+    ax2.plot(epochs, history["rmse"], marker="s", color="tomato")
+    best_epoch = int(np.argmin(history["rmse"])) + 1
+    ax2.axvline(best_epoch, linestyle="--", color="gray", alpha=0.7, label=f"Best epoch {best_epoch}")
+    ax2.set_title("Test RMSE")
+    ax2.set_xlabel("Epoch")
+    ax2.set_ylabel("RMSE (cycles)")
+    ax2.legend(fontsize=8)
+    ax2.grid(True, linestyle="--", alpha=0.5)
+
+    # Score
+    ax3 = fig.add_subplot(gs[0, 2])
+    ax3.plot(epochs, history["score"], marker="^", color="mediumseagreen")
+    ax3.set_title("NASA Score")
+    ax3.set_xlabel("Epoch")
+    ax3.set_ylabel("Score (lower is better)")
+    ax3.grid(True, linestyle="--", alpha=0.5)
+
+    # Pred vs True scatter
+    ax4 = fig.add_subplot(gs[1, 0:2])
+    ax4.scatter(testY_np * RUL_max, pred_np * RUL_max, s=8, alpha=0.5, color="steelblue", label="Predictions")
+    lim = max(testY_np.max(), pred_np.max()) * RUL_max * 1.05
+    ax4.plot([0, lim], [0, lim], "r--", linewidth=1, label="Perfect prediction")
+    ax4.set_title("Predicted vs True RUL (final epoch)")
+    ax4.set_xlabel("True RUL (cycles)")
+    ax4.set_ylabel("Predicted RUL (cycles)")
+    ax4.legend(fontsize=8)
+    ax4.grid(True, linestyle="--", alpha=0.5)
+
+    # Pred vs True line (sorted by true RUL)
+    ax5 = fig.add_subplot(gs[1, 2])
+    sort_idx = np.argsort(testY_np)
+    ax5.plot(testY_np[sort_idx] * RUL_max, label="True RUL", linewidth=1)
+    ax5.plot(pred_np[sort_idx] * RUL_max, label="Pred RUL", linewidth=1, alpha=0.8)
+    ax5.set_title("Sorted RUL Comparison")
+    ax5.set_xlabel("Sample (sorted)")
+    ax5.set_ylabel("RUL (cycles)")
+    ax5.legend(fontsize=8)
+    ax5.grid(True, linestyle="--", alpha=0.5)
+
+    save_path = os.path.join(save_dir, f"training_result_{dataset}_{timestamp}.png")
+    plt.savefig(save_path, dpi=150, bbox_inches="tight")
+    plt.show()
+    print(f"圖表已儲存至: {save_path}")
      
 def main():
     # ── 超參數 ──────────────────────────────────────────────
     DATASET    = 'FD001'       # 改成 FD002 / FD003 / FD004
     BATCH_SIZE = 256
-    EPOCHS     = 10
+    EPOCHS     = 100
     LR         = 1e-3
-    DEC_SEQ    = 10
-    optimizer = torch.optim.RAdam(model.parameters(), lr=LR)
-    loss_fn = torch.nn.MSELoss()
-    best_rmse=2000
+    RUL_max    = 125.0
+    
     device     = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     print(f"使用裝置: {device}")
-    dataset_name = "cmapss_fd001"
-    train_dataset='train_dataset'
-    model_path = 'train_model'
+    traindata_dir = 'train_dataset'
+    model_dir = 'train_model'
     
     # ── 資料載入與處理 ─────────────────────────────────────
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    trainX = load_array(f"{train_dataset}/{DATASET}_window_size_trainX.mat", "train1X")
-    trainY = load_array(f"{train_dataset}/{DATASET}_window_size_trainY.mat", "train1Y").flatten()
-    testX = load_array(f"{train_dataset}/{DATASET}_window_size_testX.mat", "test1X")
-    testY = load_array(f"{train_dataset}/{DATASET}_window_size_testY.mat", "test1Y").flatten()
+    trainX = load_array(f"{traindata_dir}/{DATASET}_window_size_trainX_new.mat", "train1X_new")
+    trainY = load_array(f"{traindata_dir}/{DATASET}_window_size_trainY.mat", "train1Y").flatten()
+    testX = load_array(f"{traindata_dir}/{DATASET}_window_size_testX_new.mat", "test1X_new")
+    testY = load_array(f"{traindata_dir}/{DATASET}_window_size_testY.mat", "test1Y").flatten()
 
     trainX = torch.tensor(trainX, dtype=torch.float32).to(device)
     testX = torch.tensor(testX, dtype=torch.float32).to(device)
     trainY = torch.tensor(trainY, dtype=torch.float32).to(device)
-    testY_np = testY.cpu().numpy() if isinstance(testY, torch.Tensor) else testY  
+    testY_np = testY.cpu().numpy() if isinstance(testY, torch.Tensor) else testY
+    testY = torch.tensor(testY, dtype=torch.float32)
 
     train_dataset = TensorDataset(trainX, trainY)
     test_dataset = TensorDataset(testX, testY)
@@ -76,9 +139,12 @@ def main():
         n_encoder_layers=2,
         n_decoder_layers=1,
         n_heads=4,
-        dropout=0.2,
+        dropout=0.1,
     ).to(device)
 
+    optimizer = torch.optim.RAdam(model.parameters(), lr=LR)
+    loss_fn = torch.nn.MSELoss()
+    best_rmse=2000
     loss_history = {"train_loss": [], "test_loss": [], "rmse": [], "score": []}
     # ── 訓練迴圈 ────────────────────────────────────────────
     for epoch in range(1, EPOCHS + 1):
@@ -98,18 +164,30 @@ def main():
         model.eval()
         with torch.no_grad():
             pred_np = model(testX.to(device)).squeeze().cpu().numpy()
-        rmse  = np.sqrt(np.mean((pred_np - testY_np) ** 2))
-        score_value = calculate_score(pred_np, testY_np)
-        print(f"Epoch {epoch:3d} | Train Loss: {total_loss/len(train_loader):.4f} "
+        rmse  = np.sqrt(np.mean((pred_np - testY_np) ** 2))*RUL_max
+        score_value = calculate_score(pred_np*RUL_max, testY_np*RUL_max)
+        train_loss_avg = total_loss / len(train_loader)
+        loss_history["train_loss"].append(train_loss_avg)
+        loss_history["rmse"].append(rmse)
+        loss_history["score"].append(score_value)
+        print(f"Epoch {epoch:3d} | Train Loss: {train_loss_avg:.4f} "
                 f"| Test RMSE: {rmse:.4f} | Score: {score_value:.1f}")
         if rmse < best_rmse:
             best_rmse = rmse
             torch.save(model.state_dict(), f'dast_{DATASET}_best.pth')
 
     # ── 儲存模型 ────────────────────────────────────────────
-    torch.save(model.state_dict(), f'{model_path}/dast_{DATASET}_{time.strftime("%Y-%m-%d_%H-%M-%S")}.pth')
+    torch.save(model.state_dict(), f'{model_dir}/dast_{DATASET}_{time.strftime("%Y-%m-%d_%H-%M-%S")}.pth')
     model.to(device)
     print("模型已儲存")
 
+    # ── 視覺化 ──────────────────────────────────────────────
+    model.eval()
+    with torch.no_grad():
+        final_pred_np = model(testX.to(device)).squeeze().cpu().numpy()
+    plot_training_results(loss_history, final_pred_np, testY_np, RUL_max, DATASET, save_dir="plots")
+
 if __name__ == '__main__':
     main()
+
+# python data_process.py
