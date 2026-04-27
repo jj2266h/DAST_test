@@ -2,10 +2,10 @@
   "dataset_type": "cmapss",
 
   "cmapss": {
-    "dataset": "FD001",
+    "dataset": "FD003",
     "data_path": "Cmapss_data",
     "output_path": "train_dataset",
-    "window_size": 40,
+    "window_size": 60,
     "rul_max": 125.0,
     "feature_len": 14
   },
@@ -15,14 +15,15 @@
     "output_path": "femto_dataset/",
     "window_size": 60,
     "feature_len": 16,
-    "condition": "1"
+    "condition": "3"
   },
 
   "training": {
     "batch_size": 256,
     "epochs": 100,
     "learning_rate": 0.001,
-    "model_save_path": "model"
+    "model_save_path": "model",
+    "seed": 42
   },
 
   "model": {
