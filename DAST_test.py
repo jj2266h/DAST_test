@@ -1,16 +1,26 @@
+import random
 import numpy as np
 import scipy.io as sio
 import torch
 import os
-from sklearn import preprocessing
 from torch.utils.data import DataLoader, TensorDataset
 import csv
 import json
-from datetime import datetime
 from DAST_Network import DAST
 import time
+import math
 import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
+
+def set_seed(seed: int):
+    random.seed(seed)
+    np.random.seed(seed)
+    torch.manual_seed(seed)
+    if torch.cuda.is_available():
+        torch.cuda.manual_seed_all(seed)
+    torch.backends.cudnn.deterministic = True
+    torch.backends.cudnn.benchmark = False
+
 
 def load_array(path, key):
     return sio.loadmat(path)[key]
@@ -23,9 +33,6 @@ def append_experiment_log(csv_path, row):
             writer.writeheader()
         writer.writerow(row)
 
-def calculate_score(pred, true):
-    diff = pred - true
-    return float(np.sum(np.where(diff < 0, np.exp(-diff/13)-1, np.exp(diff/10)-1)))
 
 def plot_training_results(history, pred_np, testY_np, RUL_max, dataset, save_dir):
     epochs = range(1, len(history["train_loss"]) + 1)
@@ -38,7 +45,7 @@ def plot_training_results(history, pred_np, testY_np, RUL_max, dataset, save_dir
 
     # Train Loss
     ax1 = fig.add_subplot(gs[0, 0])
-    ax1.plot(epochs, history["train_loss"], marker="o", color="steelblue")
+    ax1.plot(epochs, history["train_loss"], color="steelblue")
     ax1.set_title("Train Loss")
     ax1.set_xlabel("Epoch")
     ax1.set_ylabel("MSE Loss")
@@ -46,7 +53,7 @@ def plot_training_results(history, pred_np, testY_np, RUL_max, dataset, save_dir
 
     # RMSE
     ax2 = fig.add_subplot(gs[0, 1])
-    ax2.plot(epochs, history["rmse"], marker="s", color="tomato")
+    ax2.plot(epochs, history["rmse"], color="tomato")
     best_epoch = int(np.argmin(history["rmse"])) + 1
     ax2.axvline(best_epoch, linestyle="--", color="gray", alpha=0.7, label=f"Best epoch {best_epoch}")
     ax2.set_title("Test RMSE")
@@ -57,7 +64,7 @@ def plot_training_results(history, pred_np, testY_np, RUL_max, dataset, save_dir
 
     # Score
     ax3 = fig.add_subplot(gs[0, 2])
-    ax3.plot(epochs, history["score"], marker="^", color="mediumseagreen")
+    ax3.plot(epochs, history["score"], color="mediumseagreen")
     ax3.set_title("NASA Score")
     ax3.set_xlabel("Epoch")
     ax3.set_ylabel("Score (lower is better)")
@@ -74,13 +81,12 @@ def plot_training_results(history, pred_np, testY_np, RUL_max, dataset, save_dir
     ax4.legend(fontsize=8)
     ax4.grid(True, linestyle="--", alpha=0.5)
 
-    # Pred vs True line (sorted by true RUL)
+    # Pred vs True line
     ax5 = fig.add_subplot(gs[1, 2])
-    sort_idx = np.argsort(testY_np)
-    ax5.plot(testY_np[sort_idx] * RUL_max, label="True RUL", linewidth=1)
-    ax5.plot(pred_np[sort_idx] * RUL_max, label="Pred RUL", linewidth=1, alpha=0.8)
-    ax5.set_title("Sorted RUL Comparison")
-    ax5.set_xlabel("Sample (sorted)")
+    ax5.plot(testY_np * RUL_max, label="True RUL", linewidth=1)
+    ax5.plot(pred_np * RUL_max, label="Pred RUL", linewidth=1, alpha=0.8)
+    ax5.set_title("RUL Comparison")
+    ax5.set_xlabel("Sample")
     ax5.set_ylabel("RUL (cycles)")
     ax5.legend(fontsize=8)
     ax5.grid(True, linestyle="--", alpha=0.5)
@@ -89,7 +95,25 @@ def plot_training_results(history, pred_np, testY_np, RUL_max, dataset, save_dir
     plt.savefig(save_path, dpi=150, bbox_inches="tight")
     plt.show()
     print(f"圖表已儲存至: {save_path}")
-     
+
+# ── 損失函數/指標 ──────────────────────────────────────────────────
+def RMSELoss(yhat, y):
+    return torch.sqrt(torch.mean((yhat - y) ** 2))
+
+def compute_rmse(pred: np.ndarray, true: np.ndarray, rul_max: float = 1.0) -> float:
+    return float(np.sqrt(np.mean((pred - true) ** 2)) * rul_max)
+
+def compute_mae(pred: np.ndarray, true: np.ndarray, rul_max: float = 1.0) -> float:
+    return float(np.mean(np.abs(pred - true)) * rul_max)
+
+def s_score(y_true, y_pred):
+    diff = np.array(y_pred) - np.array(y_true)
+    score = [(math.exp(-d/13.0) - 1.0) if d < 0 else (math.exp(d/10.0) - 1.0) for d in diff]
+    return float(np.sum(score))
+
+def mae_np(y_true, y_pred):
+    return float(np.mean(np.abs(np.array(y_true) - np.array(y_pred))))
+
 def main():
     # ── 讀取設定檔 ────────────────────────────────────────
     with open("config.json", "r", encoding="utf-8") as f:
@@ -99,6 +123,8 @@ def main():
     _tr  = config["training"]
     _mdl = config["model"]
 
+    set_seed(_tr.get("seed", 42))
+
     DATASET       = _ds["dataset"]
     RUL_max       = _ds["rul_max"]
     traindata_dir = _ds["output_path"]
@@ -107,11 +133,10 @@ def main():
     LR            = _tr["learning_rate"]
     model_dir     = _tr["model_save_path"]
 
-    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-    print(f"使用裝置: {device}")
-    
-    # ── 資料載入與處理 ─────────────────────────────────────
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    print(f"使用裝置: {device}")
+
+    # ── 資料載入與處理 ─────────────────────────────────────
     trainX = load_array(f"{traindata_dir}/{DATASET}_window_size_trainX_new.mat", "train1X_new")
     trainY = load_array(f"{traindata_dir}/{DATASET}_window_size_trainY.mat", "train1Y").flatten()
     testX = load_array(f"{traindata_dir}/{DATASET}_window_size_testX_new.mat", "test1X_new")
@@ -123,12 +148,9 @@ def main():
     testY_np = testY.cpu().numpy() if isinstance(testY, torch.Tensor) else testY
     testY = torch.tensor(testY, dtype=torch.float32)
 
-    train_dataset = TensorDataset(trainX, trainY)
-    test_dataset = TensorDataset(testX, testY)
-    train_loader = DataLoader(train_dataset, batch_size=BATCH_SIZE, shuffle=True)
-    test_loader = DataLoader(test_dataset, batch_size=BATCH_SIZE, shuffle=False)
-    time_step = train_loader.dataset[0][0].shape[0]  # 獲取時間步長
-    input_size = train_loader.dataset[0][0].shape[1]  # 獲取輸入特徵數
+    train_loader = DataLoader(TensorDataset(trainX, trainY), batch_size=BATCH_SIZE, shuffle=True)
+    time_step  = trainX.shape[1]
+    input_size = trainX.shape[2]
     print(f"Time step: {time_step}, Sensor count: {input_size}")
     # ── 模型建立 ─────────────────────────────────────────────
     
@@ -150,13 +172,13 @@ def main():
     ).to(device)
 
     optimizer = torch.optim.RAdam(model.parameters(), lr=LR)
-    loss_fn = torch.nn.MSELoss()
+    loss_fn = RMSELoss
     best_rmse=2000
-    loss_history = {"train_loss": [], "test_loss": [], "rmse": [], "score": []}
+    loss_history = {"train_loss": [], "rmse": [], "mae": [], "score": []}
     # ── 訓練迴圈 ────────────────────────────────────────────
     for epoch in range(1, EPOCHS + 1):
         model.train()
-        total_loss = 0
+        total_loss = 0.0
         for xb, yb in train_loader:
             xb, yb = xb.to(device), yb.to(device)
             pred = model(xb).squeeze()
@@ -171,14 +193,16 @@ def main():
         model.eval()
         with torch.no_grad():
             pred_np = model(testX.to(device)).squeeze().cpu().numpy()
-        rmse  = np.sqrt(np.mean((pred_np - testY_np) ** 2))*RUL_max
-        score_value = calculate_score(pred_np*RUL_max, testY_np*RUL_max)
         train_loss_avg = total_loss / len(train_loader)
+        rmse        = compute_rmse(pred_np, testY_np, RUL_max)
+        mae         = compute_mae(pred_np, testY_np, RUL_max)
+        score_value = s_score(testY_np * RUL_max, pred_np * RUL_max)
         loss_history["train_loss"].append(train_loss_avg)
         loss_history["rmse"].append(rmse)
+        loss_history["mae"].append(mae)
         loss_history["score"].append(score_value)
         print(f"Epoch {epoch:3d} | Train Loss: {train_loss_avg:.4f} "
-                f"| Test RMSE: {rmse:.4f} | Score: {score_value:.1f}")
+              f"| Test RMSE: {rmse:.4f} | MAE: {mae:.4f} | Score: {score_value:.1f}")
         if rmse < best_rmse:
             best_rmse = rmse
             torch.save(model.state_dict(), f'dast_{DATASET}_best.pth')
@@ -188,7 +212,12 @@ def main():
     model.to(device)
     print("模型已儲存")
 
+    print(f"\nBest RMSE (HI): {best_rmse:.5f}")
+    print("模型已儲存")
+
     # ── 視覺化 ──────────────────────────────────────────────
+    best_ckpt = f"dast_{DATASET}_best.pth"
+    model.load_state_dict(torch.load(best_ckpt, map_location=device))
     model.eval()
     with torch.no_grad():
         final_pred_np = model(testX.to(device)).squeeze().cpu().numpy()

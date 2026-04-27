@@ -198,6 +198,61 @@ class FEMTOPreprocessor:
                 print(f"  → Saved {name}_X.mat, {name}_Y.mat")
         print("\n✓ 前處理完成。")
 
+    def plot_hi_overview(self, save_path: str = "plots/hi_overview.png"):
+        """
+        讀取已儲存的 Y.mat，繪製訓練集與測試集 HI 曲線（各軸承一條線）。
+        X 軸：時間（秒），每個 acc 檔案 = 10 秒。
+        Y 軸：Health Index（1=健康，0=失效）。
+        """
+        try:
+            import matplotlib.pyplot as plt
+        except ImportError as e:
+            print(f"Matplotlib 無法載入，略過 HI 概覽圖: {e}")
+            return
+
+        train_curves, test_curves = [], []
+        for (folder, is_train, _) in self.folders:
+            name   = os.path.basename(folder)
+            prefix = "train" if is_train else "test"
+            y_path = os.path.join(self.POST_PROCESS, f"{name}_Y.mat")
+            if not os.path.exists(y_path):
+                continue
+            y = sio.loadmat(y_path)[f"PHM_{prefix}Y"].flatten()
+            t = np.arange(len(y)) * 10   # 每筆 = 10 秒
+            if is_train:
+                train_curves.append((name, t, y))
+            else:
+                test_curves.append((name, t, y))
+
+        fig, (ax_tr, ax_te) = plt.subplots(1, 2, figsize=(14, 5), sharey=True)
+        fig.suptitle("PHM2012 (FEMTO) — Health Index Overview", fontsize=13, fontweight="bold")
+
+        cmap_tr = plt.cm.tab10
+        cmap_te = plt.cm.tab20
+
+        for i, (name, t, y) in enumerate(train_curves):
+            ax_tr.plot(t, y, linewidth=1.2, label=name, color=cmap_tr(i % 10))
+        ax_tr.set_title("Training set")
+        ax_tr.set_xlabel("Time (s)")
+        ax_tr.set_ylabel("Health Index HI")
+        ax_tr.set_ylim(-0.05, 1.05)
+        ax_tr.legend(fontsize=8)
+        ax_tr.grid(True, linestyle="--", alpha=0.4)
+
+        for i, (name, t, y) in enumerate(test_curves):
+            ax_te.plot(t, y, linewidth=1.0, label=name, color=cmap_te(i % 20))
+        ax_te.set_title("Testing data")
+        ax_te.set_xlabel("Time (s)")
+        ax_te.set_ylim(-0.05, 1.05)
+        ax_te.legend(fontsize=7)
+        ax_te.grid(True, linestyle="--", alpha=0.4)
+
+        plt.tight_layout()
+        os.makedirs(os.path.dirname(save_path) or ".", exist_ok=True)
+        plt.savefig(save_path, dpi=150, bbox_inches="tight")
+        plt.show()
+        print(f"HI 概覽圖已儲存至: {save_path}")
+
 
 # ════════════════════════════════════════════════════════
 if __name__ == "__main__":
@@ -240,3 +295,4 @@ if __name__ == "__main__":
         is_save=True,
     )
     preprocessor.process_all()
+    preprocessor.plot_hi_overview(save_path="plots/hi_overview.png")
