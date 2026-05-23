@@ -2,12 +2,15 @@
   "dataset_type": "cmapss",
 
   "cmapss": {
-    "dataset": "FD003",
+    "dataset": "FD004",
     "data_path": "Cmapss_data",
     "output_path": "train_dataset",
     "window_size": 60,
     "rul_max": 125.0,
-    "feature_len": 14
+    "feature_len": 14,
+    "condition_scaling_enabled": true,
+    "condition_scaling_method": "zscore",
+    "condition_cluster_count": 6
   },
 
   "femto": {
@@ -31,7 +34,7 @@
     "out_seq_len": 1,
     "dim_val": 64,
     "dim_attn": 64,
-    "n_encoder_layers": 1,
+    "n_encoder_layers": 2,
     "n_decoder_layers": 1,
     "n_heads": 4,
     "dropout": 0.1,

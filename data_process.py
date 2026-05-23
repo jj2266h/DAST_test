@@ -9,10 +9,11 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import json
-from sklearn import preprocessing, linear_model
+from sklearn import preprocessing
 from sklearn.metrics import mean_squared_error, r2_score, mean_absolute_error
 from sklearn.model_selection import GridSearchCV
 from scipy import interpolate
+from scipy.cluster.vq import kmeans as scipy_kmeans, vq as scipy_vq
 import scipy.io as sio
 
 with open("config.json", "r", encoding="utf-8") as f:
@@ -24,15 +25,87 @@ dataset_path = _cfg["output_path"]
 RUL_max      = _cfg["rul_max"]
 window_Size  = _cfg["window_size"]
 _data_path   = _cfg["data_path"]
+condition_scaling_enabled = _cfg.get("condition_scaling_enabled", True)
+condition_scaling_method  = _cfg.get("condition_scaling_method", "zscore").lower()
+condition_cluster_count   = _cfg.get("condition_cluster_count", 6)
 
 min_max_scaler = preprocessing.MinMaxScaler()
+
+
+def _fit_condition_clusters(train_data, n_clusters):
+    op_data = train_data[:, 2:5].astype(float)
+    scale = op_data.std(axis=0)
+    scale[scale == 0] = 1.0
+    centers, _ = scipy_kmeans(op_data / scale, n_clusters, iter=50, seed=42)
+
+    order = np.argsort(centers[:, 0])
+    centers = centers[order]
+    return centers, scale
+
+
+def _assign_condition_clusters(data, centers, scale):
+    labels, _ = scipy_vq(data[:, 2:5].astype(float) / scale, centers)
+    return labels
+
+
+def _apply_condition_scaling(train_data, test_data, method, n_clusters):
+    if method not in ("zscore", "minmax"):
+        raise ValueError(
+            f"Unsupported condition_scaling_method: {method}. "
+            "Use 'zscore' or 'minmax'."
+        )
+
+    centers, op_scale = _fit_condition_clusters(train_data, n_clusters)
+    train_labels = _assign_condition_clusters(train_data, centers, op_scale)
+    test_labels = _assign_condition_clusters(test_data, centers, op_scale)
+
+    train_scaled = train_data.copy()
+    test_scaled = test_data.copy()
+    sensor_cols = slice(5, 26)
+
+    for cluster_id in range(len(centers)):
+        train_mask = train_labels == cluster_id
+        if not np.any(train_mask):
+            continue
+
+        train_sensor = train_data[train_mask, sensor_cols]
+        if method == "zscore":
+            center = train_sensor.mean(axis=0)
+            denom = train_sensor.std(axis=0)
+        else:
+            center = train_sensor.min(axis=0)
+            denom = train_sensor.max(axis=0) - center
+        denom[denom == 0] = 1.0
+
+        train_scaled[train_mask, sensor_cols] = (train_sensor - center) / denom
+
+        test_mask = test_labels == cluster_id
+        if np.any(test_mask):
+            test_scaled[test_mask, sensor_cols] = (
+                test_data[test_mask, sensor_cols] - center
+            ) / denom
+
+    print(
+        f"Applied per-condition {method} scaling "
+        f"with {len(centers)} clusters for {DATASET}."
+    )
+    return train_scaled, test_scaled
 
 #Import dataset
 RUL_DATASET   = np.loadtxt(f'{_data_path}/RUL_{DATASET}.txt')
 train_dataset = np.loadtxt(f'{_data_path}/train_{DATASET}.txt')
 test_dataset  = np.loadtxt(f'{_data_path}/test_{DATASET}.txt')
-train_dataset[:, 2:] = min_max_scaler.fit_transform(train_dataset[:,2:])
-test_dataset[:, 2:] = min_max_scaler.transform(test_dataset[:,2:])
+
+if condition_scaling_enabled and DATASET in ("FD002", "FD004"):
+    train_dataset, test_dataset = _apply_condition_scaling(
+        train_dataset,
+        test_dataset,
+        condition_scaling_method,
+        condition_cluster_count,
+    )
+else:
+    train_dataset[:, 2:] = min_max_scaler.fit_transform(train_dataset[:,2:])
+    test_dataset[:, 2:] = min_max_scaler.transform(test_dataset[:,2:])
 train_01_nor = train_dataset
 test_01_nor = test_dataset
 
@@ -140,12 +213,15 @@ sio.savemat(f'{dataset_path}/{DATASET}_window_size_testY.mat', {"test1Y": testY}
 # --- Statistical features (論文 Section IV-B-1c) ---
 # 對每個 sliding window 計算 regression coef 和 mean，各作為一列 appended
 # window: (T, 14) → (T+2, 14)
-_regr = linear_model.LinearRegression()
 
 def _fea_extract1(window):
     """每個感測器對時間步的線性回歸係數"""
-    t_idx = np.arange(window.shape[0]).reshape(-1, 1)
-    return [float(_regr.fit(t_idx, window[:, s]).coef_[0]) for s in range(window.shape[1])]
+    t_idx = np.arange(window.shape[0], dtype=np.float64)
+    t_idx = t_idx - t_idx.mean()
+    denom = np.sum(t_idx ** 2)
+    if denom == 0:
+        return [0.0] * window.shape[1]
+    return ((t_idx @ window) / denom).astype(float).tolist()
 
 def _fea_extract2(window):
     """每個感測器的平均值"""
