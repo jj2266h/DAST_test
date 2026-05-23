@@ -4,9 +4,9 @@ __pycache__/
 *.mat
 *.ipynb
 *.log
-*.csv
 *.h5
 *.json
+!config.json
 *.yaml
 *.ckpt
 *.pt
@@ -21,3 +21,9 @@ build/
 *.png
 *.jpg
 *.pdf
+紀錄/
+.claude/
+tmp/
+PHM-2008_prediction_result/
+plots/
+pdf_content*.txt
