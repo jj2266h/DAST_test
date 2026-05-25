@@ -25,6 +25,10 @@
     "batch_size": 256,
     "epochs": 100,
     "learning_rate": 0.001,
+    "grad_clip_enabled": false,
+    "grad_clip_max_norm": 1.0,
+    "lr_warmup_enabled": false,
+    "lr_warmup_epochs": 5,
     "model_save_path": "model",
     "seed": 42
   },

@@ -26,6 +26,7 @@ def load_array(path, key):
     return sio.loadmat(path)[key]
 
 def append_experiment_log(csv_path, row):
+    os.makedirs(os.path.dirname(csv_path), exist_ok=True)
     file_exists = os.path.exists(csv_path)
     with open(csv_path, "a", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=list(row.keys()))
@@ -95,6 +96,7 @@ def plot_training_results(history, pred_np, testY_np, RUL_max, dataset, save_dir
     plt.savefig(save_path, dpi=150, bbox_inches="tight")
     plt.show()
     print(f"圖表已儲存至: {save_path}")
+    return save_path
 
 # ── 損失函數/指標 ──────────────────────────────────────────────────
 def RMSELoss(yhat, y):
@@ -131,7 +133,16 @@ def main():
     BATCH_SIZE    = _tr["batch_size"]
     EPOCHS        = _tr["epochs"]
     LR            = _tr["learning_rate"]
+    GRAD_CLIP_ENABLED = _tr.get("grad_clip_enabled", False)
+    GRAD_CLIP_MAX_NORM = _tr.get("grad_clip_max_norm", 1.0)
+    LR_WARMUP_ENABLED = _tr.get("lr_warmup_enabled", False)
+    LR_WARMUP_EPOCHS = _tr.get("lr_warmup_epochs", 5)
     model_dir     = _tr["model_save_path"]
+    run_id        = time.strftime("%Y-%m-%d_%H-%M-%S")
+    log_dir       = "紀錄"
+    history_csv   = os.path.join(log_dir, f"training_history_{DATASET}_{run_id}.csv")
+    summary_csv   = os.path.join(log_dir, "experiment_log.csv")
+    os.makedirs(log_dir, exist_ok=True)
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print(f"使用裝置: {device}")
@@ -172,11 +183,33 @@ def main():
     ).to(device)
 
     optimizer = torch.optim.RAdam(model.parameters(), lr=LR)
+    warmup_steps = max(1, LR_WARMUP_EPOCHS * len(train_loader))
+    scheduler = None
+    if LR_WARMUP_ENABLED:
+        scheduler = torch.optim.lr_scheduler.LambdaLR(
+            optimizer,
+            lr_lambda=lambda step: min(1.0, (step + 1) / warmup_steps),
+        )
     loss_fn = RMSELoss
     best_rmse=2000
+    best_epoch = 0
+    best_mae = None
+    best_score = None
     loss_history = {"train_loss": [], "rmse": [], "mae": [], "score": []}
+    start_time = time.time()
+    print(f"Training history will be saved to: {history_csv}")
+    print(
+        f"Gradient clipping: {'on' if GRAD_CLIP_ENABLED else 'off'} "
+        f"(max_norm={GRAD_CLIP_MAX_NORM})"
+    )
+    print(
+        f"LR warmup: {'on' if LR_WARMUP_ENABLED else 'off'} "
+        f"(warmup_epochs={LR_WARMUP_EPOCHS})"
+    )
+
     # ── 訓練迴圈 ────────────────────────────────────────────
     for epoch in range(1, EPOCHS + 1):
+        epoch_start = time.time()
         model.train()
         total_loss = 0.0
         for xb, yb in train_loader:
@@ -185,7 +218,11 @@ def main():
             loss = loss_fn(pred, yb)
             optimizer.zero_grad()
             loss.backward()
+            if GRAD_CLIP_ENABLED:
+                torch.nn.utils.clip_grad_norm_(model.parameters(), GRAD_CLIP_MAX_NORM)
             optimizer.step()
+            if scheduler is not None:
+                scheduler.step()
             total_loss += loss.item()
 
         
@@ -201,10 +238,34 @@ def main():
         loss_history["rmse"].append(rmse)
         loss_history["mae"].append(mae)
         loss_history["score"].append(score_value)
+        epoch_time = time.time() - epoch_start
+        elapsed_time = time.time() - start_time
+        is_best = rmse < best_rmse
         print(f"Epoch {epoch:3d} | Train Loss: {train_loss_avg:.4f} "
               f"| Test RMSE: {rmse:.4f} | MAE: {mae:.4f} | Score: {score_value:.1f}")
-        if rmse < best_rmse:
+        append_experiment_log(history_csv, {
+            "run_id": run_id,
+            "dataset": DATASET,
+            "epoch": epoch,
+            "train_loss": train_loss_avg,
+            "rmse": rmse,
+            "mae": mae,
+            "score": score_value,
+            "epoch_time_sec": epoch_time,
+            "elapsed_time_sec": elapsed_time,
+            "learning_rate": optimizer.param_groups[0]["lr"],
+            "batch_size": BATCH_SIZE,
+            "grad_clip_enabled": int(GRAD_CLIP_ENABLED),
+            "grad_clip_max_norm": GRAD_CLIP_MAX_NORM,
+            "lr_warmup_enabled": int(LR_WARMUP_ENABLED),
+            "lr_warmup_epochs": LR_WARMUP_EPOCHS,
+            "is_best": int(is_best),
+        })
+        if is_best:
             best_rmse = rmse
+            best_epoch = epoch
+            best_mae = mae
+            best_score = score_value
             torch.save(model.state_dict(), f'dast_{DATASET}_best.pth')
 
     # ── 儲存模型 ────────────────────────────────────────────
@@ -221,7 +282,34 @@ def main():
     model.eval()
     with torch.no_grad():
         final_pred_np = model(testX.to(device)).squeeze().cpu().numpy()
-    plot_training_results(loss_history, final_pred_np, testY_np, RUL_max, DATASET, save_dir="plots")
+    plot_path = plot_training_results(loss_history, final_pred_np, testY_np, RUL_max, DATASET, save_dir="plots")
+
+    append_experiment_log(summary_csv, {
+        "run_id": run_id,
+        "dataset": DATASET,
+        "epochs": EPOCHS,
+        "batch_size": BATCH_SIZE,
+        "learning_rate": LR,
+        "grad_clip_enabled": int(GRAD_CLIP_ENABLED),
+        "grad_clip_max_norm": GRAD_CLIP_MAX_NORM,
+        "lr_warmup_enabled": int(LR_WARMUP_ENABLED),
+        "lr_warmup_epochs": LR_WARMUP_EPOCHS,
+        "rul_max": RUL_max,
+        "time_step": time_step,
+        "input_size": input_size,
+        "best_epoch": best_epoch,
+        "best_rmse": best_rmse,
+        "best_mae": best_mae,
+        "best_score": best_score,
+        "final_train_loss": loss_history["train_loss"][-1],
+        "final_rmse": loss_history["rmse"][-1],
+        "final_mae": loss_history["mae"][-1],
+        "final_score": loss_history["score"][-1],
+        "elapsed_time_sec": time.time() - start_time,
+        "history_csv": history_csv,
+        "plot_path": plot_path,
+    })
+    print(f"Experiment summary saved to: {summary_csv}")
 
 if __name__ == '__main__':
     main()
