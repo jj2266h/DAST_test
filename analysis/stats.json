@@ -1,0 +1,121 @@
+{
+  "train_units": 249,
+  "test_units": 248,
+  "train_rows": 61249,
+  "test_rows": 41214,
+  "train_life_min": 128,
+  "train_life_mean": 246.0,
+  "train_life_max": 543,
+  "test_life_min": 19,
+  "test_life_mean": 166.2,
+  "test_life_max": 486,
+  "rul_true_min": 6,
+  "rul_true_mean": 86.6,
+  "rul_true_max": 195,
+  "oc_centers": {
+    "OC0_center": {
+      "op1": 0.0015,
+      "op2": 0.0005,
+      "op3": 100.0,
+      "pct_train": 15.1
+    },
+    "OC1_center": {
+      "op1": 10.003,
+      "op2": 0.2505,
+      "op3": 100.0,
+      "pct_train": 15.1
+    },
+    "OC2_center": {
+      "op1": 20.003,
+      "op2": 0.7005,
+      "op3": 100.0,
+      "pct_train": 14.8
+    },
+    "OC3_center": {
+      "op1": 25.0031,
+      "op2": 0.6205,
+      "op3": 60.0,
+      "pct_train": 14.9
+    },
+    "OC4_center": {
+      "op1": 35.003,
+      "op2": 0.8405,
+      "op3": 100.0,
+      "pct_train": 15.0
+    },
+    "OC5_center": {
+      "op1": 42.003,
+      "op2": 0.8405,
+      "op3": 100.0,
+      "pct_train": 25.1
+    }
+  },
+  "valid_sensors": [
+    "s2",
+    "s3",
+    "s4",
+    "s7",
+    "s8",
+    "s9",
+    "s11",
+    "s12",
+    "s13",
+    "s14",
+    "s15",
+    "s17",
+    "s20",
+    "s21"
+  ],
+  "invalid_sensors": [
+    "s1",
+    "s5",
+    "s6",
+    "s10",
+    "s16",
+    "s18",
+    "s19"
+  ],
+  "n_valid_sensors": 14,
+  "oc_shift_top3": [
+    "s12",
+    "s7",
+    "s21"
+  ],
+  "spearman_top6": [
+    "s11",
+    "s4",
+    "s17",
+    "s3",
+    "s2",
+    "s13"
+  ],
+  "spearman_rho": {
+    "s2": -0.543,
+    "s3": -0.6097,
+    "s4": -0.6715,
+    "s7": -0.1081,
+    "s8": -0.53,
+    "s9": -0.5231,
+    "s11": -0.7084,
+    "s12": -0.1148,
+    "s13": -0.5306,
+    "s14": -0.4263,
+    "s15": -0.1213,
+    "s17": -0.6274,
+    "s20": 0.0627,
+    "s21": 0.0654
+  },
+  "pca_pc1_var": 47.3,
+  "pca_pc2_var": 26.8,
+  "hi_spearman_rho": -0.6764,
+  "rf_rmse": 28.45,
+  "rf_mae": 20.85,
+  "rf_mape": 30.56,
+  "rf_phm_score": 6065.2,
+  "n_features": 44,
+  "n_train_samples": 54028,
+  "dast_rmse": 27.68,
+  "dast_mae": 21.96,
+  "dast_mape": 42.57,
+  "dast_phm_score": 4055.9
+}

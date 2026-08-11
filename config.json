@@ -2,10 +2,10 @@
   "dataset_type": "cmapss",
 
   "cmapss": {
-    "dataset": "FD004",
+    "dataset": "FD003",
     "data_path": "Cmapss_data",
     "output_path": "train_dataset",
-    "window_size": 60,
+    "window_size": 40,
     "rul_max": 125.0,
     "feature_len": 14,
     "condition_scaling_enabled": true,
@@ -25,10 +25,10 @@
     "batch_size": 256,
     "epochs": 100,
     "learning_rate": 0.001,
-    "grad_clip_enabled": false,
+    "grad_clip_enabled": true,
     "grad_clip_max_norm": 1.0,
     "lr_warmup_enabled": false,
-    "lr_warmup_epochs": 5,
+    "lr_warmup_epochs": 10,
     "model_save_path": "model",
     "seed": 42
   },
