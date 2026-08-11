@@ -8,7 +8,9 @@ Created on Fri Mar 11 15:31:47 2022
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+import argparse
 import json
+import os
 from sklearn import preprocessing
 from sklearn.metrics import mean_squared_error, r2_score, mean_absolute_error
 from sklearn.model_selection import GridSearchCV
@@ -16,7 +18,16 @@ from scipy import interpolate
 from scipy.cluster.vq import kmeans as scipy_kmeans, vq as scipy_vq
 import scipy.io as sio
 
-with open("config.json", "r", encoding="utf-8") as f:
+
+def parse_args():
+    parser = argparse.ArgumentParser(description="Preprocess CMAPSS data for DAST.")
+    parser.add_argument("--config", default="config.json", help="Path to config JSON.")
+    return parser.parse_args()
+
+
+args = parse_args()
+
+with open(args.config, "r", encoding="utf-8") as f:
     config = json.load(f)
 
 _cfg = config["cmapss"]
@@ -28,6 +39,8 @@ _data_path   = _cfg["data_path"]
 condition_scaling_enabled = _cfg.get("condition_scaling_enabled", True)
 condition_scaling_method  = _cfg.get("condition_scaling_method", "zscore").lower()
 condition_cluster_count   = _cfg.get("condition_cluster_count", 6)
+
+os.makedirs(dataset_path, exist_ok=True)
 
 min_max_scaler = preprocessing.MinMaxScaler()
 

@@ -26,4 +26,6 @@ build/
 tmp/
 PHM-2008_prediction_result/
 plots/
+experiments/generated_configs/
+experiments/results/
 pdf_content*.txt

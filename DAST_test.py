@@ -6,6 +6,7 @@ import os
 from torch.utils.data import DataLoader, TensorDataset
 import csv
 import json
+import argparse
 from DAST_Network import DAST
 import time
 import math
@@ -27,10 +28,33 @@ def load_array(path, key):
     return sio.loadmat(path)[key]
 
 def append_experiment_log(csv_path, row):
-    os.makedirs(os.path.dirname(csv_path), exist_ok=True)
+    log_dir = os.path.dirname(csv_path)
+    if log_dir:
+        os.makedirs(log_dir, exist_ok=True)
     file_exists = os.path.exists(csv_path)
+    fieldnames = list(row.keys())
+
+    if file_exists:
+        with open(csv_path, newline="", encoding="utf-8") as f:
+            reader = csv.DictReader(f)
+            existing_fieldnames = reader.fieldnames or []
+            existing_rows = [
+                {key: value for key, value in existing_row.items() if key is not None}
+                for existing_row in reader
+            ]
+
+        missing_fields = [name for name in fieldnames if name not in existing_fieldnames]
+        if missing_fields:
+            fieldnames = existing_fieldnames + missing_fields
+            with open(csv_path, "w", newline="", encoding="utf-8") as f:
+                writer = csv.DictWriter(f, fieldnames=fieldnames)
+                writer.writeheader()
+                writer.writerows(existing_rows)
+        else:
+            fieldnames = existing_fieldnames
+
     with open(csv_path, "a", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=list(row.keys()))
+        writer = csv.DictWriter(f, fieldnames=fieldnames)
         if not file_exists:
             writer.writeheader()
         writer.writerow(row)
@@ -249,16 +273,28 @@ def plot_training_results(history, pred_np, testY_np, RUL_max, dataset, save_dir
         print(f"  {path}")
     return plot_paths
 
+def parse_args():
+    parser = argparse.ArgumentParser(description="Train DAST on a configured dataset.")
+    parser.add_argument("--config", default="config.json", help="Path to config JSON.")
+    parser.add_argument("--run-label", default="", help="Optional label for sweep runs.")
+    return parser.parse_args()
+
+
 def main():
+    args = parse_args()
+    config_path = args.config
+    run_label = args.run_label
+
     # ── 讀取設定檔 ────────────────────────────────────────
-    with open("config.json", "r", encoding="utf-8") as f:
+    with open(config_path, "r", encoding="utf-8") as f:
         config = json.load(f)
 
     _ds  = config["cmapss"]
     _tr  = config["training"]
     _mdl = config["model"]
 
-    set_seed(_tr.get("seed", 42))
+    seed = _tr.get("seed", 42)
+    set_seed(seed)
 
     DATASET       = _ds["dataset"]
     RUL_max       = _ds["rul_max"]
@@ -275,10 +311,13 @@ def main():
     LR_WARMUP_EPOCHS = _tr.get("lr_warmup_epochs", 5)
     model_dir     = _tr["model_save_path"]
     run_id        = time.strftime("%Y-%m-%d_%H-%M-%S")
+    run_suffix    = f"{DATASET}_{run_label}_{run_id}" if run_label else f"{DATASET}_{run_id}"
     log_dir       = "紀錄"
-    history_csv   = os.path.join(log_dir, f"training_history_{DATASET}_{run_id}.csv")
+    history_csv   = os.path.join(log_dir, f"training_history_{run_suffix}.csv")
     summary_csv   = os.path.join(log_dir, "experiment_log.csv")
     os.makedirs(log_dir, exist_ok=True)
+    os.makedirs(model_dir, exist_ok=True)
+    best_ckpt = os.path.join(model_dir, f"dast_{run_suffix}_best.pth")
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print(f"使用裝置: {device}")
@@ -381,7 +420,10 @@ def main():
               f"| Test RMSE: {rmse:.4f} | MAE: {mae:.4f} | Score: {score_value:.1f}")
         append_experiment_log(history_csv, {
             "run_id": run_id,
+            "run_label": run_label,
+            "config_path": config_path,
             "dataset": DATASET,
+            "seed": seed,
             "epoch": epoch,
             "train_loss": train_loss_avg,
             "rmse": rmse,
@@ -402,10 +444,10 @@ def main():
             best_epoch = epoch
             best_mae = mae
             best_score = score_value
-            torch.save(model.state_dict(), f'dast_{DATASET}_best.pth')
+            torch.save(model.state_dict(), best_ckpt)
 
     # ── 儲存模型 ────────────────────────────────────────────
-    torch.save(model.state_dict(), f'{model_dir}/dast_{DATASET}_{time.strftime("%Y-%m-%d_%H-%M-%S")}.pth')
+    torch.save(model.state_dict(), os.path.join(model_dir, f"dast_{run_suffix}.pth"))
     model.to(device)
     print("模型已儲存")
 
@@ -413,7 +455,6 @@ def main():
     print("模型已儲存")
 
     # ── 視覺化 ──────────────────────────────────────────────
-    best_ckpt = f"dast_{DATASET}_best.pth"
     model.load_state_dict(torch.load(best_ckpt, map_location=device))
     model.eval()
     with torch.no_grad():
@@ -433,7 +474,10 @@ def main():
 
     append_experiment_log(summary_csv, {
         "run_id": run_id,
+        "run_label": run_label,
+        "config_path": config_path,
         "dataset": DATASET,
+        "seed": seed,
         "epochs": EPOCHS,
         "batch_size": BATCH_SIZE,
         "learning_rate": LR,
@@ -455,6 +499,7 @@ def main():
         "elapsed_time_sec": time.time() - start_time,
         "history_csv": history_csv,
         "plot_path": ";".join(plot_path),
+        "best_checkpoint": best_ckpt,
     })
     print(f"Experiment summary saved to: {summary_csv}")
 
