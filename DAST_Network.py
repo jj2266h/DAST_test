@@ -6,7 +6,7 @@ from DAST_utils import *
 
 
 class Sensors_EncoderLayer(torch.nn.Module):
-    def __init__(self, dim_val, dim_attn, n_heads = 1, dropout=0.1):
+    def __init__(self, dim_val, dim_attn, n_heads = 1, dropout=0.2):
         super(Sensors_EncoderLayer, self).__init__()
         self.attn = Sensor_MultiHeadAttentionBlock(dim_val, dim_attn, n_heads)
         self.fc1 = nn.Linear(dim_val, dim_val)
@@ -24,7 +24,7 @@ class Sensors_EncoderLayer(torch.nn.Module):
 
 
 class Time_step_EncoderLayer(torch.nn.Module):
-    def __init__(self, dim_val, dim_attn, n_heads = 1, dropout=0.1):
+    def __init__(self, dim_val, dim_attn, n_heads = 1, dropout=0.2):
         super(Time_step_EncoderLayer, self).__init__()
         self.attn = TimeStepMultiHeadAttentionBlock(dim_val, dim_attn, n_heads)
         self.fc1 = nn.Linear(dim_val, dim_val)
@@ -42,7 +42,7 @@ class Time_step_EncoderLayer(torch.nn.Module):
 
 
 class DecoderLayer(torch.nn.Module):
-    def __init__(self, dim_val, dim_attn, n_heads = 1, dropout=0.1):
+    def __init__(self, dim_val, dim_attn, n_heads = 1, dropout=0.2):
         super(DecoderLayer, self).__init__()
         self.attn1 = MultiHeadAttentionBlock(dim_val, dim_attn, n_heads)
         self.attn2 = MultiHeadAttentionBlock(dim_val, dim_attn, n_heads)
@@ -54,8 +54,11 @@ class DecoderLayer(torch.nn.Module):
         self.norm3 = nn.LayerNorm(dim_val)
 
     def forward(self, x, enc):
-        a = self.attn1(x)
-        x = self.norm1(a + x)
+        causal_mask = torch.tril(
+            torch.ones(x.size(1), x.size(1), dtype=torch.bool, device=x.device)
+        )
+        a = self.attn1(x, mask=causal_mask)
+        x = self.norm1(x + self.dropout(a))
         a = self.attn2(x, kv = enc)
         x = self.norm2(x + self.dropout(a))
         a = self.fc1(F.elu(self.fc2(x)))
@@ -65,7 +68,7 @@ class DecoderLayer(torch.nn.Module):
 class DAST(torch.nn.Module):
     def __init__(self, dim_val_s, dim_attn_s, dim_val_t,dim_attn_t,dim_val, dim_attn, time_step, 
                  input_size, dec_seq_len, out_seq_len, n_decoder_layers = 1, n_encoder_layers = 1,
-                 n_heads = 1, dropout = 0.1):
+                 n_heads = 1, dropout = 0.2):
         
         super(DAST, self).__init__()
         self.dec_seq_len = dec_seq_len
@@ -103,7 +106,9 @@ class DAST(torch.nn.Module):
         self.timestep_enc_input_fc = nn.Linear(input_size, dim_val_t)
         self.sensor_enc_input_fc = nn.Linear(time_step, dim_val_s)
         self.dec_input_fc = nn.Linear(input_size, dim_val)
-        self.out_fc = nn.Linear(dec_seq_len * dim_val, out_seq_len)
+        self.output_hidden_fc = nn.Linear(dec_seq_len * dim_val, 64)
+        self.output_activation = nn.ReLU()
+        self.out_fc = nn.Linear(64, out_seq_len)
         self.norm1 = nn.LayerNorm(dim_val)
         self.fusion_fc = nn.Linear(dim_val, dim_val)
     
@@ -129,16 +134,10 @@ class DAST(torch.nn.Module):
         p = self.fusion_fc(self.norm1(torch.cat((e, o), dim=1)))  #((batch_size,timestep+sensor,dim_val))
 
         # decoder receive the output of feature fusion layer
-        d = self.decoder[0](self.dec_input_fc(x[:,-self.dec_seq_len:]), p)
+        d = self.dec_input_fc(x[:,-self.dec_seq_len:])
+        for decoder_layer in self.decoder:
+            d = decoder_layer(d, p)
 
         # output the RUL
-        x = self.out_fc(F.elu(d.flatten(start_dim=1)))
+        x = self.out_fc(self.output_activation(self.output_hidden_fc(d.flatten(start_dim=1))))
         return x
-    
-    
-    
-
-
-    
-    
-   

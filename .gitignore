@@ -26,4 +26,17 @@ build/
 tmp/
 PHM-2008_prediction_result/
 plots/
+experiments/generated_configs/
+experiments/results/
 pdf_content*.txt
+
+# Generated datasets, checkpoints, and downloaded result mirrors
+cmapss_dataset/
+model/
+server_results/
+phm2012_dataset/
+_tmp_pptx_build/
+
+# Local agent tooling
+.agents/
+.aris/

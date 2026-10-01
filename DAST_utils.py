@@ -5,9 +5,11 @@ import numpy as np
 import math
 
 
-def a_norm(Q, K):
+def a_norm(Q, K, mask=None):
     m = torch.matmul(Q, K.transpose(2,1).float())
-    m /= torch.sqrt(torch.tensor(Q.shape[-1]).float())    
+    m /= torch.sqrt(torch.tensor(Q.shape[-1], device=Q.device).float())
+    if mask is not None:
+        m = m.masked_fill(~mask, float('-inf'))
     return torch.softmax(m,-1)
 
 def Sensor_a_norm(Q, K):
@@ -22,8 +24,8 @@ def time_step_a_norm(Q, K):
 
 #attention
 
-def attention(Q, K, V):
-    a = a_norm(Q, K) 
+def attention(Q, K, V, mask=None):
+    a = a_norm(Q, K, mask=mask)
     return  torch.matmul(a,  V)
 
 def Sensor_attention(Q, K, V):
@@ -42,10 +44,10 @@ class AttentionBlock(torch.nn.Module):
         self.key = Key(dim_val, dim_attn)  
         self.query = Query(dim_val, dim_attn) 
     
-    def forward(self, x, kv = None): 
+    def forward(self, x, kv = None, mask=None):
         if(kv is None):
-            return attention(self.query(x), self.key(x), self.value(x))        
-        return attention(self.query(x), self.key(kv), self.value(kv))
+            return attention(self.query(x), self.key(x), self.value(x), mask=mask)
+        return attention(self.query(x), self.key(kv), self.value(kv), mask=mask)
 
 class Sensor_AttentionBlock(torch.nn.Module):
     def __init__(self, dim_val, dim_attn):
@@ -84,10 +86,10 @@ class MultiHeadAttentionBlock(torch.nn.Module):
         self.fc = nn.Linear(n_heads * dim_val, dim_val, bias = False)
                       
         
-    def forward(self, x, kv = None):
+    def forward(self, x, kv = None, mask=None):
         a = []
         for h in self.heads:
-            a.append(h(x, kv = kv))           
+            a.append(h(x, kv = kv, mask=mask))
         a = torch.stack(a, dim = -1) 
         a = a.flatten(start_dim = 2)        
         x = self.fc(a) 
@@ -201,4 +203,3 @@ class PositionalEncoding(nn.Module):
 
 
 
- 

@@ -1,8 +1,11 @@
+# Core DAST training and data-processing dependencies
 matplotlib==3.10.8
-hmmlearn
 numpy==2.4.3
 pandas==3.0.1
-pdfplumber
 scikit-learn==1.8.0
 scipy==1.17.1
 torch==2.10.0
+
+# Auxiliary analysis and document utilities
+hmmlearn
+pdfplumber

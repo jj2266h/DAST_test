@@ -2,9 +2,9 @@
   "dataset_type": "cmapss",
 
   "cmapss": {
-    "dataset": "FD003",
+    "dataset": "FD001",
     "data_path": "Cmapss_data",
-    "output_path": "train_dataset",
+    "output_path": "cmapss_dataset",
     "window_size": 40,
     "rul_max": 125.0,
     "feature_len": 14,
@@ -25,7 +25,7 @@
     "batch_size": 256,
     "epochs": 100,
     "learning_rate": 0.001,
-    "grad_clip_enabled": true,
+    "grad_clip_enabled": false,
     "grad_clip_max_norm": 1.0,
     "lr_warmup_enabled": false,
     "lr_warmup_epochs": 10,
@@ -34,14 +34,14 @@
   },
 
   "model": {
-    "dec_seq_len": 10,
+    "dec_seq_len": 4,
     "out_seq_len": 1,
     "dim_val": 64,
     "dim_attn": 64,
     "n_encoder_layers": 2,
     "n_decoder_layers": 1,
     "n_heads": 4,
-    "dropout": 0.1,
+    "dropout": 0.2,
     "use_full_features_for_time_encoder": false
   }
 }
