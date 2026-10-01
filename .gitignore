@@ -40,3 +40,18 @@ _tmp_pptx_build/
 # Local agent tooling
 .agents/
 .aris/
+
+# Local research reports, paper drafts, and experiment notes
+analysis/*.md
+*_plan.md
+PAPER_PLAN*.md
+CIIE_*.md
+CLAIMS_FROM_RESULTS.md
+EXPERIMENT_AUDIT.md
+MANIFEST.md
+findings.md
+literature_review/
+refine-logs/
+工工協會投稿/
+存檔1.md
+實驗記錄.xlsx

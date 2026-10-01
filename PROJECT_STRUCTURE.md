@@ -26,7 +26,7 @@
 |---|---|
 | `Cmapss_data/` | 原始 C-MAPSS 文字資料；目前由 Git 追蹤 |
 | `cmapss_dataset/` | 由 `data_process.py` 產生的 `.mat`；不提交，可重建 |
-| `train_dataset/` | 舊版處理資料；暫時保留，二進位更新不併入主要程式提交 |
+| `train_dataset/` | 舊版處理資料；保留本機但停止 Git 追蹤，可由前處理流程重建 |
 | `phm2012_dataset/`、`femto_dataset/` | FEMTO/PHM 資料；不與 C-MAPSS 主程式提交混合 |
 
 重新產生目前設定的 C-MAPSS 資料：
@@ -67,6 +67,7 @@ python DAST_test.py --config config.json --run-label <run-label>
 - `condition_scaling_enabled` 僅在 FD002/FD004 啟用 operating-condition scaling；FD001/FD003 使用全域 MinMax scaling。
 - `DAST_test.py` 每個 epoch 都評估 test set，並以最低 Test RMSE 選 checkpoint；相關 best 結果屬 test-selected exploratory evidence，不是獨立 final-test 結果。
 - `紀錄/`、`plots/`、`experiments/results/` 與 `server_results/` 是產物或結果鏡像，不納入主要程式提交。
+- `analysis/*.md`、論文草稿、實驗計畫與本機研究紀錄保留在工作區，不納入程式版本歷史；需要發布的定稿應移至獨立文件儲存庫或 release artifact。
 
 ## 主要程式提交清單
 
