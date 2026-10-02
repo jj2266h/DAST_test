@@ -21,8 +21,8 @@ for d in ("FD002", "FD004"):
                         "val_rmse_mean": st.mean(f("best_val_rmse")),
                         "holdout_rmse_mean": st.mean(f("holdout_selby_valrmse_rmse")),
                         "holdout_rmse_sd": st.stdev(f("holdout_selby_valrmse_rmse")),
-                        "holdout_score_mean": st.mean(f("holdout_selby_valrmse_score_engine_mean")),
-                        "holdout_score_sd": st.stdev(f("holdout_selby_valrmse_score_engine_mean"))})
+                        "holdout_score_mean": st.mean(f("holdout_selby_valrmse_score_sum")),
+                        "holdout_score_sd": st.stdev(f("holdout_selby_valrmse_score_sum"))})
 with open("paper/data/table4_clip_warmup_holdout.csv", "w", newline="") as fh:
     w = csv.DictWriter(fh, fieldnames=list(out[0]))
     w.writeheader(); w.writerows(out)
