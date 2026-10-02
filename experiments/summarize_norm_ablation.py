@@ -15,8 +15,9 @@ import sys
 
 from scipy import stats
 
-METRICS = (("RMSE", "holdout_selby_valrmse_rmse"),
-           ("Score", "holdout_selby_valrmse_score_engine_mean"))
+# (label, summary key, number format). Score is the NASA score summed over all holdout windows.
+METRICS = (("RMSE", "holdout_selby_valrmse_rmse", ".2f"),
+           ("Score", "holdout_selby_valrmse_score_sum", ".0f"))
 
 
 def load(path):
@@ -28,11 +29,11 @@ def arm(r):
     return (r["dataset"], r.get("norm", "oc_z"), float(r["clip"]), int(r["warmup"]))
 
 
-def mean_sd(xs):
-    return f"{st.mean(xs):.2f} ± {st.stdev(xs):.2f}" if len(xs) > 1 else f"{xs[0]:.2f}"
+def mean_sd(xs, fmt):
+    return f"{st.mean(xs):{fmt}} ± {st.stdev(xs):{fmt}}" if len(xs) > 1 else f"{xs[0]:{fmt}}"
 
 
-def paired(a, b, key):
+def paired(a, b, key, fmt):
     """Mean of (a - b) over shared seeds, with a t-based 95% CI."""
     seeds = sorted(set(a) & set(b))
     d = [a[s][key] - b[s][key] for s in seeds]
@@ -40,7 +41,7 @@ def paired(a, b, key):
         return f"n={len(d)}"
     m, se = st.mean(d), st.stdev(d) / len(d) ** 0.5
     h = stats.t.ppf(0.975, len(d) - 1) * se
-    return f"{m:+.2f} [{m - h:+.2f}, {m + h:+.2f}] (n={len(d)})"
+    return f"{m:+{fmt}} [{m - h:+{fmt}}, {m + h:+{fmt}}] (n={len(d)})"
 
 
 def main(path):
@@ -53,7 +54,7 @@ def main(path):
     print("| Dataset | Norm | clip | warmup | n | RMSE | Score |")
     print("|---|---|---|---|---|---|---|")
     for (ds, norm, c, w), runs in sorted(groups.items()):
-        cols = [mean_sd([r[k] for r in runs.values()]) for _, k in METRICS]
+        cols = [mean_sd([r[k] for r in runs.values()], f) for _, k, f in METRICS]
         print(f"| {ds} | {norm} | {c:g} | {w} | {len(runs)} | " + " | ".join(cols) + " |")
 
     print("\n## Paired differences vs reference (negative = lower error)\n")
@@ -69,7 +70,7 @@ def main(path):
             pairs.append((f"oc_z +{name} − oc_z", groups.get((ds, "oc_z", c, w)), base["oc_z"]))
         for label, a, b in pairs:
             if a and b:
-                print(f"| {ds} | {label} | " + " | ".join(paired(a, b, k) for _, k in METRICS) + " |")
+                print(f"| {ds} | {label} | " + " | ".join(paired(a, b, k, f) for _, k, f in METRICS) + " |")
 
 
 if __name__ == "__main__":
