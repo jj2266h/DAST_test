@@ -64,8 +64,10 @@ def rmse_loss(yhat, y):
 
 
 def nasa_score(true_cycles, pred_cycles):
+    import math
     d = np.asarray(pred_cycles) - np.asarray(true_cycles)
-    return float(np.sum(np.where(d < 0, np.exp(-d / 13.0), np.exp(d / 10.0)) - 1.0))
+    score = [math.exp(-diff/13.0) - 1.0 if diff < 0 else math.exp(diff/10.0) - 1.0 for diff in d]
+    return float(np.sum(score))
 
 
 def evaluate(model, X, Y, E, rul_max, device, batch=1024):
