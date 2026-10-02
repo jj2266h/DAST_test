@@ -4,7 +4,13 @@
 Use when summary.jsonl is lost but the .pth files remain. Only the val-RMSE-selected
 checkpoint is evaluated (the one the paper reports). Refuses to overwrite an existing file.
 
-    python experiments/reeval_holdout.py --results-dir experiments/norm_ablation_results
+Besides the all-window metrics it adds `holdout_cut_*`: one window per holdout engine,
+cut at a random point as in the official test set (true RUL 0 at the last window would be
+trivial). Cut points use a fixed seed, so arms with the same window size share them.
+`holdout_cut_score_sum` is the NASA score summed over those engines (DAST_test.s_score).
+
+    python experiments/reeval_holdout.py --results-dir experiments/norm_ablation_results \
+        --out experiments/norm_ablation_results/summary_cut.jsonl
 """
 
 import argparse
@@ -14,14 +20,35 @@ import os
 import re
 import sys
 
+import numpy as np
 import torch
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from DAST_Network import DAST
-from experiments.train_split import evaluate, load_split
+from experiments.train_split import evaluate, load_split, nasa_score
 
-CKPT = re.compile(r"best_valrmse_(FD\d{3})_(.+)_(global|condfe|none|shuffle)"
+# the norm part is absent in clean-sweep names (those runs are oc_z)
+CKPT = re.compile(r"best_valrmse_(FD\d{3})(?:_(.+?))?_(global|condfe|none|shuffle)"
                   r"_clip([\d.]+)_warmup(\d+)_seed(\d+)\.pth$")
+CUT_SEED = 2026
+
+
+def cut_index(E, seed=CUT_SEED):
+    """One window index per engine, drawn uniformly; windows of an engine are in time order."""
+    rng = np.random.default_rng(seed)
+    return np.array([rng.choice(np.flatnonzero(E == u)) for u in np.unique(E)])
+
+
+def cut_metrics(model, X, Y, E, rul_max, device):
+    idx = cut_index(E)
+    model.eval()
+    with torch.no_grad():
+        xb = torch.tensor(X[idx], dtype=torch.float32, device=device)
+        pred = model(xb).squeeze(-1).cpu().numpy().ravel() * rul_max
+    true = Y[idx] * rul_max
+    return {"holdout_cut_rmse": float(np.sqrt(np.mean((pred - true) ** 2))),
+            "holdout_cut_score_sum": nasa_score(true, pred),
+            "holdout_cut_n": int(len(idx))}
 
 
 def main():
@@ -50,6 +77,7 @@ def main():
                 print(f"  skip (unrecognized name): {path}")
                 continue
             ds, norm, variant, clip, warmup, seed = m.groups()
+            norm = norm or "oc_z"
             X, Y, E = load_split(args.split_dir, ds, norm, variant, "holdout")
             model = DAST(
                 dim_val_s=mdl["dim_val"], dim_attn_s=mdl["dim_attn"],
@@ -69,8 +97,10 @@ def main():
                    "seed": int(seed), "clip": float(clip), "warmup": int(warmup),
                    "window": X.shape[1] - 2, "reevaluated": True}
             row.update({f"holdout_selby_valrmse_{k}": v for k, v in hm.items()})
+            row.update(cut_metrics(model, X, Y, E, rul_max, device))
             f.write(json.dumps(row) + "\n")
-            print(f"  {tag}: RMSE {hm['rmse']:.3f} | Score(sum) {hm['score_sum']:.0f}")
+            print(f"  {tag}: RMSE {hm['rmse']:.3f} | cut RMSE {row['holdout_cut_rmse']:.3f} "
+                  f"| cut Score {row['holdout_cut_score_sum']:.1f} (n={row['holdout_cut_n']})")
     print(f"-> {out}")
 
 
