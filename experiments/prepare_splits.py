@@ -32,7 +32,7 @@ SPLIT_SEED = 2026
 COLS_TO_REMOVE = [2, 3, 4, 5, 9, 10, 14, 20, 22, 23]
 SENSOR_COLS = slice(5, 26)
 VARIANTS = ("global", "condfe", "none", "shuffle")
-NORMS = ("oc_z", "global_z", "global_minmax")
+NORMS = ("oc_z", "oc_minmax", "global_z", "global_minmax")
 
 
 def parse_args():
@@ -53,7 +53,7 @@ def split_stem(dataset, norm, variant):
 def scale_sensors(raw, train_mask, labels, n_centers, norm):
     """Normalize sensor columns of `raw`; statistics come from rows where train_mask is True."""
     scaled = raw.copy()
-    if norm == "oc_z":
+    if norm in ("oc_z", "oc_minmax"):
         groups = [labels == c for c in range(n_centers)]
     else:
         groups = [np.ones(len(raw), dtype=bool)]
@@ -61,7 +61,7 @@ def scale_sensors(raw, train_mask, labels, n_centers, norm):
         ref = raw[g & train_mask, SENSOR_COLS]
         if len(ref) == 0:
             continue
-        if norm == "global_minmax":
+        if norm in ("global_minmax", "oc_minmax"):
             center = ref.min(axis=0)
             denom = ref.max(axis=0) - center
         else:
