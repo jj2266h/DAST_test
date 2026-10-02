@@ -6,7 +6,7 @@
 #   conda activate dast && bash experiments/run_norm_ablation.sh 1      # required
 #   bash experiments/run_norm_ablation.sh 1 2 3                         # everything
 #
-# Phase 1 (required, 30 runs): FD002/FD004 x {global_minmax, global_z, oc_z}, clip/warmup off
+# Phase 1 (required, 40 runs): FD002/FD004 x {global_minmax, global_z, oc_minmax, oc_z}, clip/warmup off
 # Phase 2 (control,  20 runs): FD001/FD003 x {global_minmax, global_z}, clip/warmup off
 #                              (oc_z == global_z on single-condition data, so not rerun)
 # Phase 3 (RQ3,      30 runs): FD002/FD004 x oc_z x {warmup only, clip only, both}
@@ -54,7 +54,7 @@ for phase in "${PHASES[@]}"; do
   case "$phase" in
     1)
       for ds in FD002 FD004; do
-        for norm in global_minmax global_z oc_z; do
+        for norm in global_minmax global_z oc_minmax oc_z; do
           prepare "$ds" "$norm"
           for seed in $SEEDS; do run "$ds" "$norm" 0 0 "$seed"; done
         done
