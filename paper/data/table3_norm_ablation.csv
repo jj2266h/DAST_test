@@ -1,0 +1,9 @@
+dataset,norm,n_seeds,allwin_rmse_mean,allwin_rmse_sd,cut_rmse_mean,cut_rmse_sd,cut_score_sum_mean,cut_score_sum_sd
+FD002,global_minmax,5,15.71,0.52,16.29,1.01,190.01,39.17
+FD002,global_z,5,15.83,0.39,17.12,2.51,288.96,147.69
+FD002,oc_minmax,5,12.49,0.43,12.07,0.96,108.64,19.81
+FD002,oc_z,5,12.54,0.58,14.54,1.13,171.90,41.77
+FD004,global_minmax,5,20.20,1.23,21.40,1.71,421.92,101.58
+FD004,global_z,5,17.86,0.32,18.07,1.01,339.22,63.03
+FD004,oc_minmax,5,15.32,0.31,14.65,0.47,193.45,32.78
+FD004,oc_z,5,15.50,0.72,15.73,1.08,204.39,73.88
