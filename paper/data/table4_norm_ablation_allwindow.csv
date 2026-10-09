@@ -1,0 +1,18 @@
+# Holdout all-window metrics, window 60, clip/warmup off, 5 seeds (20,42,100,7,2026).
+# Source: summarize_norm_ablation.py output on the server, 2026-10-02 (Score = per-engine mean NASA score).
+dataset,norm,n_seeds,rmse_mean,rmse_sd,score_engine_mean,score_engine_sd
+FD002,global_minmax,5,15.71,0.52,5.34,0.77
+FD002,global_z,5,15.83,0.39,6.84,0.98
+FD002,oc_minmax,5,12.49,0.43,3.31,0.51
+FD002,oc_z,5,12.54,0.58,3.28,0.60
+FD004,global_minmax,5,20.20,1.23,25.93,3.21
+FD004,global_z,5,17.86,0.32,22.27,2.75
+FD004,oc_minmax,5,15.32,0.31,15.98,3.51
+FD004,oc_z,5,15.50,0.72,16.24,4.79
+# Seed-paired differences A - B: mean [95% t CI]
+# FD002 oc_z-global_z RMSE -3.30 [-4.34,-2.25] Score -3.56 [-5.08,-2.04]
+# FD002 oc_z-global_minmax RMSE -3.17 [-4.06,-2.28] Score -2.06 [-3.43,-0.70]
+# FD002 global_z-global_minmax RMSE +0.12 [-0.57,+0.81] Score +1.49 [+0.48,+2.51]
+# FD004 oc_z-global_z RMSE -2.37 [-3.35,-1.39] Score -6.02 [-15.06,+3.01]
+# FD004 oc_z-global_minmax RMSE -4.71 [-6.54,-2.87] Score -9.69 [-16.92,-2.46]
+# FD004 global_z-global_minmax RMSE -2.34 [-3.70,-0.98] Score -3.66 [-8.20,+0.87]
