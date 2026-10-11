@@ -9,7 +9,7 @@ from matplotlib.patches import FancyBboxPatch
 plt.rcParams.update({"font.family": "Times New Roman", "font.size": 7})
 
 # ---- Table 4: clean-protocol clip x warmup grid (OC z-score, val-selected, holdout) ----
-SUMMARY = "../../../server_results/experiments/clean_sweep_results/summary.jsonl"
+SUMMARY = "../../../experiments/clip_warmup_validation_search/results/server_experiments/summary.jsonl"
 rows = [json.loads(l) for l in open(SUMMARY, encoding="utf-8")]
 out = []
 for d in ("FD002", "FD004"):
@@ -62,37 +62,23 @@ fig.tight_layout(h_pad=0.6)
 fig.savefig("paper/figures/fig3_rq1_column.png", dpi=300)
 
 # ---- Fig 1 (column width): framework ----
-fig, ax = plt.subplots(figsize=(3.4, 3.9))
-ax.set_xlim(0, 10); ax.set_ylim(0, 11.6); ax.axis("off")
+fig, ax = plt.subplots(figsize=(3.4, 2.5))
+ax.set_xlim(0, 10); ax.set_ylim(0, 7.2); ax.axis("off")
 def box(x, y, w, h, text, fc):
     ax.add_patch(FancyBboxPatch((x, y), w, h, boxstyle="round,pad=0.05,rounding_size=0.15", fc=fc, ec="#333", lw=0.6))
-    ax.text(x + w / 2, y + h / 2, text, ha="center", va="center", fontsize=5.6)
+    ax.text(x + w / 2, y + h / 2, text, ha="center", va="center", fontsize=6.5)
 def arrow(x1, y1, x2, y2, dashed=False):
     ax.annotate("", xy=(x2, y2), xytext=(x1, y1),
-                arrowprops=dict(arrowstyle="->", lw=0.7, ls="--" if dashed else "-", color="#333"))
-box(1.2, 10.5, 7.6, 0.8, "C-MAPSS training file: engine-disjoint split\n(train 70% / validation 15% / holdout 15%)", "#eef2f7")
-ax.text(2.3, 9.95, "Training engines", fontsize=6.5, ha="center", weight="bold")
-ax.text(7.7, 9.95, "Validation / holdout engines", fontsize=6.5, ha="center", weight="bold")
-arrow(3.5, 10.5, 2.3, 10.15); arrow(6.5, 10.5, 7.7, 10.15)
-L, Rx, W, H = 0.0, 5.6, 4.4, 0.85
-box(L, 8.75, W, H, "Fit K-means on (op1, op2, op3)\n-> OC centers", "#dbe7f5")
-box(Rx, 8.75, W, H, "Assign OC with\ntrain-fitted centers", "#f3f3f3")
-box(L, 7.45, W, H, "Estimate per-OC statistics\n(mean/SD or min/max) per sensor", "#dbe7f5")
-box(Rx, 7.45, W, H, "Apply train statistics\n(no re-estimation)", "#f3f3f3")
-arrow(2.2, 8.75, 2.2, 8.3); arrow(7.8, 8.75, 7.8, 8.3)
-arrow(4.4, 9.17, 5.6, 9.17, dashed=True); arrow(4.4, 7.87, 5.6, 7.87, dashed=True)
-box(0.8, 5.95, 8.4, 0.95, "OC-aware z-score or min-max -> 14 sensors -> sliding window (length T)\n+ window slope and mean rows (T + 2)", "#e7f0e3")
-arrow(2.2, 7.45, 3.5, 6.9); arrow(7.8, 7.45, 6.5, 6.9)
-box(0.3, 4.35, 4.4, 0.9, "Sensor encoder\n(attention over sensors)", "#fbeede")
-box(5.3, 4.35, 4.4, 0.9, "Time-step encoder\n(attention over time steps)", "#fbeede")
-arrow(3.8, 5.95, 2.65, 5.25); arrow(6.2, 5.95, 7.35, 5.25)
-box(2.5, 2.95, 5.0, 0.8, "Feature fusion", "#fbeede")
-arrow(2.65, 4.35, 4.0, 3.75); arrow(7.35, 4.35, 6.0, 3.75)
-box(2.5, 1.6, 5.0, 0.8, "Decoder -> RUL prediction", "#fbeede")
-arrow(5, 2.95, 5, 2.4)
-box(1.0, 0.1, 8.0, 0.9, "Model selection on validation RMSE;\nevaluation on holdout engines (RMSE, NASA Score)", "#eef2f7")
-arrow(5, 1.6, 5, 1.0)
-ax.add_patch(FancyBboxPatch((0.1, 1.45), 9.8, 4.0, boxstyle="round,pad=0.05", fc="none", ec="#b07a30", lw=0.6, ls=":"))
-ax.text(0.25, 2.0, "DAST\n(unchanged)", fontsize=5.6, ha="left", style="italic", color="#7a4a10")
+                arrowprops=dict(arrowstyle="->", lw=0.8, ls="--" if dashed else "-", color="#333"))
+box(1.5, 6.0, 7.0, 1.0, "Engine-disjoint split\n(train / validation / holdout)", "#eef2f7")
+box(0.1, 3.4, 2.9, 1.3, "Normalization\n(grouping × scaling)", "#dbe7f5")
+box(3.6, 3.4, 2.8, 1.3, "DAST\n(fixed)", "#fbeede")
+box(7.0, 3.4, 2.9, 1.3, "Prediction error\n(RMSE, Score)", "#e7f0e3")
+box(0.1, 0.3, 2.9, 1.3, "Input statistics\n($\\eta^2_w$, $|\\rho|$)", "#f3f3f3")
+box(3.6, 0.3, 2.8, 1.3, "Training settings\n(clip, warmup)", "#f3f3f3")
+arrow(3.0, 6.0, 1.55, 4.75)
+arrow(3.0, 4.05, 3.6, 4.05); arrow(6.4, 4.05, 7.0, 4.05)
+arrow(1.55, 3.4, 1.55, 1.65, dashed=True)
+arrow(5.0, 1.6, 5.0, 3.35)
 fig.savefig("paper/figures/fig1_framework.png", dpi=300, bbox_inches="tight")
 print("figures saved")
