@@ -13,7 +13,7 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
 KEEP = [2, 3, 4, 7, 8, 9, 11, 12, 13, 14, 15, 17, 20, 21]  # 14 sensors used by DAST
-WINDOW, STRIDE, RUL_MAX = 40, 10, 125
+WINDOW, STRIDE, RUL_MAX = 60, 10, 125
 
 
 def eta2(x, lab):

@@ -15,7 +15,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from experiments.prepare_splits import split_engines
 
 KEEP = [2, 3, 4, 7, 8, 9, 11, 12, 13, 14, 15, 17, 20, 21]
-WINDOW, STRIDE = 40, 10
+WINDOW, STRIDE = 60, 10
 
 
 def eta2(x, lab):

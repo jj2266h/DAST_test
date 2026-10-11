@@ -11,7 +11,10 @@
 #                              (oc_z == global_z on single-condition data, so not rerun)
 # Phase 3 (RQ3,      30 runs): FD002/FD004 x oc_z x {warmup only, clip only, both}
 #                              with c=5, w=5 (the validation-selected setting of the clean sweep)
+# Phase 4 (RQ3 grid, 72 runs): FD002/FD004 x oc_z x clip {0.5,1,2,5} x warmup {5,10,15}
+#                              x seeds {20,42,100}; the clip/warmup sweep at the config window
 # Safe to re-run: runs already present in summary.jsonl are skipped.
+# Every split is checked against cmapss.window_size in config.json before training.
 
 set -euo pipefail
 
@@ -34,6 +37,15 @@ prepare() {  # dataset norm
   if [ ! -f "$SPLIT/${stem}_trainX.mat" ]; then
     python experiments/prepare_splits.py --dataset "$1" --norm "$2" --out-dir "$SPLIT" --variants global
   fi
+  # an old split built with another window would otherwise be reused silently
+  python - "$SPLIT/${stem}_trainX.mat" <<'PY'
+import json, sys
+import scipy.io as sio
+w = json.load(open("config.json", encoding="utf-8"))["cmapss"]["window_size"]
+t = sio.loadmat(sys.argv[1])["X"].shape[1] - 2
+if t != w:
+    sys.exit(f"{sys.argv[1]} has window {t}, config.json says {w}; delete it and re-run")
+PY
 }
 
 run() {  # dataset norm clip warmup seed
@@ -73,6 +85,15 @@ for phase in "${PHASES[@]}"; do
           run "$ds" oc_z 0 "$WARMUP_ON" "$seed"
           run "$ds" oc_z "$CLIP_ON" 0 "$seed"
           run "$ds" oc_z "$CLIP_ON" "$WARMUP_ON" "$seed"
+        done
+      done ;;
+    4)
+      for ds in FD002 FD004; do
+        prepare "$ds" oc_z
+        for clip in 0.5 1 2 5; do
+          for warmup in 5 10 15; do
+            for seed in 20 42 100; do run "$ds" oc_z "$clip" "$warmup" "$seed"; done
+          done
         done
       done ;;
     *) echo "unknown phase: $phase"; exit 1 ;;
