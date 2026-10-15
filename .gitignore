@@ -77,3 +77,7 @@ CLAUDE.md
 # Run configs are small provenance records; include only explicitly selected ones.
 !/experiments/*/configs/**/*.json
 !/docs/organization_2026-10-07/inventory_summary.json
+.claude
+.codex
+experiments
+tests
