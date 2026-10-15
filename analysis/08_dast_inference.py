@@ -26,8 +26,8 @@ plt.rcParams.update({'font.size': 11, 'axes.titlesize': 12,
                      'axes.labelsize': 11, 'figure.dpi': 120})
 
 # ── Paths ──────────────────────────────────────────────────────────────────────
-ROOT        = r"C:\Users\hjs92\Desktop\DAST_test"
-DATA_DIR    = os.path.join(ROOT, "train_dataset")
+ROOT        = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DATA_DIR    = os.path.join(ROOT, "data", "processed", "cmapss_legacy", "local")
 RUL_MAX     = float(RUL_CAP)     # 125
 
 # ── Load model architecture from project root ──────────────────────────────────
@@ -42,7 +42,7 @@ _ds  = _cfg["cmapss"]
 _mdl = _cfg["model"]
 
 DATASET    = _ds["dataset"]                        # e.g. "FD004"
-MODEL_PATH = os.path.join(ROOT, f"dast_{DATASET}_best.pth")
+MODEL_PATH = os.path.join(ROOT, "experiments", "cmapss_legacy_runs", "checkpoints", "local", f"dast_{DATASET}_best.pth")
 
 def compute_rmse(pred, true, rul_max=1.0):
     return float(np.sqrt(np.mean((pred - true) ** 2)) * rul_max)

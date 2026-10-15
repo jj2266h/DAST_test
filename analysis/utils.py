@@ -29,10 +29,14 @@ import pandas as pd
 from scipy.cluster.vq import kmeans as _sp_kmeans, vq as _sp_vq, whiten as _sp_whiten
 
 # ── Paths ──────────────────────────────────────────────────────────────────────
-DATA_DIR     = r"C:\Users\hjs92\Desktop\DAST_test\Cmapss_data"
-ANALYSIS_DIR = r"C:\Users\hjs92\Desktop\DAST_test\analysis"
-FIG_DIR      = os.path.join(ANALYSIS_DIR, "figures")
-STATS_FILE   = os.path.join(ANALYSIS_DIR, "stats.json")
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DATA_DIR = os.path.join(ROOT, "data", "raw", "cmapss", "local")
+EXPERIMENT_DIR = os.path.join(ROOT, "experiments", "fd004_operating_condition_analysis")
+ANALYSIS_DIR = os.path.join(EXPERIMENT_DIR, "notes", "current")
+FIG_DIR = os.path.join(EXPERIMENT_DIR, "figures", "current")
+STATS_FILE = os.path.join(EXPERIMENT_DIR, "results", "current", "stats.json")
+os.makedirs(ANALYSIS_DIR, exist_ok=True)
+os.makedirs(os.path.dirname(STATS_FILE), exist_ok=True)
 
 os.makedirs(FIG_DIR, exist_ok=True)
 

@@ -16,7 +16,7 @@ REFERENCE_RATIO = 0.15      # 前 15% 作健康基準
 SIGMA_K         = 3.0
 SMOOTH_WINDOW   = 20        # RMS 平滑窗口（檔案數）
 CONSEC          = 5         # 連續超標次數
-SAVE_DIR        = "plots/psp_rms"
+SAVE_DIR        = "experiments/phm2012_degradation_detection/figures"
 
 ALL_BEARINGS = [
     ("Bearing1_1", "Learning_set/Bearing1_1",   True),
@@ -121,7 +121,9 @@ def main():
     print("\n" + "=" * 65)
     print(df.to_string(index=False))
     print("=" * 65)
-    csv_path = os.path.join(SAVE_DIR, "psp_rms_summary.csv")
+    result_dir = "experiments/phm2012_degradation_detection/results"
+    os.makedirs(result_dir, exist_ok=True)
+    csv_path = os.path.join(result_dir, "psp_rms_summary.csv")
     df.to_csv(csv_path, index=False)
     print(f"\nCSV: {csv_path}")
 

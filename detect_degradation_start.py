@@ -232,8 +232,8 @@ def plot_results(rms, kurt, res_3s, res_rb, res_hmm, bearing_name):
     ax5.grid(True, linestyle="--", alpha=0.4)
 
     if SAVE_FIG:
-        os.makedirs("plots", exist_ok=True)
-        path = f"plots/psp_detection_{bearing_name}.png"
+        os.makedirs("experiments/phm2012_degradation_detection/figures", exist_ok=True)
+        path = f"experiments/phm2012_degradation_detection/figures/psp_detection_{bearing_name}.png"
         plt.savefig(path, dpi=150, bbox_inches="tight")
         print(f"圖表儲存至: {path}")
     plt.show()

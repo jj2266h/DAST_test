@@ -3,7 +3,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from experiments.run_cmapss_sweep import create_sweep_jobs
+from run_cmapss_sweep import create_sweep_jobs
 
 
 class SweepConfigTests(unittest.TestCase):
@@ -57,7 +57,7 @@ class SweepConfigTests(unittest.TestCase):
             self.assertEqual(generated["training"]["seed"], 42)
             self.assertEqual(
                 generated["training"]["model_save_path"],
-                str(Path("experiments/results/models")),
+                str(Path("experiments/clip_warmup_smoke_test/checkpoints")),
             )
 
 

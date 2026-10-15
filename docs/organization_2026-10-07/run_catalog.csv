@@ -1,0 +1,763 @@
+﻿source,row,experiment,run_key,dataset,seed,epochs,time_step,protocol,notes
+server_results/DAST_test/紀錄/experiment_log.csv,2,cmapss_legacy_runs,__2026-07-07_13-57-23,FD004,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,3,cmapss_legacy_runs,__2026-07-07_14-00-03,FD004,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,4,cmapss_legacy_runs,__2026-07-07_14-02-59,FD004,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,5,cmapss_legacy_runs,__2026-07-07_14-05-44,FD004,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,6,cmapss_legacy_runs,__2026-07-07_14-08-42,FD004,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,7,cmapss_legacy_runs,__2026-07-07_14-11-49,FD002,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,8,cmapss_legacy_runs,__2026-07-07_14-13-55,FD002,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,9,cmapss_legacy_runs,__2026-07-07_14-16-01,FD002,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,10,cmapss_legacy_runs,__2026-07-07_14-18-17,FD002,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,11,cmapss_legacy_runs,__2026-07-07_14-21-33,FD002,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,12,cmapss_legacy_runs,__2026-07-07_14-24-44,FD001,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,13,cmapss_legacy_runs,__2026-07-07_14-26-09,FD001,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,14,cmapss_legacy_runs,__2026-07-07_14-27-56,FD001,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,15,cmapss_legacy_runs,__2026-07-07_14-29-26,FD001,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,16,cmapss_legacy_runs,__2026-07-07_14-31-41,FD001,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,17,cmapss_legacy_runs,__2026-07-07_14-34-53,FD003,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,18,cmapss_legacy_runs,__2026-07-07_14-38-35,FD003,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,19,cmapss_legacy_runs,__2026-07-07_14-42-30,FD003,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,20,cmapss_legacy_runs,__2026-07-07_14-45-14,FD003,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,21,cmapss_legacy_runs,__2026-07-07_14-46-35,FD003,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,22,cmapss_legacy_runs,__2026-07-07_15-05-48,FD003,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,23,cmapss_legacy_runs,__2026-07-07_15-09-17,FD003,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,24,cmapss_legacy_runs,__2026-07-07_15-10-58,FD003,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,25,cmapss_legacy_runs,__2026-07-07_15-12-08,FD003,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,26,cmapss_legacy_runs,__2026-07-07_15-13-33,FD003,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,27,cmapss_legacy_runs,__2026-07-07_15-17-13,FD001,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,28,cmapss_legacy_runs,__2026-07-07_15-18-13,FD001,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,29,cmapss_legacy_runs,__2026-07-07_15-19-13,FD001,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,30,cmapss_legacy_runs,__2026-07-07_15-20-38,FD001,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,31,cmapss_legacy_runs,__2026-07-07_15-22-25,FD001,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,32,cmapss_legacy_runs,__2026-07-07_15-25-11,FD002,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,33,cmapss_legacy_runs,__2026-07-07_15-29-16,FD002,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,34,cmapss_legacy_runs,__2026-07-07_15-37-32,FD002,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,35,cmapss_legacy_runs,__2026-07-07_15-41-48,FD002,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,36,cmapss_legacy_runs,__2026-07-07_15-54-01,FD002,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,37,cmapss_legacy_runs,__2026-07-07_16-01-52,FD002,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,38,cmapss_legacy_runs,__2026-07-07_16-05-30,FD004,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,39,cmapss_legacy_runs,__2026-07-07_16-10-10,FD004,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,40,cmapss_legacy_runs,__2026-07-07_16-14-40,FD004,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,41,cmapss_legacy_runs,__2026-07-07_16-19-22,FD004,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,42,cmapss_legacy_runs,__2026-07-07_16-21-54,FD004,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,43,cmapss_legacy_runs,__2026-07-21_14-05-01,FD004,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,44,cmapss_legacy_runs,__2026-07-21_14-09-12,FD003,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,45,cmapss_legacy_runs,__2026-07-21_14-10-54,FD002,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,46,cmapss_legacy_runs,__2026-07-21_14-13-29,FD001,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,47,cmapss_legacy_runs,__2026-07-21_14-15-21,FD001,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,48,cmapss_legacy_runs,__2026-07-21_14-18-19,FD002,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,49,cmapss_legacy_runs,__2026-07-21_14-21-57,FD003,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,50,cmapss_legacy_runs,__2026-07-21_14-24-50,FD004,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,51,cmapss_legacy_runs,__2026-07-30_00-11-04,FD002,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,52,clip_warmup_smoke_test,FD004_clip0.5_warmup5_seed42__2026-08-31_20-09-19,FD004,42,1,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,53,clip_warmup_hyperparameter_search,FD001_clip0.5_warmup5_seed42__2026-08-31_20-58-40,FD001,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,54,clip_warmup_hyperparameter_search,FD001_clip0.5_warmup5_seed20__2026-08-31_20-59-37,FD001,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,55,clip_warmup_hyperparameter_search,FD001_clip0.5_warmup5_seed100__2026-08-31_21-00-34,FD001,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,56,clip_warmup_hyperparameter_search,FD001_clip0.5_warmup10_seed42__2026-08-31_21-01-32,FD001,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,57,clip_warmup_hyperparameter_search,FD001_clip0.5_warmup10_seed20__2026-08-31_21-02-29,FD001,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,58,clip_warmup_hyperparameter_search,FD001_clip0.5_warmup10_seed100__2026-08-31_21-03-27,FD001,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,59,clip_warmup_hyperparameter_search,FD001_clip0.5_warmup15_seed42__2026-08-31_21-04-26,FD001,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,60,clip_warmup_hyperparameter_search,FD001_clip0.5_warmup15_seed20__2026-08-31_21-05-24,FD001,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,61,clip_warmup_hyperparameter_search,FD001_clip0.5_warmup15_seed100__2026-08-31_21-06-22,FD001,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,62,clip_warmup_hyperparameter_search,FD001_clip1_warmup5_seed42__2026-08-31_21-07-20,FD001,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,63,clip_warmup_hyperparameter_search,FD001_clip1_warmup5_seed20__2026-08-31_21-08-18,FD001,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,64,clip_warmup_hyperparameter_search,FD001_clip1_warmup5_seed100__2026-08-31_21-09-15,FD001,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,65,clip_warmup_hyperparameter_search,FD001_clip1_warmup10_seed42__2026-08-31_21-10-13,FD001,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,66,clip_warmup_hyperparameter_search,FD001_clip1_warmup10_seed20__2026-08-31_21-11-11,FD001,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,67,clip_warmup_hyperparameter_search,FD001_clip1_warmup10_seed100__2026-08-31_21-12-09,FD001,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,68,clip_warmup_hyperparameter_search,FD001_clip1_warmup15_seed42__2026-08-31_21-13-08,FD001,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,69,clip_warmup_hyperparameter_search,FD001_clip1_warmup15_seed20__2026-08-31_21-14-06,FD001,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,70,clip_warmup_hyperparameter_search,FD001_clip1_warmup15_seed100__2026-08-31_21-15-04,FD001,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,71,clip_warmup_hyperparameter_search,FD001_clip2_warmup5_seed42__2026-08-31_21-16-03,FD001,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,72,clip_warmup_hyperparameter_search,FD001_clip2_warmup5_seed20__2026-08-31_21-17-01,FD001,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,73,clip_warmup_hyperparameter_search,FD001_clip2_warmup5_seed100__2026-08-31_21-18-00,FD001,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,74,clip_warmup_hyperparameter_search,FD001_clip2_warmup10_seed42__2026-08-31_21-18-58,FD001,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,75,clip_warmup_hyperparameter_search,FD001_clip2_warmup10_seed20__2026-08-31_21-19-56,FD001,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,76,clip_warmup_hyperparameter_search,FD001_clip2_warmup10_seed100__2026-08-31_21-20-55,FD001,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,77,clip_warmup_hyperparameter_search,FD001_clip2_warmup15_seed42__2026-08-31_21-21-53,FD001,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,78,clip_warmup_hyperparameter_search,FD001_clip2_warmup15_seed20__2026-08-31_21-22-51,FD001,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,79,clip_warmup_hyperparameter_search,FD001_clip2_warmup15_seed100__2026-08-31_21-23-48,FD001,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,80,clip_warmup_hyperparameter_search,FD001_clip5_warmup5_seed42__2026-08-31_21-24-46,FD001,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,81,clip_warmup_hyperparameter_search,FD001_clip5_warmup5_seed20__2026-08-31_21-25-44,FD001,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,82,clip_warmup_hyperparameter_search,FD001_clip5_warmup5_seed100__2026-08-31_21-26-43,FD001,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,83,clip_warmup_hyperparameter_search,FD001_clip5_warmup10_seed42__2026-08-31_21-27-41,FD001,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,84,clip_warmup_hyperparameter_search,FD001_clip5_warmup10_seed20__2026-08-31_21-28-39,FD001,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,85,clip_warmup_hyperparameter_search,FD001_clip5_warmup10_seed100__2026-08-31_21-29-37,FD001,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,86,clip_warmup_hyperparameter_search,FD001_clip5_warmup15_seed42__2026-08-31_21-30-35,FD001,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,87,clip_warmup_hyperparameter_search,FD001_clip5_warmup15_seed20__2026-08-31_21-31-33,FD001,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,88,clip_warmup_hyperparameter_search,FD001_clip5_warmup15_seed100__2026-08-31_21-32-31,FD001,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,89,clip_warmup_hyperparameter_search,FD002_clip0.5_warmup5_seed42__2026-08-31_21-33-33,FD002,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,90,clip_warmup_hyperparameter_search,FD002_clip0.5_warmup5_seed20__2026-08-31_21-35-58,FD002,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,91,clip_warmup_hyperparameter_search,FD002_clip0.5_warmup5_seed100__2026-08-31_21-38-21,FD002,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,92,clip_warmup_hyperparameter_search,FD002_clip0.5_warmup10_seed42__2026-08-31_21-40-43,FD002,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,93,clip_warmup_hyperparameter_search,FD002_clip0.5_warmup10_seed20__2026-08-31_21-43-08,FD002,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,94,clip_warmup_hyperparameter_search,FD002_clip0.5_warmup10_seed100__2026-08-31_21-45-32,FD002,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,95,clip_warmup_hyperparameter_search,FD002_clip0.5_warmup15_seed42__2026-08-31_21-47-56,FD002,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,96,clip_warmup_hyperparameter_search,FD002_clip0.5_warmup15_seed20__2026-08-31_21-50-20,FD002,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,97,clip_warmup_hyperparameter_search,FD002_clip0.5_warmup15_seed100__2026-08-31_21-52-43,FD002,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,98,clip_warmup_hyperparameter_search,FD002_clip1_warmup5_seed42__2026-08-31_21-55-08,FD002,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,99,clip_warmup_hyperparameter_search,FD002_clip1_warmup5_seed20__2026-08-31_21-57-33,FD002,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,100,clip_warmup_hyperparameter_search,FD002_clip1_warmup5_seed100__2026-08-31_21-59-57,FD002,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,101,clip_warmup_hyperparameter_search,FD002_clip1_warmup10_seed42__2026-08-31_22-02-19,FD002,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,102,clip_warmup_hyperparameter_search,FD002_clip1_warmup10_seed20__2026-08-31_22-04-43,FD002,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,103,clip_warmup_hyperparameter_search,FD002_clip1_warmup10_seed100__2026-08-31_22-07-08,FD002,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,104,clip_warmup_hyperparameter_search,FD002_clip1_warmup15_seed42__2026-08-31_22-09-33,FD002,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,105,clip_warmup_hyperparameter_search,FD002_clip1_warmup15_seed20__2026-08-31_22-11-56,FD002,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,106,clip_warmup_hyperparameter_search,FD002_clip1_warmup15_seed100__2026-08-31_22-14-19,FD002,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,107,clip_warmup_hyperparameter_search,FD002_clip2_warmup5_seed42__2026-08-31_22-16-44,FD002,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,108,clip_warmup_hyperparameter_search,FD002_clip2_warmup5_seed20__2026-08-31_22-19-07,FD002,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,109,clip_warmup_hyperparameter_search,FD002_clip2_warmup5_seed100__2026-08-31_22-21-31,FD002,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,110,clip_warmup_hyperparameter_search,FD002_clip2_warmup10_seed42__2026-08-31_22-23-57,FD002,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,111,clip_warmup_hyperparameter_search,FD002_clip2_warmup10_seed20__2026-08-31_22-26-20,FD002,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,112,clip_warmup_hyperparameter_search,FD002_clip2_warmup10_seed100__2026-08-31_22-28-43,FD002,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,113,clip_warmup_hyperparameter_search,FD002_clip2_warmup15_seed42__2026-08-31_22-31-08,FD002,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,114,clip_warmup_hyperparameter_search,FD002_clip2_warmup15_seed20__2026-08-31_22-33-34,FD002,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,115,clip_warmup_hyperparameter_search,FD002_clip2_warmup15_seed100__2026-08-31_22-35-59,FD002,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,116,clip_warmup_hyperparameter_search,FD002_clip5_warmup5_seed42__2026-08-31_22-38-25,FD002,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,117,clip_warmup_hyperparameter_search,FD002_clip5_warmup5_seed20__2026-08-31_22-40-50,FD002,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,118,clip_warmup_hyperparameter_search,FD002_clip5_warmup5_seed100__2026-08-31_22-43-13,FD002,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,119,clip_warmup_hyperparameter_search,FD002_clip5_warmup10_seed42__2026-08-31_22-45-38,FD002,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,120,clip_warmup_hyperparameter_search,FD002_clip5_warmup10_seed20__2026-08-31_22-48-02,FD002,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,121,clip_warmup_hyperparameter_search,FD002_clip5_warmup10_seed100__2026-08-31_22-50-25,FD002,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,122,clip_warmup_hyperparameter_search,FD002_clip5_warmup15_seed42__2026-08-31_22-52-48,FD002,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,123,clip_warmup_hyperparameter_search,FD002_clip5_warmup15_seed20__2026-08-31_22-55-11,FD002,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,124,clip_warmup_hyperparameter_search,FD002_clip5_warmup15_seed100__2026-08-31_22-57-35,FD002,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,125,clip_warmup_hyperparameter_search,FD003_clip0.5_warmup5_seed42__2026-08-31_22-59-56,FD003,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,126,clip_warmup_hyperparameter_search,FD003_clip0.5_warmup5_seed20__2026-08-31_23-01-08,FD003,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,127,clip_warmup_hyperparameter_search,FD003_clip0.5_warmup5_seed100__2026-08-31_23-02-19,FD003,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,128,clip_warmup_hyperparameter_search,FD003_clip0.5_warmup10_seed42__2026-08-31_23-03-31,FD003,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,129,clip_warmup_hyperparameter_search,FD003_clip0.5_warmup10_seed20__2026-08-31_23-04-42,FD003,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,130,clip_warmup_hyperparameter_search,FD003_clip0.5_warmup10_seed100__2026-08-31_23-05-54,FD003,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,131,clip_warmup_hyperparameter_search,FD003_clip0.5_warmup15_seed42__2026-08-31_23-07-06,FD003,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,132,clip_warmup_hyperparameter_search,FD003_clip0.5_warmup15_seed20__2026-08-31_23-08-18,FD003,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,133,clip_warmup_hyperparameter_search,FD003_clip0.5_warmup15_seed100__2026-08-31_23-09-29,FD003,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,134,clip_warmup_hyperparameter_search,FD003_clip1_warmup5_seed42__2026-08-31_23-10-41,FD003,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,135,clip_warmup_hyperparameter_search,FD003_clip1_warmup5_seed20__2026-08-31_23-11-53,FD003,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,136,clip_warmup_hyperparameter_search,FD003_clip1_warmup5_seed100__2026-08-31_23-13-05,FD003,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,137,clip_warmup_hyperparameter_search,FD003_clip1_warmup10_seed42__2026-08-31_23-14-16,FD003,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,138,clip_warmup_hyperparameter_search,FD003_clip1_warmup10_seed20__2026-08-31_23-15-28,FD003,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,139,clip_warmup_hyperparameter_search,FD003_clip1_warmup10_seed100__2026-08-31_23-16-40,FD003,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,140,clip_warmup_hyperparameter_search,FD003_clip1_warmup15_seed42__2026-08-31_23-17-52,FD003,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,141,clip_warmup_hyperparameter_search,FD003_clip1_warmup15_seed20__2026-08-31_23-19-03,FD003,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,142,clip_warmup_hyperparameter_search,FD003_clip1_warmup15_seed100__2026-08-31_23-20-14,FD003,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,143,clip_warmup_hyperparameter_search,FD003_clip2_warmup5_seed42__2026-08-31_23-21-26,FD003,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,144,clip_warmup_hyperparameter_search,FD003_clip2_warmup5_seed20__2026-08-31_23-22-38,FD003,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,145,clip_warmup_hyperparameter_search,FD003_clip2_warmup5_seed100__2026-08-31_23-23-50,FD003,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,146,clip_warmup_hyperparameter_search,FD003_clip2_warmup10_seed42__2026-08-31_23-25-02,FD003,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,147,clip_warmup_hyperparameter_search,FD003_clip2_warmup10_seed20__2026-08-31_23-26-13,FD003,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,148,clip_warmup_hyperparameter_search,FD003_clip2_warmup10_seed100__2026-08-31_23-27-25,FD003,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,149,clip_warmup_hyperparameter_search,FD003_clip2_warmup15_seed42__2026-08-31_23-28-37,FD003,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,150,clip_warmup_hyperparameter_search,FD003_clip2_warmup15_seed20__2026-08-31_23-29-49,FD003,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,151,clip_warmup_hyperparameter_search,FD003_clip2_warmup15_seed100__2026-08-31_23-31-00,FD003,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,152,clip_warmup_hyperparameter_search,FD003_clip5_warmup5_seed42__2026-08-31_23-32-11,FD003,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,153,clip_warmup_hyperparameter_search,FD003_clip5_warmup5_seed20__2026-08-31_23-33-23,FD003,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,154,clip_warmup_hyperparameter_search,FD003_clip5_warmup5_seed100__2026-08-31_23-34-35,FD003,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,155,clip_warmup_hyperparameter_search,FD003_clip5_warmup10_seed42__2026-08-31_23-35-47,FD003,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,156,clip_warmup_hyperparameter_search,FD003_clip5_warmup10_seed20__2026-08-31_23-36-59,FD003,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,157,clip_warmup_hyperparameter_search,FD003_clip5_warmup10_seed100__2026-08-31_23-38-10,FD003,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,158,clip_warmup_hyperparameter_search,FD003_clip5_warmup15_seed42__2026-08-31_23-39-22,FD003,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,159,clip_warmup_hyperparameter_search,FD003_clip5_warmup15_seed20__2026-08-31_23-40-34,FD003,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,160,clip_warmup_hyperparameter_search,FD003_clip5_warmup15_seed100__2026-08-31_23-41-45,FD003,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,161,clip_warmup_hyperparameter_search,FD004_clip0.5_warmup5_seed42__2026-08-31_23-43-01,FD004,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,162,clip_warmup_hyperparameter_search,FD004_clip0.5_warmup5_seed20__2026-08-31_23-45-50,FD004,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,163,clip_warmup_hyperparameter_search,FD004_clip0.5_warmup5_seed100__2026-08-31_23-48-39,FD004,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,164,clip_warmup_hyperparameter_search,FD004_clip0.5_warmup10_seed42__2026-08-31_23-51-29,FD004,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,165,clip_warmup_hyperparameter_search,FD004_clip0.5_warmup10_seed20__2026-08-31_23-54-20,FD004,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,166,clip_warmup_hyperparameter_search,FD004_clip0.5_warmup10_seed100__2026-08-31_23-57-11,FD004,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,167,clip_warmup_hyperparameter_search,FD004_clip0.5_warmup15_seed42__2026-09-01_00-00-01,FD004,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,168,clip_warmup_hyperparameter_search,FD004_clip0.5_warmup15_seed20__2026-09-01_00-02-50,FD004,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,169,clip_warmup_hyperparameter_search,FD004_clip0.5_warmup15_seed100__2026-09-01_00-05-40,FD004,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,170,clip_warmup_hyperparameter_search,FD004_clip1_warmup5_seed42__2026-09-01_00-08-30,FD004,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,171,clip_warmup_hyperparameter_search,FD004_clip1_warmup5_seed20__2026-09-01_00-11-18,FD004,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,172,clip_warmup_hyperparameter_search,FD004_clip1_warmup5_seed100__2026-09-01_00-14-07,FD004,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,173,clip_warmup_hyperparameter_search,FD004_clip1_warmup10_seed42__2026-09-01_00-16-56,FD004,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,174,clip_warmup_hyperparameter_search,FD004_clip1_warmup10_seed20__2026-09-01_00-19-45,FD004,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,175,clip_warmup_hyperparameter_search,FD004_clip1_warmup10_seed100__2026-09-01_00-22-35,FD004,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,176,clip_warmup_hyperparameter_search,FD004_clip1_warmup15_seed42__2026-09-01_00-25-24,FD004,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,177,clip_warmup_hyperparameter_search,FD004_clip1_warmup15_seed20__2026-09-01_00-28-15,FD004,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,178,clip_warmup_hyperparameter_search,FD004_clip1_warmup15_seed100__2026-09-01_00-31-05,FD004,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,179,clip_warmup_hyperparameter_search,FD004_clip2_warmup5_seed42__2026-09-01_00-33-56,FD004,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,180,clip_warmup_hyperparameter_search,FD004_clip2_warmup5_seed20__2026-09-01_00-36-45,FD004,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,181,clip_warmup_hyperparameter_search,FD004_clip2_warmup5_seed100__2026-09-01_00-39-33,FD004,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,182,clip_warmup_hyperparameter_search,FD004_clip2_warmup10_seed42__2026-09-01_00-42-22,FD004,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,183,clip_warmup_hyperparameter_search,FD004_clip2_warmup10_seed20__2026-09-01_00-45-11,FD004,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,184,clip_warmup_hyperparameter_search,FD004_clip2_warmup10_seed100__2026-09-01_00-47-59,FD004,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,185,clip_warmup_hyperparameter_search,FD004_clip2_warmup15_seed42__2026-09-01_00-50-47,FD004,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,186,clip_warmup_hyperparameter_search,FD004_clip2_warmup15_seed20__2026-09-01_00-53-38,FD004,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,187,clip_warmup_hyperparameter_search,FD004_clip2_warmup15_seed100__2026-09-01_00-56-29,FD004,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,188,clip_warmup_hyperparameter_search,FD004_clip5_warmup5_seed42__2026-09-01_00-59-19,FD004,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,189,clip_warmup_hyperparameter_search,FD004_clip5_warmup5_seed20__2026-09-01_01-02-10,FD004,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,190,clip_warmup_hyperparameter_search,FD004_clip5_warmup5_seed100__2026-09-01_01-05-00,FD004,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,191,clip_warmup_hyperparameter_search,FD004_clip5_warmup10_seed42__2026-09-01_01-07-50,FD004,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,192,clip_warmup_hyperparameter_search,FD004_clip5_warmup10_seed20__2026-09-01_01-10-38,FD004,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,193,clip_warmup_hyperparameter_search,FD004_clip5_warmup10_seed100__2026-09-01_01-13-27,FD004,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,194,clip_warmup_hyperparameter_search,FD004_clip5_warmup15_seed42__2026-09-01_01-16-17,FD004,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,195,clip_warmup_hyperparameter_search,FD004_clip5_warmup15_seed20__2026-09-01_01-19-05,FD004,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/DAST_test/紀錄/experiment_log.csv,196,clip_warmup_hyperparameter_search,FD004_clip5_warmup15_seed100__2026-09-01_01-21-57,FD004,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,2,cmapss_legacy_runs,__2026-07-07_13-57-23,FD004,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,3,cmapss_legacy_runs,__2026-07-07_14-00-03,FD004,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,4,cmapss_legacy_runs,__2026-07-07_14-02-59,FD004,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,5,cmapss_legacy_runs,__2026-07-07_14-05-44,FD004,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,6,cmapss_legacy_runs,__2026-07-07_14-08-42,FD004,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,7,cmapss_legacy_runs,__2026-07-07_14-11-49,FD002,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,8,cmapss_legacy_runs,__2026-07-07_14-13-55,FD002,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,9,cmapss_legacy_runs,__2026-07-07_14-16-01,FD002,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,10,cmapss_legacy_runs,__2026-07-07_14-18-17,FD002,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,11,cmapss_legacy_runs,__2026-07-07_14-21-33,FD002,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,12,cmapss_legacy_runs,__2026-07-07_14-24-44,FD001,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,13,cmapss_legacy_runs,__2026-07-07_14-26-09,FD001,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,14,cmapss_legacy_runs,__2026-07-07_14-27-56,FD001,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,15,cmapss_legacy_runs,__2026-07-07_14-29-26,FD001,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,16,cmapss_legacy_runs,__2026-07-07_14-31-41,FD001,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,17,cmapss_legacy_runs,__2026-07-07_14-34-53,FD003,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,18,cmapss_legacy_runs,__2026-07-07_14-38-35,FD003,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,19,cmapss_legacy_runs,__2026-07-07_14-42-30,FD003,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,20,cmapss_legacy_runs,__2026-07-07_14-45-14,FD003,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,21,cmapss_legacy_runs,__2026-07-07_14-46-35,FD003,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,22,cmapss_legacy_runs,__2026-07-07_15-05-48,FD003,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,23,cmapss_legacy_runs,__2026-07-07_15-09-17,FD003,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,24,cmapss_legacy_runs,__2026-07-07_15-10-58,FD003,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,25,cmapss_legacy_runs,__2026-07-07_15-12-08,FD003,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,26,cmapss_legacy_runs,__2026-07-07_15-13-33,FD003,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,27,cmapss_legacy_runs,__2026-07-07_15-17-13,FD001,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,28,cmapss_legacy_runs,__2026-07-07_15-18-13,FD001,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,29,cmapss_legacy_runs,__2026-07-07_15-19-13,FD001,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,30,cmapss_legacy_runs,__2026-07-07_15-20-38,FD001,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,31,cmapss_legacy_runs,__2026-07-07_15-22-25,FD001,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,32,cmapss_legacy_runs,__2026-07-07_15-25-11,FD002,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,33,cmapss_legacy_runs,__2026-07-07_15-29-16,FD002,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,34,cmapss_legacy_runs,__2026-07-07_15-37-32,FD002,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,35,cmapss_legacy_runs,__2026-07-07_15-41-48,FD002,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,36,cmapss_legacy_runs,__2026-07-07_15-54-01,FD002,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,37,cmapss_legacy_runs,__2026-07-07_16-01-52,FD002,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,38,cmapss_legacy_runs,__2026-07-07_16-05-30,FD004,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,39,cmapss_legacy_runs,__2026-07-07_16-10-10,FD004,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,40,cmapss_legacy_runs,__2026-07-07_16-14-40,FD004,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,41,cmapss_legacy_runs,__2026-07-07_16-19-22,FD004,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,42,cmapss_legacy_runs,__2026-07-07_16-21-54,FD004,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,43,cmapss_legacy_runs,__2026-07-21_14-05-01,FD004,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,44,cmapss_legacy_runs,__2026-07-21_14-09-12,FD003,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,45,cmapss_legacy_runs,__2026-07-21_14-10-54,FD002,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,46,cmapss_legacy_runs,__2026-07-21_14-13-29,FD001,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,47,cmapss_legacy_runs,__2026-07-21_14-15-21,FD001,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,48,cmapss_legacy_runs,__2026-07-21_14-18-19,FD002,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,49,cmapss_legacy_runs,__2026-07-21_14-21-57,FD003,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,50,cmapss_legacy_runs,__2026-07-21_14-24-50,FD004,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,51,cmapss_legacy_runs,__2026-07-30_00-11-04,FD002,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,52,clip_warmup_smoke_test,FD004_clip0.5_warmup5_seed42__2026-08-31_20-09-19,FD004,42,1,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,53,clip_warmup_hyperparameter_search,FD001_clip0.5_warmup5_seed42__2026-08-31_20-58-40,FD001,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,54,clip_warmup_hyperparameter_search,FD001_clip0.5_warmup5_seed20__2026-08-31_20-59-37,FD001,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,55,clip_warmup_hyperparameter_search,FD001_clip0.5_warmup5_seed100__2026-08-31_21-00-34,FD001,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,56,clip_warmup_hyperparameter_search,FD001_clip0.5_warmup10_seed42__2026-08-31_21-01-32,FD001,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,57,clip_warmup_hyperparameter_search,FD001_clip0.5_warmup10_seed20__2026-08-31_21-02-29,FD001,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,58,clip_warmup_hyperparameter_search,FD001_clip0.5_warmup10_seed100__2026-08-31_21-03-27,FD001,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,59,clip_warmup_hyperparameter_search,FD001_clip0.5_warmup15_seed42__2026-08-31_21-04-26,FD001,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,60,clip_warmup_hyperparameter_search,FD001_clip0.5_warmup15_seed20__2026-08-31_21-05-24,FD001,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,61,clip_warmup_hyperparameter_search,FD001_clip0.5_warmup15_seed100__2026-08-31_21-06-22,FD001,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,62,clip_warmup_hyperparameter_search,FD001_clip1_warmup5_seed42__2026-08-31_21-07-20,FD001,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,63,clip_warmup_hyperparameter_search,FD001_clip1_warmup5_seed20__2026-08-31_21-08-18,FD001,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,64,clip_warmup_hyperparameter_search,FD001_clip1_warmup5_seed100__2026-08-31_21-09-15,FD001,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,65,clip_warmup_hyperparameter_search,FD001_clip1_warmup10_seed42__2026-08-31_21-10-13,FD001,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,66,clip_warmup_hyperparameter_search,FD001_clip1_warmup10_seed20__2026-08-31_21-11-11,FD001,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,67,clip_warmup_hyperparameter_search,FD001_clip1_warmup10_seed100__2026-08-31_21-12-09,FD001,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,68,clip_warmup_hyperparameter_search,FD001_clip1_warmup15_seed42__2026-08-31_21-13-08,FD001,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,69,clip_warmup_hyperparameter_search,FD001_clip1_warmup15_seed20__2026-08-31_21-14-06,FD001,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,70,clip_warmup_hyperparameter_search,FD001_clip1_warmup15_seed100__2026-08-31_21-15-04,FD001,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,71,clip_warmup_hyperparameter_search,FD001_clip2_warmup5_seed42__2026-08-31_21-16-03,FD001,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,72,clip_warmup_hyperparameter_search,FD001_clip2_warmup5_seed20__2026-08-31_21-17-01,FD001,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,73,clip_warmup_hyperparameter_search,FD001_clip2_warmup5_seed100__2026-08-31_21-18-00,FD001,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,74,clip_warmup_hyperparameter_search,FD001_clip2_warmup10_seed42__2026-08-31_21-18-58,FD001,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,75,clip_warmup_hyperparameter_search,FD001_clip2_warmup10_seed20__2026-08-31_21-19-56,FD001,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,76,clip_warmup_hyperparameter_search,FD001_clip2_warmup10_seed100__2026-08-31_21-20-55,FD001,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,77,clip_warmup_hyperparameter_search,FD001_clip2_warmup15_seed42__2026-08-31_21-21-53,FD001,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,78,clip_warmup_hyperparameter_search,FD001_clip2_warmup15_seed20__2026-08-31_21-22-51,FD001,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,79,clip_warmup_hyperparameter_search,FD001_clip2_warmup15_seed100__2026-08-31_21-23-48,FD001,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,80,clip_warmup_hyperparameter_search,FD001_clip5_warmup5_seed42__2026-08-31_21-24-46,FD001,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,81,clip_warmup_hyperparameter_search,FD001_clip5_warmup5_seed20__2026-08-31_21-25-44,FD001,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,82,clip_warmup_hyperparameter_search,FD001_clip5_warmup5_seed100__2026-08-31_21-26-43,FD001,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,83,clip_warmup_hyperparameter_search,FD001_clip5_warmup10_seed42__2026-08-31_21-27-41,FD001,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,84,clip_warmup_hyperparameter_search,FD001_clip5_warmup10_seed20__2026-08-31_21-28-39,FD001,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,85,clip_warmup_hyperparameter_search,FD001_clip5_warmup10_seed100__2026-08-31_21-29-37,FD001,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,86,clip_warmup_hyperparameter_search,FD001_clip5_warmup15_seed42__2026-08-31_21-30-35,FD001,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,87,clip_warmup_hyperparameter_search,FD001_clip5_warmup15_seed20__2026-08-31_21-31-33,FD001,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,88,clip_warmup_hyperparameter_search,FD001_clip5_warmup15_seed100__2026-08-31_21-32-31,FD001,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,89,clip_warmup_hyperparameter_search,FD002_clip0.5_warmup5_seed42__2026-08-31_21-33-33,FD002,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,90,clip_warmup_hyperparameter_search,FD002_clip0.5_warmup5_seed20__2026-08-31_21-35-58,FD002,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,91,clip_warmup_hyperparameter_search,FD002_clip0.5_warmup5_seed100__2026-08-31_21-38-21,FD002,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,92,clip_warmup_hyperparameter_search,FD002_clip0.5_warmup10_seed42__2026-08-31_21-40-43,FD002,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,93,clip_warmup_hyperparameter_search,FD002_clip0.5_warmup10_seed20__2026-08-31_21-43-08,FD002,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,94,clip_warmup_hyperparameter_search,FD002_clip0.5_warmup10_seed100__2026-08-31_21-45-32,FD002,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,95,clip_warmup_hyperparameter_search,FD002_clip0.5_warmup15_seed42__2026-08-31_21-47-56,FD002,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,96,clip_warmup_hyperparameter_search,FD002_clip0.5_warmup15_seed20__2026-08-31_21-50-20,FD002,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,97,clip_warmup_hyperparameter_search,FD002_clip0.5_warmup15_seed100__2026-08-31_21-52-43,FD002,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,98,clip_warmup_hyperparameter_search,FD002_clip1_warmup5_seed42__2026-08-31_21-55-08,FD002,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,99,clip_warmup_hyperparameter_search,FD002_clip1_warmup5_seed20__2026-08-31_21-57-33,FD002,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,100,clip_warmup_hyperparameter_search,FD002_clip1_warmup5_seed100__2026-08-31_21-59-57,FD002,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,101,clip_warmup_hyperparameter_search,FD002_clip1_warmup10_seed42__2026-08-31_22-02-19,FD002,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,102,clip_warmup_hyperparameter_search,FD002_clip1_warmup10_seed20__2026-08-31_22-04-43,FD002,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,103,clip_warmup_hyperparameter_search,FD002_clip1_warmup10_seed100__2026-08-31_22-07-08,FD002,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,104,clip_warmup_hyperparameter_search,FD002_clip1_warmup15_seed42__2026-08-31_22-09-33,FD002,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,105,clip_warmup_hyperparameter_search,FD002_clip1_warmup15_seed20__2026-08-31_22-11-56,FD002,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,106,clip_warmup_hyperparameter_search,FD002_clip1_warmup15_seed100__2026-08-31_22-14-19,FD002,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,107,clip_warmup_hyperparameter_search,FD002_clip2_warmup5_seed42__2026-08-31_22-16-44,FD002,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,108,clip_warmup_hyperparameter_search,FD002_clip2_warmup5_seed20__2026-08-31_22-19-07,FD002,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,109,clip_warmup_hyperparameter_search,FD002_clip2_warmup5_seed100__2026-08-31_22-21-31,FD002,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,110,clip_warmup_hyperparameter_search,FD002_clip2_warmup10_seed42__2026-08-31_22-23-57,FD002,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,111,clip_warmup_hyperparameter_search,FD002_clip2_warmup10_seed20__2026-08-31_22-26-20,FD002,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,112,clip_warmup_hyperparameter_search,FD002_clip2_warmup10_seed100__2026-08-31_22-28-43,FD002,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,113,clip_warmup_hyperparameter_search,FD002_clip2_warmup15_seed42__2026-08-31_22-31-08,FD002,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,114,clip_warmup_hyperparameter_search,FD002_clip2_warmup15_seed20__2026-08-31_22-33-34,FD002,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,115,clip_warmup_hyperparameter_search,FD002_clip2_warmup15_seed100__2026-08-31_22-35-59,FD002,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,116,clip_warmup_hyperparameter_search,FD002_clip5_warmup5_seed42__2026-08-31_22-38-25,FD002,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,117,clip_warmup_hyperparameter_search,FD002_clip5_warmup5_seed20__2026-08-31_22-40-50,FD002,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,118,clip_warmup_hyperparameter_search,FD002_clip5_warmup5_seed100__2026-08-31_22-43-13,FD002,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,119,clip_warmup_hyperparameter_search,FD002_clip5_warmup10_seed42__2026-08-31_22-45-38,FD002,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,120,clip_warmup_hyperparameter_search,FD002_clip5_warmup10_seed20__2026-08-31_22-48-02,FD002,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,121,clip_warmup_hyperparameter_search,FD002_clip5_warmup10_seed100__2026-08-31_22-50-25,FD002,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,122,clip_warmup_hyperparameter_search,FD002_clip5_warmup15_seed42__2026-08-31_22-52-48,FD002,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,123,clip_warmup_hyperparameter_search,FD002_clip5_warmup15_seed20__2026-08-31_22-55-11,FD002,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,124,clip_warmup_hyperparameter_search,FD002_clip5_warmup15_seed100__2026-08-31_22-57-35,FD002,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,125,clip_warmup_hyperparameter_search,FD003_clip0.5_warmup5_seed42__2026-08-31_22-59-56,FD003,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,126,clip_warmup_hyperparameter_search,FD003_clip0.5_warmup5_seed20__2026-08-31_23-01-08,FD003,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,127,clip_warmup_hyperparameter_search,FD003_clip0.5_warmup5_seed100__2026-08-31_23-02-19,FD003,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,128,clip_warmup_hyperparameter_search,FD003_clip0.5_warmup10_seed42__2026-08-31_23-03-31,FD003,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,129,clip_warmup_hyperparameter_search,FD003_clip0.5_warmup10_seed20__2026-08-31_23-04-42,FD003,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,130,clip_warmup_hyperparameter_search,FD003_clip0.5_warmup10_seed100__2026-08-31_23-05-54,FD003,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,131,clip_warmup_hyperparameter_search,FD003_clip0.5_warmup15_seed42__2026-08-31_23-07-06,FD003,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,132,clip_warmup_hyperparameter_search,FD003_clip0.5_warmup15_seed20__2026-08-31_23-08-18,FD003,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,133,clip_warmup_hyperparameter_search,FD003_clip0.5_warmup15_seed100__2026-08-31_23-09-29,FD003,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,134,clip_warmup_hyperparameter_search,FD003_clip1_warmup5_seed42__2026-08-31_23-10-41,FD003,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,135,clip_warmup_hyperparameter_search,FD003_clip1_warmup5_seed20__2026-08-31_23-11-53,FD003,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,136,clip_warmup_hyperparameter_search,FD003_clip1_warmup5_seed100__2026-08-31_23-13-05,FD003,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,137,clip_warmup_hyperparameter_search,FD003_clip1_warmup10_seed42__2026-08-31_23-14-16,FD003,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,138,clip_warmup_hyperparameter_search,FD003_clip1_warmup10_seed20__2026-08-31_23-15-28,FD003,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,139,clip_warmup_hyperparameter_search,FD003_clip1_warmup10_seed100__2026-08-31_23-16-40,FD003,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,140,clip_warmup_hyperparameter_search,FD003_clip1_warmup15_seed42__2026-08-31_23-17-52,FD003,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,141,clip_warmup_hyperparameter_search,FD003_clip1_warmup15_seed20__2026-08-31_23-19-03,FD003,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,142,clip_warmup_hyperparameter_search,FD003_clip1_warmup15_seed100__2026-08-31_23-20-14,FD003,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,143,clip_warmup_hyperparameter_search,FD003_clip2_warmup5_seed42__2026-08-31_23-21-26,FD003,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,144,clip_warmup_hyperparameter_search,FD003_clip2_warmup5_seed20__2026-08-31_23-22-38,FD003,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,145,clip_warmup_hyperparameter_search,FD003_clip2_warmup5_seed100__2026-08-31_23-23-50,FD003,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,146,clip_warmup_hyperparameter_search,FD003_clip2_warmup10_seed42__2026-08-31_23-25-02,FD003,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,147,clip_warmup_hyperparameter_search,FD003_clip2_warmup10_seed20__2026-08-31_23-26-13,FD003,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,148,clip_warmup_hyperparameter_search,FD003_clip2_warmup10_seed100__2026-08-31_23-27-25,FD003,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,149,clip_warmup_hyperparameter_search,FD003_clip2_warmup15_seed42__2026-08-31_23-28-37,FD003,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,150,clip_warmup_hyperparameter_search,FD003_clip2_warmup15_seed20__2026-08-31_23-29-49,FD003,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,151,clip_warmup_hyperparameter_search,FD003_clip2_warmup15_seed100__2026-08-31_23-31-00,FD003,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,152,clip_warmup_hyperparameter_search,FD003_clip5_warmup5_seed42__2026-08-31_23-32-11,FD003,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,153,clip_warmup_hyperparameter_search,FD003_clip5_warmup5_seed20__2026-08-31_23-33-23,FD003,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,154,clip_warmup_hyperparameter_search,FD003_clip5_warmup5_seed100__2026-08-31_23-34-35,FD003,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,155,clip_warmup_hyperparameter_search,FD003_clip5_warmup10_seed42__2026-08-31_23-35-47,FD003,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,156,clip_warmup_hyperparameter_search,FD003_clip5_warmup10_seed20__2026-08-31_23-36-59,FD003,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,157,clip_warmup_hyperparameter_search,FD003_clip5_warmup10_seed100__2026-08-31_23-38-10,FD003,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,158,clip_warmup_hyperparameter_search,FD003_clip5_warmup15_seed42__2026-08-31_23-39-22,FD003,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,159,clip_warmup_hyperparameter_search,FD003_clip5_warmup15_seed20__2026-08-31_23-40-34,FD003,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,160,clip_warmup_hyperparameter_search,FD003_clip5_warmup15_seed100__2026-08-31_23-41-45,FD003,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,161,clip_warmup_hyperparameter_search,FD004_clip0.5_warmup5_seed42__2026-08-31_23-43-01,FD004,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,162,clip_warmup_hyperparameter_search,FD004_clip0.5_warmup5_seed20__2026-08-31_23-45-50,FD004,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,163,clip_warmup_hyperparameter_search,FD004_clip0.5_warmup5_seed100__2026-08-31_23-48-39,FD004,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,164,clip_warmup_hyperparameter_search,FD004_clip0.5_warmup10_seed42__2026-08-31_23-51-29,FD004,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,165,clip_warmup_hyperparameter_search,FD004_clip0.5_warmup10_seed20__2026-08-31_23-54-20,FD004,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,166,clip_warmup_hyperparameter_search,FD004_clip0.5_warmup10_seed100__2026-08-31_23-57-11,FD004,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,167,clip_warmup_hyperparameter_search,FD004_clip0.5_warmup15_seed42__2026-09-01_00-00-01,FD004,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,168,clip_warmup_hyperparameter_search,FD004_clip0.5_warmup15_seed20__2026-09-01_00-02-50,FD004,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,169,clip_warmup_hyperparameter_search,FD004_clip0.5_warmup15_seed100__2026-09-01_00-05-40,FD004,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,170,clip_warmup_hyperparameter_search,FD004_clip1_warmup5_seed42__2026-09-01_00-08-30,FD004,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,171,clip_warmup_hyperparameter_search,FD004_clip1_warmup5_seed20__2026-09-01_00-11-18,FD004,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,172,clip_warmup_hyperparameter_search,FD004_clip1_warmup5_seed100__2026-09-01_00-14-07,FD004,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,173,clip_warmup_hyperparameter_search,FD004_clip1_warmup10_seed42__2026-09-01_00-16-56,FD004,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,174,clip_warmup_hyperparameter_search,FD004_clip1_warmup10_seed20__2026-09-01_00-19-45,FD004,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,175,clip_warmup_hyperparameter_search,FD004_clip1_warmup10_seed100__2026-09-01_00-22-35,FD004,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,176,clip_warmup_hyperparameter_search,FD004_clip1_warmup15_seed42__2026-09-01_00-25-24,FD004,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,177,clip_warmup_hyperparameter_search,FD004_clip1_warmup15_seed20__2026-09-01_00-28-15,FD004,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,178,clip_warmup_hyperparameter_search,FD004_clip1_warmup15_seed100__2026-09-01_00-31-05,FD004,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,179,clip_warmup_hyperparameter_search,FD004_clip2_warmup5_seed42__2026-09-01_00-33-56,FD004,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,180,clip_warmup_hyperparameter_search,FD004_clip2_warmup5_seed20__2026-09-01_00-36-45,FD004,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,181,clip_warmup_hyperparameter_search,FD004_clip2_warmup5_seed100__2026-09-01_00-39-33,FD004,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,182,clip_warmup_hyperparameter_search,FD004_clip2_warmup10_seed42__2026-09-01_00-42-22,FD004,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,183,clip_warmup_hyperparameter_search,FD004_clip2_warmup10_seed20__2026-09-01_00-45-11,FD004,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,184,clip_warmup_hyperparameter_search,FD004_clip2_warmup10_seed100__2026-09-01_00-47-59,FD004,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,185,clip_warmup_hyperparameter_search,FD004_clip2_warmup15_seed42__2026-09-01_00-50-47,FD004,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,186,clip_warmup_hyperparameter_search,FD004_clip2_warmup15_seed20__2026-09-01_00-53-38,FD004,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,187,clip_warmup_hyperparameter_search,FD004_clip2_warmup15_seed100__2026-09-01_00-56-29,FD004,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,188,clip_warmup_hyperparameter_search,FD004_clip5_warmup5_seed42__2026-09-01_00-59-19,FD004,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,189,clip_warmup_hyperparameter_search,FD004_clip5_warmup5_seed20__2026-09-01_01-02-10,FD004,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,190,clip_warmup_hyperparameter_search,FD004_clip5_warmup5_seed100__2026-09-01_01-05-00,FD004,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,191,clip_warmup_hyperparameter_search,FD004_clip5_warmup10_seed42__2026-09-01_01-07-50,FD004,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,192,clip_warmup_hyperparameter_search,FD004_clip5_warmup10_seed20__2026-09-01_01-10-38,FD004,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,193,clip_warmup_hyperparameter_search,FD004_clip5_warmup10_seed100__2026-09-01_01-13-27,FD004,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,194,clip_warmup_hyperparameter_search,FD004_clip5_warmup15_seed42__2026-09-01_01-16-17,FD004,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,195,clip_warmup_hyperparameter_search,FD004_clip5_warmup15_seed20__2026-09-01_01-19-05,FD004,20,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/紀錄/experiment_log.csv,196,clip_warmup_hyperparameter_search,FD004_clip5_warmup15_seed100__2026-09-01_01-21-57,FD004,100,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log (2).csv,2,cmapss_legacy_runs,__2026-07-07_13-57-23,FD004,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log (2).csv,3,cmapss_legacy_runs,__2026-07-07_14-00-03,FD004,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log (2).csv,4,cmapss_legacy_runs,__2026-07-07_14-02-59,FD004,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log (2).csv,5,cmapss_legacy_runs,__2026-07-07_14-05-44,FD004,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log (2).csv,6,cmapss_legacy_runs,__2026-07-07_14-08-42,FD004,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log (2).csv,7,cmapss_legacy_runs,__2026-07-07_14-11-49,FD002,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log (2).csv,8,cmapss_legacy_runs,__2026-07-07_14-13-55,FD002,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log (2).csv,9,cmapss_legacy_runs,__2026-07-07_14-16-01,FD002,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log (2).csv,10,cmapss_legacy_runs,__2026-07-07_14-18-17,FD002,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log (2).csv,11,cmapss_legacy_runs,__2026-07-07_14-21-33,FD002,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log (2).csv,12,cmapss_legacy_runs,__2026-07-07_14-24-44,FD001,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log (2).csv,13,cmapss_legacy_runs,__2026-07-07_14-26-09,FD001,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log (2).csv,14,cmapss_legacy_runs,__2026-07-07_14-27-56,FD001,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log (2).csv,15,cmapss_legacy_runs,__2026-07-07_14-29-26,FD001,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log (2).csv,16,cmapss_legacy_runs,__2026-07-07_14-31-41,FD001,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log (2).csv,17,cmapss_legacy_runs,__2026-07-07_14-34-53,FD003,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log (2).csv,18,cmapss_legacy_runs,__2026-07-07_14-38-35,FD003,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log (2).csv,19,cmapss_legacy_runs,__2026-07-07_14-42-30,FD003,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log (2).csv,20,cmapss_legacy_runs,__2026-07-07_14-45-14,FD003,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log (2).csv,21,cmapss_legacy_runs,__2026-07-07_14-46-35,FD003,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log (2).csv,22,cmapss_legacy_runs,__2026-07-07_15-05-48,FD003,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log (2).csv,23,cmapss_legacy_runs,__2026-07-07_15-09-17,FD003,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log (2).csv,24,cmapss_legacy_runs,__2026-07-07_15-10-58,FD003,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log (2).csv,25,cmapss_legacy_runs,__2026-07-07_15-12-08,FD003,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log (2).csv,26,cmapss_legacy_runs,__2026-07-07_15-13-33,FD003,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log (2).csv,27,cmapss_legacy_runs,__2026-07-07_15-17-13,FD001,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log (2).csv,28,cmapss_legacy_runs,__2026-07-07_15-18-13,FD001,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log (2).csv,29,cmapss_legacy_runs,__2026-07-07_15-19-13,FD001,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log (2).csv,30,cmapss_legacy_runs,__2026-07-07_15-20-38,FD001,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log (2).csv,31,cmapss_legacy_runs,__2026-07-07_15-22-25,FD001,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log (2).csv,32,cmapss_legacy_runs,__2026-07-07_15-25-11,FD002,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log (2).csv,33,cmapss_legacy_runs,__2026-07-07_15-29-16,FD002,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log (2).csv,34,cmapss_legacy_runs,__2026-07-07_15-37-32,FD002,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log (2).csv,35,cmapss_legacy_runs,__2026-07-07_15-41-48,FD002,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log (2).csv,36,cmapss_legacy_runs,__2026-07-07_15-54-01,FD002,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log (2).csv,37,cmapss_legacy_runs,__2026-07-07_16-01-52,FD002,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log (2).csv,38,cmapss_legacy_runs,__2026-07-07_16-05-30,FD004,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log (2).csv,39,cmapss_legacy_runs,__2026-07-07_16-10-10,FD004,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log (2).csv,40,cmapss_legacy_runs,__2026-07-07_16-14-40,FD004,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log (2).csv,41,cmapss_legacy_runs,__2026-07-07_16-19-22,FD004,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log (2).csv,42,cmapss_legacy_runs,__2026-07-07_16-21-54,FD004,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log (2).csv,43,cmapss_legacy_runs,__2026-07-21_14-05-01,FD004,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log (2).csv,44,cmapss_legacy_runs,__2026-07-21_14-09-12,FD003,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log (2).csv,45,cmapss_legacy_runs,__2026-07-21_14-10-54,FD002,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log (2).csv,46,cmapss_legacy_runs,__2026-07-21_14-13-29,FD001,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log (2).csv,47,cmapss_legacy_runs,__2026-07-21_14-15-21,FD001,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log (2).csv,48,cmapss_legacy_runs,__2026-07-21_14-18-19,FD002,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log (2).csv,49,cmapss_legacy_runs,__2026-07-21_14-21-57,FD003,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log (2).csv,50,cmapss_legacy_runs,__2026-07-21_14-24-50,FD004,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log.csv,2,cmapss_legacy_runs,__2026-07-07_13-57-23,FD004,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log.csv,3,cmapss_legacy_runs,__2026-07-07_14-00-03,FD004,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log.csv,4,cmapss_legacy_runs,__2026-07-07_14-02-59,FD004,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log.csv,5,cmapss_legacy_runs,__2026-07-07_14-05-44,FD004,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log.csv,6,cmapss_legacy_runs,__2026-07-07_14-08-42,FD004,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log.csv,7,cmapss_legacy_runs,__2026-07-07_14-11-49,FD002,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log.csv,8,cmapss_legacy_runs,__2026-07-07_14-13-55,FD002,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log.csv,9,cmapss_legacy_runs,__2026-07-07_14-16-01,FD002,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log.csv,10,cmapss_legacy_runs,__2026-07-07_14-18-17,FD002,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log.csv,11,cmapss_legacy_runs,__2026-07-07_14-21-33,FD002,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log.csv,12,cmapss_legacy_runs,__2026-07-07_14-24-44,FD001,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log.csv,13,cmapss_legacy_runs,__2026-07-07_14-26-09,FD001,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log.csv,14,cmapss_legacy_runs,__2026-07-07_14-27-56,FD001,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log.csv,15,cmapss_legacy_runs,__2026-07-07_14-29-26,FD001,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log.csv,16,cmapss_legacy_runs,__2026-07-07_14-31-41,FD001,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log.csv,17,cmapss_legacy_runs,__2026-07-07_14-34-53,FD003,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log.csv,18,cmapss_legacy_runs,__2026-07-07_14-38-35,FD003,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log.csv,19,cmapss_legacy_runs,__2026-07-07_14-42-30,FD003,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log.csv,20,cmapss_legacy_runs,__2026-07-07_14-45-14,FD003,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log.csv,21,cmapss_legacy_runs,__2026-07-07_14-46-35,FD003,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log.csv,22,cmapss_legacy_runs,__2026-07-07_15-05-48,FD003,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log.csv,23,cmapss_legacy_runs,__2026-07-07_15-09-17,FD003,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log.csv,24,cmapss_legacy_runs,__2026-07-07_15-10-58,FD003,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log.csv,25,cmapss_legacy_runs,__2026-07-07_15-12-08,FD003,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log.csv,26,cmapss_legacy_runs,__2026-07-07_15-13-33,FD003,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log.csv,27,cmapss_legacy_runs,__2026-07-07_15-17-13,FD001,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log.csv,28,cmapss_legacy_runs,__2026-07-07_15-18-13,FD001,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log.csv,29,cmapss_legacy_runs,__2026-07-07_15-19-13,FD001,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log.csv,30,cmapss_legacy_runs,__2026-07-07_15-20-38,FD001,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log.csv,31,cmapss_legacy_runs,__2026-07-07_15-22-25,FD001,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log.csv,32,cmapss_legacy_runs,__2026-07-07_15-25-11,FD002,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log.csv,33,cmapss_legacy_runs,__2026-07-07_15-29-16,FD002,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log.csv,34,cmapss_legacy_runs,__2026-07-07_15-37-32,FD002,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log.csv,35,cmapss_legacy_runs,__2026-07-07_15-41-48,FD002,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log.csv,36,cmapss_legacy_runs,__2026-07-07_15-54-01,FD002,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log.csv,37,cmapss_legacy_runs,__2026-07-07_16-01-52,FD002,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log.csv,38,cmapss_legacy_runs,__2026-07-07_16-05-30,FD004,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log.csv,39,cmapss_legacy_runs,__2026-07-07_16-10-10,FD004,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log.csv,40,cmapss_legacy_runs,__2026-07-07_16-14-40,FD004,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log.csv,41,cmapss_legacy_runs,__2026-07-07_16-19-22,FD004,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log.csv,42,cmapss_legacy_runs,__2026-07-07_16-21-54,FD004,,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log.csv,43,cmapss_legacy_runs,__2026-07-14_16-24-28,FD003,,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/experiment_log.csv,44,clip_warmup_smoke_test,FD004_clip0.5_warmup5_seed42__2026-08-11_21-36-13,FD004,42,1,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/ dast0926/experiment_log.csv,2,cmapss_no_clip_no_warmup,run_once_noclip_20260926__2026-09-26_04-35-37,FD001,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/ dast0926/experiment_log.csv,3,cmapss_no_clip_no_warmup,run_once_noclip_20260926__2026-09-26_05-38-18,FD002,42,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/ dast0926/experiment_log.csv,4,cmapss_no_clip_no_warmup,run_once_noclip_20260926__2026-09-26_08-51-53,FD003,42,100,42,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+紀錄/ dast0926/experiment_log.csv,5,cmapss_no_clip_no_warmup,run_once_noclip_20260926__2026-09-26_10-28-31,FD004,42,100,62,historical_ledger_not_independent_test,原總帳列；可能與其他來源重複，不當獨立實驗加總
+server_results/summary/full_sweep_records.csv,2,clip_warmup_hyperparameter_search,FD001_clip0.5_warmup5_seed42__2026-08-31_20-58-40,FD001,42.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,3,clip_warmup_hyperparameter_search,FD001_clip0.5_warmup5_seed20__2026-08-31_20-59-37,FD001,20.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,4,clip_warmup_hyperparameter_search,FD001_clip0.5_warmup5_seed100__2026-08-31_21-00-34,FD001,100.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,5,clip_warmup_hyperparameter_search,FD001_clip0.5_warmup10_seed42__2026-08-31_21-01-32,FD001,42.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,6,clip_warmup_hyperparameter_search,FD001_clip0.5_warmup10_seed20__2026-08-31_21-02-29,FD001,20.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,7,clip_warmup_hyperparameter_search,FD001_clip0.5_warmup10_seed100__2026-08-31_21-03-27,FD001,100.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,8,clip_warmup_hyperparameter_search,FD001_clip0.5_warmup15_seed42__2026-08-31_21-04-26,FD001,42.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,9,clip_warmup_hyperparameter_search,FD001_clip0.5_warmup15_seed20__2026-08-31_21-05-24,FD001,20.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,10,clip_warmup_hyperparameter_search,FD001_clip0.5_warmup15_seed100__2026-08-31_21-06-22,FD001,100.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,11,clip_warmup_hyperparameter_search,FD001_clip1_warmup5_seed42__2026-08-31_21-07-20,FD001,42.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,12,clip_warmup_hyperparameter_search,FD001_clip1_warmup5_seed20__2026-08-31_21-08-18,FD001,20.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,13,clip_warmup_hyperparameter_search,FD001_clip1_warmup5_seed100__2026-08-31_21-09-15,FD001,100.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,14,clip_warmup_hyperparameter_search,FD001_clip1_warmup10_seed42__2026-08-31_21-10-13,FD001,42.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,15,clip_warmup_hyperparameter_search,FD001_clip1_warmup10_seed20__2026-08-31_21-11-11,FD001,20.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,16,clip_warmup_hyperparameter_search,FD001_clip1_warmup10_seed100__2026-08-31_21-12-09,FD001,100.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,17,clip_warmup_hyperparameter_search,FD001_clip1_warmup15_seed42__2026-08-31_21-13-08,FD001,42.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,18,clip_warmup_hyperparameter_search,FD001_clip1_warmup15_seed20__2026-08-31_21-14-06,FD001,20.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,19,clip_warmup_hyperparameter_search,FD001_clip1_warmup15_seed100__2026-08-31_21-15-04,FD001,100.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,20,clip_warmup_hyperparameter_search,FD001_clip2_warmup5_seed42__2026-08-31_21-16-03,FD001,42.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,21,clip_warmup_hyperparameter_search,FD001_clip2_warmup5_seed20__2026-08-31_21-17-01,FD001,20.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,22,clip_warmup_hyperparameter_search,FD001_clip2_warmup5_seed100__2026-08-31_21-18-00,FD001,100.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,23,clip_warmup_hyperparameter_search,FD001_clip2_warmup10_seed42__2026-08-31_21-18-58,FD001,42.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,24,clip_warmup_hyperparameter_search,FD001_clip2_warmup10_seed20__2026-08-31_21-19-56,FD001,20.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,25,clip_warmup_hyperparameter_search,FD001_clip2_warmup10_seed100__2026-08-31_21-20-55,FD001,100.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,26,clip_warmup_hyperparameter_search,FD001_clip2_warmup15_seed42__2026-08-31_21-21-53,FD001,42.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,27,clip_warmup_hyperparameter_search,FD001_clip2_warmup15_seed20__2026-08-31_21-22-51,FD001,20.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,28,clip_warmup_hyperparameter_search,FD001_clip2_warmup15_seed100__2026-08-31_21-23-48,FD001,100.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,29,clip_warmup_hyperparameter_search,FD001_clip5_warmup5_seed42__2026-08-31_21-24-46,FD001,42.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,30,clip_warmup_hyperparameter_search,FD001_clip5_warmup5_seed20__2026-08-31_21-25-44,FD001,20.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,31,clip_warmup_hyperparameter_search,FD001_clip5_warmup5_seed100__2026-08-31_21-26-43,FD001,100.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,32,clip_warmup_hyperparameter_search,FD001_clip5_warmup10_seed42__2026-08-31_21-27-41,FD001,42.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,33,clip_warmup_hyperparameter_search,FD001_clip5_warmup10_seed20__2026-08-31_21-28-39,FD001,20.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,34,clip_warmup_hyperparameter_search,FD001_clip5_warmup10_seed100__2026-08-31_21-29-37,FD001,100.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,35,clip_warmup_hyperparameter_search,FD001_clip5_warmup15_seed42__2026-08-31_21-30-35,FD001,42.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,36,clip_warmup_hyperparameter_search,FD001_clip5_warmup15_seed20__2026-08-31_21-31-33,FD001,20.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,37,clip_warmup_hyperparameter_search,FD001_clip5_warmup15_seed100__2026-08-31_21-32-31,FD001,100.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,38,clip_warmup_hyperparameter_search,FD002_clip0.5_warmup5_seed42__2026-08-31_21-33-33,FD002,42.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,39,clip_warmup_hyperparameter_search,FD002_clip0.5_warmup5_seed20__2026-08-31_21-35-58,FD002,20.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,40,clip_warmup_hyperparameter_search,FD002_clip0.5_warmup5_seed100__2026-08-31_21-38-21,FD002,100.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,41,clip_warmup_hyperparameter_search,FD002_clip0.5_warmup10_seed42__2026-08-31_21-40-43,FD002,42.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,42,clip_warmup_hyperparameter_search,FD002_clip0.5_warmup10_seed20__2026-08-31_21-43-08,FD002,20.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,43,clip_warmup_hyperparameter_search,FD002_clip0.5_warmup10_seed100__2026-08-31_21-45-32,FD002,100.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,44,clip_warmup_hyperparameter_search,FD002_clip0.5_warmup15_seed42__2026-08-31_21-47-56,FD002,42.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,45,clip_warmup_hyperparameter_search,FD002_clip0.5_warmup15_seed20__2026-08-31_21-50-20,FD002,20.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,46,clip_warmup_hyperparameter_search,FD002_clip0.5_warmup15_seed100__2026-08-31_21-52-43,FD002,100.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,47,clip_warmup_hyperparameter_search,FD002_clip1_warmup5_seed42__2026-08-31_21-55-08,FD002,42.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,48,clip_warmup_hyperparameter_search,FD002_clip1_warmup5_seed20__2026-08-31_21-57-33,FD002,20.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,49,clip_warmup_hyperparameter_search,FD002_clip1_warmup5_seed100__2026-08-31_21-59-57,FD002,100.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,50,clip_warmup_hyperparameter_search,FD002_clip1_warmup10_seed42__2026-08-31_22-02-19,FD002,42.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,51,clip_warmup_hyperparameter_search,FD002_clip1_warmup10_seed20__2026-08-31_22-04-43,FD002,20.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,52,clip_warmup_hyperparameter_search,FD002_clip1_warmup10_seed100__2026-08-31_22-07-08,FD002,100.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,53,clip_warmup_hyperparameter_search,FD002_clip1_warmup15_seed42__2026-08-31_22-09-33,FD002,42.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,54,clip_warmup_hyperparameter_search,FD002_clip1_warmup15_seed20__2026-08-31_22-11-56,FD002,20.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,55,clip_warmup_hyperparameter_search,FD002_clip1_warmup15_seed100__2026-08-31_22-14-19,FD002,100.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,56,clip_warmup_hyperparameter_search,FD002_clip2_warmup5_seed42__2026-08-31_22-16-44,FD002,42.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,57,clip_warmup_hyperparameter_search,FD002_clip2_warmup5_seed20__2026-08-31_22-19-07,FD002,20.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,58,clip_warmup_hyperparameter_search,FD002_clip2_warmup5_seed100__2026-08-31_22-21-31,FD002,100.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,59,clip_warmup_hyperparameter_search,FD002_clip2_warmup10_seed42__2026-08-31_22-23-57,FD002,42.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,60,clip_warmup_hyperparameter_search,FD002_clip2_warmup10_seed20__2026-08-31_22-26-20,FD002,20.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,61,clip_warmup_hyperparameter_search,FD002_clip2_warmup10_seed100__2026-08-31_22-28-43,FD002,100.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,62,clip_warmup_hyperparameter_search,FD002_clip2_warmup15_seed42__2026-08-31_22-31-08,FD002,42.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,63,clip_warmup_hyperparameter_search,FD002_clip2_warmup15_seed20__2026-08-31_22-33-34,FD002,20.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,64,clip_warmup_hyperparameter_search,FD002_clip2_warmup15_seed100__2026-08-31_22-35-59,FD002,100.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,65,clip_warmup_hyperparameter_search,FD002_clip5_warmup5_seed42__2026-08-31_22-38-25,FD002,42.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,66,clip_warmup_hyperparameter_search,FD002_clip5_warmup5_seed20__2026-08-31_22-40-50,FD002,20.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,67,clip_warmup_hyperparameter_search,FD002_clip5_warmup5_seed100__2026-08-31_22-43-13,FD002,100.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,68,clip_warmup_hyperparameter_search,FD002_clip5_warmup10_seed42__2026-08-31_22-45-38,FD002,42.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,69,clip_warmup_hyperparameter_search,FD002_clip5_warmup10_seed20__2026-08-31_22-48-02,FD002,20.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,70,clip_warmup_hyperparameter_search,FD002_clip5_warmup10_seed100__2026-08-31_22-50-25,FD002,100.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,71,clip_warmup_hyperparameter_search,FD002_clip5_warmup15_seed42__2026-08-31_22-52-48,FD002,42.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,72,clip_warmup_hyperparameter_search,FD002_clip5_warmup15_seed20__2026-08-31_22-55-11,FD002,20.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,73,clip_warmup_hyperparameter_search,FD002_clip5_warmup15_seed100__2026-08-31_22-57-35,FD002,100.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,74,clip_warmup_hyperparameter_search,FD003_clip0.5_warmup5_seed42__2026-08-31_22-59-56,FD003,42.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,75,clip_warmup_hyperparameter_search,FD003_clip0.5_warmup5_seed20__2026-08-31_23-01-08,FD003,20.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,76,clip_warmup_hyperparameter_search,FD003_clip0.5_warmup5_seed100__2026-08-31_23-02-19,FD003,100.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,77,clip_warmup_hyperparameter_search,FD003_clip0.5_warmup10_seed42__2026-08-31_23-03-31,FD003,42.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,78,clip_warmup_hyperparameter_search,FD003_clip0.5_warmup10_seed20__2026-08-31_23-04-42,FD003,20.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,79,clip_warmup_hyperparameter_search,FD003_clip0.5_warmup10_seed100__2026-08-31_23-05-54,FD003,100.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,80,clip_warmup_hyperparameter_search,FD003_clip0.5_warmup15_seed42__2026-08-31_23-07-06,FD003,42.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,81,clip_warmup_hyperparameter_search,FD003_clip0.5_warmup15_seed20__2026-08-31_23-08-18,FD003,20.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,82,clip_warmup_hyperparameter_search,FD003_clip0.5_warmup15_seed100__2026-08-31_23-09-29,FD003,100.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,83,clip_warmup_hyperparameter_search,FD003_clip1_warmup5_seed42__2026-08-31_23-10-41,FD003,42.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,84,clip_warmup_hyperparameter_search,FD003_clip1_warmup5_seed20__2026-08-31_23-11-53,FD003,20.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,85,clip_warmup_hyperparameter_search,FD003_clip1_warmup5_seed100__2026-08-31_23-13-05,FD003,100.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,86,clip_warmup_hyperparameter_search,FD003_clip1_warmup10_seed42__2026-08-31_23-14-16,FD003,42.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,87,clip_warmup_hyperparameter_search,FD003_clip1_warmup10_seed20__2026-08-31_23-15-28,FD003,20.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,88,clip_warmup_hyperparameter_search,FD003_clip1_warmup10_seed100__2026-08-31_23-16-40,FD003,100.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,89,clip_warmup_hyperparameter_search,FD003_clip1_warmup15_seed42__2026-08-31_23-17-52,FD003,42.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,90,clip_warmup_hyperparameter_search,FD003_clip1_warmup15_seed20__2026-08-31_23-19-03,FD003,20.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,91,clip_warmup_hyperparameter_search,FD003_clip1_warmup15_seed100__2026-08-31_23-20-14,FD003,100.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,92,clip_warmup_hyperparameter_search,FD003_clip2_warmup5_seed42__2026-08-31_23-21-26,FD003,42.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,93,clip_warmup_hyperparameter_search,FD003_clip2_warmup5_seed20__2026-08-31_23-22-38,FD003,20.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,94,clip_warmup_hyperparameter_search,FD003_clip2_warmup5_seed100__2026-08-31_23-23-50,FD003,100.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,95,clip_warmup_hyperparameter_search,FD003_clip2_warmup10_seed42__2026-08-31_23-25-02,FD003,42.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,96,clip_warmup_hyperparameter_search,FD003_clip2_warmup10_seed20__2026-08-31_23-26-13,FD003,20.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,97,clip_warmup_hyperparameter_search,FD003_clip2_warmup10_seed100__2026-08-31_23-27-25,FD003,100.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,98,clip_warmup_hyperparameter_search,FD003_clip2_warmup15_seed42__2026-08-31_23-28-37,FD003,42.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,99,clip_warmup_hyperparameter_search,FD003_clip2_warmup15_seed20__2026-08-31_23-29-49,FD003,20.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,100,clip_warmup_hyperparameter_search,FD003_clip2_warmup15_seed100__2026-08-31_23-31-00,FD003,100.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,101,clip_warmup_hyperparameter_search,FD003_clip5_warmup5_seed42__2026-08-31_23-32-11,FD003,42.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,102,clip_warmup_hyperparameter_search,FD003_clip5_warmup5_seed20__2026-08-31_23-33-23,FD003,20.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,103,clip_warmup_hyperparameter_search,FD003_clip5_warmup5_seed100__2026-08-31_23-34-35,FD003,100.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,104,clip_warmup_hyperparameter_search,FD003_clip5_warmup10_seed42__2026-08-31_23-35-47,FD003,42.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,105,clip_warmup_hyperparameter_search,FD003_clip5_warmup10_seed20__2026-08-31_23-36-59,FD003,20.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,106,clip_warmup_hyperparameter_search,FD003_clip5_warmup10_seed100__2026-08-31_23-38-10,FD003,100.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,107,clip_warmup_hyperparameter_search,FD003_clip5_warmup15_seed42__2026-08-31_23-39-22,FD003,42.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,108,clip_warmup_hyperparameter_search,FD003_clip5_warmup15_seed20__2026-08-31_23-40-34,FD003,20.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,109,clip_warmup_hyperparameter_search,FD003_clip5_warmup15_seed100__2026-08-31_23-41-45,FD003,100.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,110,clip_warmup_hyperparameter_search,FD004_clip0.5_warmup5_seed42__2026-08-31_23-43-01,FD004,42.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,111,clip_warmup_hyperparameter_search,FD004_clip0.5_warmup5_seed20__2026-08-31_23-45-50,FD004,20.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,112,clip_warmup_hyperparameter_search,FD004_clip0.5_warmup5_seed100__2026-08-31_23-48-39,FD004,100.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,113,clip_warmup_hyperparameter_search,FD004_clip0.5_warmup10_seed42__2026-08-31_23-51-29,FD004,42.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,114,clip_warmup_hyperparameter_search,FD004_clip0.5_warmup10_seed20__2026-08-31_23-54-20,FD004,20.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,115,clip_warmup_hyperparameter_search,FD004_clip0.5_warmup10_seed100__2026-08-31_23-57-11,FD004,100.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,116,clip_warmup_hyperparameter_search,FD004_clip0.5_warmup15_seed42__2026-09-01_00-00-01,FD004,42.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,117,clip_warmup_hyperparameter_search,FD004_clip0.5_warmup15_seed20__2026-09-01_00-02-50,FD004,20.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,118,clip_warmup_hyperparameter_search,FD004_clip0.5_warmup15_seed100__2026-09-01_00-05-40,FD004,100.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,119,clip_warmup_hyperparameter_search,FD004_clip1_warmup5_seed42__2026-09-01_00-08-30,FD004,42.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,120,clip_warmup_hyperparameter_search,FD004_clip1_warmup5_seed20__2026-09-01_00-11-18,FD004,20.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,121,clip_warmup_hyperparameter_search,FD004_clip1_warmup5_seed100__2026-09-01_00-14-07,FD004,100.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,122,clip_warmup_hyperparameter_search,FD004_clip1_warmup10_seed42__2026-09-01_00-16-56,FD004,42.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,123,clip_warmup_hyperparameter_search,FD004_clip1_warmup10_seed20__2026-09-01_00-19-45,FD004,20.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,124,clip_warmup_hyperparameter_search,FD004_clip1_warmup10_seed100__2026-09-01_00-22-35,FD004,100.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,125,clip_warmup_hyperparameter_search,FD004_clip1_warmup15_seed42__2026-09-01_00-25-24,FD004,42.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,126,clip_warmup_hyperparameter_search,FD004_clip1_warmup15_seed20__2026-09-01_00-28-15,FD004,20.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,127,clip_warmup_hyperparameter_search,FD004_clip1_warmup15_seed100__2026-09-01_00-31-05,FD004,100.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,128,clip_warmup_hyperparameter_search,FD004_clip2_warmup5_seed42__2026-09-01_00-33-56,FD004,42.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,129,clip_warmup_hyperparameter_search,FD004_clip2_warmup5_seed20__2026-09-01_00-36-45,FD004,20.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,130,clip_warmup_hyperparameter_search,FD004_clip2_warmup5_seed100__2026-09-01_00-39-33,FD004,100.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,131,clip_warmup_hyperparameter_search,FD004_clip2_warmup10_seed42__2026-09-01_00-42-22,FD004,42.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,132,clip_warmup_hyperparameter_search,FD004_clip2_warmup10_seed20__2026-09-01_00-45-11,FD004,20.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,133,clip_warmup_hyperparameter_search,FD004_clip2_warmup10_seed100__2026-09-01_00-47-59,FD004,100.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,134,clip_warmup_hyperparameter_search,FD004_clip2_warmup15_seed42__2026-09-01_00-50-47,FD004,42.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,135,clip_warmup_hyperparameter_search,FD004_clip2_warmup15_seed20__2026-09-01_00-53-38,FD004,20.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,136,clip_warmup_hyperparameter_search,FD004_clip2_warmup15_seed100__2026-09-01_00-56-29,FD004,100.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,137,clip_warmup_hyperparameter_search,FD004_clip5_warmup5_seed42__2026-09-01_00-59-19,FD004,42.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,138,clip_warmup_hyperparameter_search,FD004_clip5_warmup5_seed20__2026-09-01_01-02-10,FD004,20.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,139,clip_warmup_hyperparameter_search,FD004_clip5_warmup5_seed100__2026-09-01_01-05-00,FD004,100.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,140,clip_warmup_hyperparameter_search,FD004_clip5_warmup10_seed42__2026-09-01_01-07-50,FD004,42.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,141,clip_warmup_hyperparameter_search,FD004_clip5_warmup10_seed20__2026-09-01_01-10-38,FD004,20.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,142,clip_warmup_hyperparameter_search,FD004_clip5_warmup10_seed100__2026-09-01_01-13-27,FD004,100.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,143,clip_warmup_hyperparameter_search,FD004_clip5_warmup15_seed42__2026-09-01_01-16-17,FD004,42.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,144,clip_warmup_hyperparameter_search,FD004_clip5_warmup15_seed20__2026-09-01_01-19-05,FD004,20.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/summary/full_sweep_records.csv,145,clip_warmup_hyperparameter_search,FD004_clip5_warmup15_seed100__2026-09-01_01-21-57,FD004,100.0,100,42,test_selected,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/clean_sweep_results/summary.jsonl,1,clip_warmup_validation_search,FD004_global_clip0.5_warmup5_seed20,FD004,20,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/clean_sweep_results/summary.jsonl,2,clip_warmup_validation_search,FD004_global_clip0.5_warmup5_seed42,FD004,42,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/clean_sweep_results/summary.jsonl,3,clip_warmup_validation_search,FD004_global_clip0.5_warmup5_seed100,FD004,100,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/clean_sweep_results/summary.jsonl,4,clip_warmup_validation_search,FD004_global_clip0.5_warmup10_seed20,FD004,20,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/clean_sweep_results/summary.jsonl,5,clip_warmup_validation_search,FD004_global_clip0.5_warmup10_seed42,FD004,42,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/clean_sweep_results/summary.jsonl,6,clip_warmup_validation_search,FD004_global_clip0.5_warmup10_seed100,FD004,100,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/clean_sweep_results/summary.jsonl,7,clip_warmup_validation_search,FD004_global_clip0.5_warmup15_seed20,FD004,20,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/clean_sweep_results/summary.jsonl,8,clip_warmup_validation_search,FD004_global_clip0.5_warmup15_seed42,FD004,42,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/clean_sweep_results/summary.jsonl,9,clip_warmup_validation_search,FD004_global_clip0.5_warmup15_seed100,FD004,100,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/clean_sweep_results/summary.jsonl,10,clip_warmup_validation_search,FD004_global_clip1.0_warmup5_seed20,FD004,20,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/clean_sweep_results/summary.jsonl,11,clip_warmup_validation_search,FD004_global_clip1.0_warmup5_seed42,FD004,42,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/clean_sweep_results/summary.jsonl,12,clip_warmup_validation_search,FD004_global_clip1.0_warmup5_seed100,FD004,100,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/clean_sweep_results/summary.jsonl,13,clip_warmup_validation_search,FD004_global_clip1.0_warmup10_seed20,FD004,20,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/clean_sweep_results/summary.jsonl,14,clip_warmup_validation_search,FD004_global_clip1.0_warmup10_seed42,FD004,42,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/clean_sweep_results/summary.jsonl,15,clip_warmup_validation_search,FD004_global_clip1.0_warmup10_seed100,FD004,100,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/clean_sweep_results/summary.jsonl,16,clip_warmup_validation_search,FD004_global_clip1.0_warmup15_seed20,FD004,20,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/clean_sweep_results/summary.jsonl,17,clip_warmup_validation_search,FD004_global_clip1.0_warmup15_seed42,FD004,42,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/clean_sweep_results/summary.jsonl,18,clip_warmup_validation_search,FD004_global_clip1.0_warmup15_seed100,FD004,100,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/clean_sweep_results/summary.jsonl,19,clip_warmup_validation_search,FD004_global_clip2.0_warmup5_seed20,FD004,20,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/clean_sweep_results/summary.jsonl,20,clip_warmup_validation_search,FD004_global_clip2.0_warmup5_seed42,FD004,42,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/clean_sweep_results/summary.jsonl,21,clip_warmup_validation_search,FD004_global_clip2.0_warmup5_seed100,FD004,100,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/clean_sweep_results/summary.jsonl,22,clip_warmup_validation_search,FD004_global_clip2.0_warmup10_seed20,FD004,20,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/clean_sweep_results/summary.jsonl,23,clip_warmup_validation_search,FD004_global_clip2.0_warmup10_seed42,FD004,42,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/clean_sweep_results/summary.jsonl,24,clip_warmup_validation_search,FD004_global_clip2.0_warmup10_seed100,FD004,100,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/clean_sweep_results/summary.jsonl,25,clip_warmup_validation_search,FD004_global_clip2.0_warmup15_seed20,FD004,20,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/clean_sweep_results/summary.jsonl,26,clip_warmup_validation_search,FD004_global_clip2.0_warmup15_seed42,FD004,42,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/clean_sweep_results/summary.jsonl,27,clip_warmup_validation_search,FD004_global_clip2.0_warmup15_seed100,FD004,100,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/clean_sweep_results/summary.jsonl,28,clip_warmup_validation_search,FD004_global_clip5.0_warmup5_seed20,FD004,20,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/clean_sweep_results/summary.jsonl,29,clip_warmup_validation_search,FD004_global_clip5.0_warmup5_seed42,FD004,42,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/clean_sweep_results/summary.jsonl,30,clip_warmup_validation_search,FD004_global_clip5.0_warmup5_seed100,FD004,100,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/clean_sweep_results/summary.jsonl,31,clip_warmup_validation_search,FD004_global_clip5.0_warmup10_seed20,FD004,20,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/clean_sweep_results/summary.jsonl,32,clip_warmup_validation_search,FD004_global_clip5.0_warmup10_seed42,FD004,42,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/clean_sweep_results/summary.jsonl,33,clip_warmup_validation_search,FD004_global_clip5.0_warmup10_seed100,FD004,100,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/clean_sweep_results/summary.jsonl,34,clip_warmup_validation_search,FD004_global_clip5.0_warmup15_seed20,FD004,20,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/clean_sweep_results/summary.jsonl,35,clip_warmup_validation_search,FD004_global_clip5.0_warmup15_seed42,FD004,42,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/clean_sweep_results/summary.jsonl,36,clip_warmup_validation_search,FD004_global_clip5.0_warmup15_seed100,FD004,100,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/clean_sweep_results/summary.jsonl,37,clip_warmup_validation_search,FD002_global_clip0.5_warmup5_seed20,FD002,20,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/clean_sweep_results/summary.jsonl,38,clip_warmup_validation_search,FD002_global_clip0.5_warmup5_seed42,FD002,42,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/clean_sweep_results/summary.jsonl,39,clip_warmup_validation_search,FD002_global_clip0.5_warmup5_seed100,FD002,100,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/clean_sweep_results/summary.jsonl,40,clip_warmup_validation_search,FD002_global_clip0.5_warmup10_seed20,FD002,20,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/clean_sweep_results/summary.jsonl,41,clip_warmup_validation_search,FD002_global_clip0.5_warmup10_seed42,FD002,42,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/clean_sweep_results/summary.jsonl,42,clip_warmup_validation_search,FD002_global_clip0.5_warmup10_seed100,FD002,100,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/clean_sweep_results/summary.jsonl,43,clip_warmup_validation_search,FD002_global_clip0.5_warmup15_seed20,FD002,20,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/clean_sweep_results/summary.jsonl,44,clip_warmup_validation_search,FD002_global_clip0.5_warmup15_seed42,FD002,42,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/clean_sweep_results/summary.jsonl,45,clip_warmup_validation_search,FD002_global_clip0.5_warmup15_seed100,FD002,100,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/clean_sweep_results/summary.jsonl,46,clip_warmup_validation_search,FD002_global_clip1.0_warmup5_seed20,FD002,20,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/clean_sweep_results/summary.jsonl,47,clip_warmup_validation_search,FD002_global_clip1.0_warmup5_seed42,FD002,42,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/clean_sweep_results/summary.jsonl,48,clip_warmup_validation_search,FD002_global_clip1.0_warmup5_seed100,FD002,100,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/clean_sweep_results/summary.jsonl,49,clip_warmup_validation_search,FD002_global_clip1.0_warmup10_seed20,FD002,20,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/clean_sweep_results/summary.jsonl,50,clip_warmup_validation_search,FD002_global_clip1.0_warmup10_seed42,FD002,42,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/clean_sweep_results/summary.jsonl,51,clip_warmup_validation_search,FD002_global_clip1.0_warmup10_seed100,FD002,100,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/clean_sweep_results/summary.jsonl,52,clip_warmup_validation_search,FD002_global_clip1.0_warmup15_seed20,FD002,20,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/clean_sweep_results/summary.jsonl,53,clip_warmup_validation_search,FD002_global_clip1.0_warmup15_seed42,FD002,42,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/clean_sweep_results/summary.jsonl,54,clip_warmup_validation_search,FD002_global_clip1.0_warmup15_seed100,FD002,100,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/clean_sweep_results/summary.jsonl,55,clip_warmup_validation_search,FD002_global_clip2.0_warmup5_seed20,FD002,20,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/clean_sweep_results/summary.jsonl,56,clip_warmup_validation_search,FD002_global_clip2.0_warmup5_seed42,FD002,42,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/clean_sweep_results/summary.jsonl,57,clip_warmup_validation_search,FD002_global_clip2.0_warmup5_seed100,FD002,100,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/clean_sweep_results/summary.jsonl,58,clip_warmup_validation_search,FD002_global_clip2.0_warmup10_seed20,FD002,20,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/clean_sweep_results/summary.jsonl,59,clip_warmup_validation_search,FD002_global_clip2.0_warmup10_seed42,FD002,42,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/clean_sweep_results/summary.jsonl,60,clip_warmup_validation_search,FD002_global_clip2.0_warmup10_seed100,FD002,100,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/clean_sweep_results/summary.jsonl,61,clip_warmup_validation_search,FD002_global_clip2.0_warmup15_seed20,FD002,20,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/clean_sweep_results/summary.jsonl,62,clip_warmup_validation_search,FD002_global_clip2.0_warmup15_seed42,FD002,42,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/clean_sweep_results/summary.jsonl,63,clip_warmup_validation_search,FD002_global_clip2.0_warmup15_seed100,FD002,100,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/clean_sweep_results/summary.jsonl,64,clip_warmup_validation_search,FD002_global_clip5.0_warmup5_seed20,FD002,20,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/clean_sweep_results/summary.jsonl,65,clip_warmup_validation_search,FD002_global_clip5.0_warmup5_seed42,FD002,42,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/clean_sweep_results/summary.jsonl,66,clip_warmup_validation_search,FD002_global_clip5.0_warmup5_seed100,FD002,100,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/clean_sweep_results/summary.jsonl,67,clip_warmup_validation_search,FD002_global_clip5.0_warmup10_seed20,FD002,20,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/clean_sweep_results/summary.jsonl,68,clip_warmup_validation_search,FD002_global_clip5.0_warmup10_seed42,FD002,42,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/clean_sweep_results/summary.jsonl,69,clip_warmup_validation_search,FD002_global_clip5.0_warmup10_seed100,FD002,100,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/clean_sweep_results/summary.jsonl,70,clip_warmup_validation_search,FD002_global_clip5.0_warmup15_seed20,FD002,20,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/clean_sweep_results/summary.jsonl,71,clip_warmup_validation_search,FD002_global_clip5.0_warmup15_seed42,FD002,42,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/clean_sweep_results/summary.jsonl,72,clip_warmup_validation_search,FD002_global_clip5.0_warmup15_seed100,FD002,100,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/idea1_results/summary.jsonl,1,condition_slope_feature_compare,FD004_global_clip5.0_warmup15_seed20,FD004,20,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/idea1_results/summary.jsonl,2,condition_slope_feature_compare,FD004_global_clip0.5_warmup5_seed20,FD004,20,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/idea1_results/summary.jsonl,3,condition_slope_feature_compare,FD004_global_clip5.0_warmup15_seed42,FD004,42,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/idea1_results/summary.jsonl,4,condition_slope_feature_compare,FD004_global_clip0.5_warmup5_seed42,FD004,42,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/idea1_results/summary.jsonl,5,condition_slope_feature_compare,FD004_global_clip5.0_warmup15_seed100,FD004,100,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/idea1_results/summary.jsonl,6,condition_slope_feature_compare,FD004_global_clip0.5_warmup5_seed100,FD004,100,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/idea1_results/summary.jsonl,7,condition_slope_feature_compare,FD004_condfe_clip5.0_warmup15_seed20,FD004,20,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/idea1_results/summary.jsonl,8,condition_slope_feature_compare,FD004_condfe_clip0.5_warmup5_seed20,FD004,20,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/idea1_results/summary.jsonl,9,condition_slope_feature_compare,FD004_condfe_clip5.0_warmup15_seed42,FD004,42,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/idea1_results/summary.jsonl,10,condition_slope_feature_compare,FD004_condfe_clip0.5_warmup5_seed42,FD004,42,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/idea1_results/summary.jsonl,11,condition_slope_feature_compare,FD004_condfe_clip5.0_warmup15_seed100,FD004,100,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/idea1_results/summary.jsonl,12,condition_slope_feature_compare,FD004_condfe_clip0.5_warmup5_seed100,FD004,100,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/idea1_results/summary.jsonl,13,condition_slope_feature_compare,FD004_none_clip5.0_warmup15_seed20,FD004,20,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/idea1_results/summary.jsonl,14,condition_slope_feature_compare,FD004_none_clip0.5_warmup5_seed20,FD004,20,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/idea1_results/summary.jsonl,15,condition_slope_feature_compare,FD004_none_clip5.0_warmup15_seed42,FD004,42,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/idea1_results/summary.jsonl,16,condition_slope_feature_compare,FD004_none_clip0.5_warmup5_seed42,FD004,42,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/idea1_results/summary.jsonl,17,condition_slope_feature_compare,FD004_none_clip5.0_warmup15_seed100,FD004,100,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/idea1_results/summary.jsonl,18,condition_slope_feature_compare,FD004_none_clip0.5_warmup5_seed100,FD004,100,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/idea1_results/summary.jsonl,19,condition_slope_feature_compare,FD004_shuffle_clip5.0_warmup15_seed20,FD004,20,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/idea1_results/summary.jsonl,20,condition_slope_feature_compare,FD004_shuffle_clip0.5_warmup5_seed20,FD004,20,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/idea1_results/summary.jsonl,21,condition_slope_feature_compare,FD004_shuffle_clip5.0_warmup15_seed42,FD004,42,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/idea1_results/summary.jsonl,22,condition_slope_feature_compare,FD004_shuffle_clip0.5_warmup5_seed42,FD004,42,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/idea1_results/summary.jsonl,23,condition_slope_feature_compare,FD004_shuffle_clip5.0_warmup15_seed100,FD004,100,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/idea1_results/summary.jsonl,24,condition_slope_feature_compare,FD004_shuffle_clip0.5_warmup5_seed100,FD004,100,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/idea1_results/summary.jsonl,25,condition_slope_feature_compare,FD003_global_clip5.0_warmup15_seed20,FD003,20,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/idea1_results/summary.jsonl,26,condition_slope_feature_compare,FD003_global_clip5.0_warmup15_seed42,FD003,42,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/idea1_results/summary.jsonl,27,condition_slope_feature_compare,FD003_global_clip5.0_warmup15_seed100,FD003,100,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/idea1_results/summary.jsonl,28,condition_slope_feature_compare,FD003_condfe_clip5.0_warmup15_seed20,FD003,20,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/idea1_results/summary.jsonl,29,condition_slope_feature_compare,FD003_condfe_clip5.0_warmup15_seed42,FD003,42,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/experiments/idea1_results/summary.jsonl,30,condition_slope_feature_compare,FD003_condfe_clip5.0_warmup15_seed100,FD003,100,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/idea1_results/summary.jsonl,1,condition_slope_feature_compare,FD004_global_clip5.0_warmup15_seed20,FD004,20,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/idea1_results/summary.jsonl,2,condition_slope_feature_compare,FD004_global_clip0.5_warmup5_seed20,FD004,20,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/idea1_results/summary.jsonl,3,condition_slope_feature_compare,FD004_global_clip5.0_warmup15_seed42,FD004,42,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/idea1_results/summary.jsonl,4,condition_slope_feature_compare,FD004_global_clip0.5_warmup5_seed42,FD004,42,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/idea1_results/summary.jsonl,5,condition_slope_feature_compare,FD004_global_clip5.0_warmup15_seed100,FD004,100,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/idea1_results/summary.jsonl,6,condition_slope_feature_compare,FD004_global_clip0.5_warmup5_seed100,FD004,100,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/idea1_results/summary.jsonl,7,condition_slope_feature_compare,FD004_condfe_clip5.0_warmup15_seed20,FD004,20,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/idea1_results/summary.jsonl,8,condition_slope_feature_compare,FD004_condfe_clip0.5_warmup5_seed20,FD004,20,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/idea1_results/summary.jsonl,9,condition_slope_feature_compare,FD004_condfe_clip5.0_warmup15_seed42,FD004,42,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/idea1_results/summary.jsonl,10,condition_slope_feature_compare,FD004_condfe_clip0.5_warmup5_seed42,FD004,42,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/idea1_results/summary.jsonl,11,condition_slope_feature_compare,FD004_condfe_clip5.0_warmup15_seed100,FD004,100,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/idea1_results/summary.jsonl,12,condition_slope_feature_compare,FD004_condfe_clip0.5_warmup5_seed100,FD004,100,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/idea1_results/summary.jsonl,13,condition_slope_feature_compare,FD004_none_clip5.0_warmup15_seed20,FD004,20,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/idea1_results/summary.jsonl,14,condition_slope_feature_compare,FD004_none_clip0.5_warmup5_seed20,FD004,20,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/idea1_results/summary.jsonl,15,condition_slope_feature_compare,FD004_none_clip5.0_warmup15_seed42,FD004,42,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/idea1_results/summary.jsonl,16,condition_slope_feature_compare,FD004_none_clip0.5_warmup5_seed42,FD004,42,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/idea1_results/summary.jsonl,17,condition_slope_feature_compare,FD004_none_clip5.0_warmup15_seed100,FD004,100,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/idea1_results/summary.jsonl,18,condition_slope_feature_compare,FD004_none_clip0.5_warmup5_seed100,FD004,100,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/idea1_results/summary.jsonl,19,condition_slope_feature_compare,FD004_shuffle_clip5.0_warmup15_seed20,FD004,20,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/idea1_results/summary.jsonl,20,condition_slope_feature_compare,FD004_shuffle_clip0.5_warmup5_seed20,FD004,20,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/idea1_results/summary.jsonl,21,condition_slope_feature_compare,FD004_shuffle_clip5.0_warmup15_seed42,FD004,42,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/idea1_results/summary.jsonl,22,condition_slope_feature_compare,FD004_shuffle_clip0.5_warmup5_seed42,FD004,42,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/idea1_results/summary.jsonl,23,condition_slope_feature_compare,FD004_shuffle_clip5.0_warmup15_seed100,FD004,100,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/idea1_results/summary.jsonl,24,condition_slope_feature_compare,FD004_shuffle_clip0.5_warmup5_seed100,FD004,100,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/idea1_results/summary.jsonl,25,condition_slope_feature_compare,FD003_global_clip5.0_warmup15_seed20,FD003,20,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/idea1_results/summary.jsonl,26,condition_slope_feature_compare,FD003_global_clip5.0_warmup15_seed42,FD003,42,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/idea1_results/summary.jsonl,27,condition_slope_feature_compare,FD003_global_clip5.0_warmup15_seed100,FD003,100,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/idea1_results/summary.jsonl,28,condition_slope_feature_compare,FD003_condfe_clip5.0_warmup15_seed20,FD003,20,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/idea1_results/summary.jsonl,29,condition_slope_feature_compare,FD003_condfe_clip5.0_warmup15_seed42,FD003,42,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造
+server_results/idea1_results/summary.jsonl,30,condition_slope_feature_compare,FD003_condfe_clip5.0_warmup15_seed100,FD003,100,100,,validation_selected_holdout_fields_present,summary 原始列；跨 summary 相同 tag 不等於同次執行；缺少日期不填造

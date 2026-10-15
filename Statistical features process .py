@@ -1,5 +1,6 @@
 # Statistical features process 
 
+import os
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -76,5 +77,7 @@ for i in range(len(testX)):
     testX_new.append(data_temp)
 testX_new = np.array(testX_new)
         
-sio.savemat('F001_window_size_trainX_new.mat', {"train1X_new": trainX_new})
-sio.savemat('F001_window_size_testX_new.mat', {"test1X_new": testX_new})   
+output_dir = "experiments/cmapss_preprocessing_exploration/data"
+os.makedirs(output_dir, exist_ok=True)
+sio.savemat(os.path.join(output_dir, "F001_window_size_trainX_new.mat"), {"train1X_new": trainX_new})
+sio.savemat(os.path.join(output_dir, "F001_window_size_testX_new.mat"), {"test1X_new": testX_new})   

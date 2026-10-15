@@ -198,7 +198,7 @@ class FEMTOPreprocessor:
                 print(f"  → Saved {name}_X.mat, {name}_Y.mat")
         print("\n✓ 前處理完成。")
 
-    def plot_hi_overview(self, save_path: str = "plots/hi_overview.png"):
+    def plot_hi_overview(self, save_path: str = "experiments/phm2012_health_indicator/figures/hi_overview.png"):
         """
         讀取已儲存的 Y.mat，繪製訓練集與測試集 HI 曲線（各軸承一條線）。
         X 軸：時間（秒），每個 acc 檔案 = 10 秒。
@@ -295,4 +295,4 @@ if __name__ == "__main__":
         is_save=True,
     )
     preprocessor.process_all()
-    preprocessor.plot_hi_overview(save_path="plots/hi_overview.png")
+    preprocessor.plot_hi_overview(save_path="experiments/phm2012_health_indicator/figures/hi_overview.png")

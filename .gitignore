@@ -55,3 +55,25 @@ refine-logs/
 工工協會投稿/
 存檔1.md
 實驗記錄.xlsx
+CLAUDE.md
+
+# Purpose-based experiment organization (2026-10-07)
+/archive/
+/logs/
+/data/processed/
+/data/legacy_packages/
+/data/raw/cmapss/server_snapshot/
+/experiments/*/checkpoints/
+/experiments/*/results/
+/experiments/*/figures/
+/experiments/*/data/
+/experiments/*/notes/source_snapshot/
+/docs/organization_2026-10-07/execution/
+/docs/manuscripts/
+/docs/presentations/
+/docs/research_audit/
+/docs/experiment_registry/
+/docs/literature/
+# Run configs are small provenance records; include only explicitly selected ones.
+!/experiments/*/configs/**/*.json
+!/docs/organization_2026-10-07/inventory_summary.json

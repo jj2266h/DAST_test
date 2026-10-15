@@ -43,6 +43,6 @@ for script, desc in scripts:
 total = time.time() - total_start
 print(f"\n{'='*60}")
 print(f"  All phases complete in {total:.1f}s")
-print(f"  Figures : analysis/figures/")
-print(f"  Report  : analysis/analysis_report.md")
+print(f"  Figures : experiments/fd004_operating_condition_analysis/figures/current/")
+print(f"  Report  : experiments/fd004_operating_condition_analysis/notes/current/analysis_report.md")
 print(f"{'='*60}")

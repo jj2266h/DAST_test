@@ -205,7 +205,18 @@ def main():
     BATCH_SIZE = _tr["batch_size"]
     EPOCHS     = _tr["epochs"]
     LR         = _tr["learning_rate"]
-    model_dir  = _tr["model_save_path"]
+    experiment_dir = os.path.join("experiments", "femto_condition_training")
+    run_id = time.strftime("%Y-%m-%d_%H-%M-%S")
+    run_suffix = f"FEMTO_cond{CONDITION}_{run_id}"
+    model_dir = os.path.join(experiment_dir, "checkpoints")
+    best_ckpt = os.path.join(model_dir, f"dast_{run_suffix}_best.pth")
+    figure_dir = os.path.join(experiment_dir, "figures", run_suffix)
+    log_dir = os.path.join("logs", "femto_condition_training", run_id[:10], run_suffix)
+    config_dir = os.path.join(experiment_dir, "configs", "runs")
+    for directory in (model_dir, log_dir, config_dir):
+        os.makedirs(directory, exist_ok=True)
+    with open(os.path.join(config_dir, f"{run_suffix}.json"), "x", encoding="utf-8") as f:
+        json.dump(config, f, ensure_ascii=False, indent=2)
     WS=_ds["window_size"]
     
 
@@ -286,25 +297,28 @@ def main():
         loss_history["test_loss"].append(test_loss)
         loss_history["rmse"].append(rmse)
         loss_history["mae"].append(mae)
+        append_experiment_log(os.path.join(log_dir, "metrics.csv"), {
+            "epoch": epoch, "train_loss": train_loss_avg, "test_loss": test_loss,
+            "rmse": rmse, "mae": mae,
+        })
 
         print(f"Epoch {epoch:3d} | Train Loss: {train_loss_avg:.5f}  Train RMSE: {train_rmse:.5f} "
               f"| Test Loss: {test_loss:.5f}  Test RMSE: {rmse:.5f} | MAE: {mae:.5f}")
 
         if rmse < best_rmse:
             best_rmse = rmse
-            torch.save(model.state_dict(), f"dast_FEMTO_cond{CONDITION}_best.pth")
+            torch.save(model.state_dict(), best_ckpt)
             
     # ── 儲存與視覺化 ──
     os.makedirs(model_dir, exist_ok=True)
     torch.save(
         model.state_dict(),
-        os.path.join(model_dir, f'dast_FEMTO_cond{CONDITION}_{time.strftime("%Y-%m-%d_%H-%M-%S")}.pth'),
+        os.path.join(model_dir, f"dast_{run_suffix}.pth"),
     )
 
     print(f"\nBest RMSE (HI): {best_rmse:.5f}")
     print("模型已儲存")
 
-    best_ckpt = f"dast_FEMTO_cond{CONDITION}_best.pth"
     model.load_state_dict(torch.load(best_ckpt, map_location=device))
     model.eval()
     bearing_preds = []
@@ -313,7 +327,7 @@ def main():
             x_t    = torch.tensor(x_np, dtype=torch.float32).to(device)
             pred_b = model(x_t).squeeze().cpu().numpy()
             bearing_preds.append((name, pred_b, y_np))
-    plot_training_results(loss_history, bearing_preds, save_dir="plots", condition=CONDITION)
+    plot_training_results(loss_history, bearing_preds, save_dir=figure_dir, condition=CONDITION)
 
 
 if __name__ == "__main__":

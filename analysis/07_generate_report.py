@@ -30,7 +30,7 @@ def fmt_sensors(key):
 
 # Relative paths for figures in the report
 def fig(filename):
-    return f"figures/{filename}"
+    return f"../../figures/current/{filename}"
 
 report = f"""# CMAPSS FD004 資料集探索分析報告
 
@@ -410,7 +410,7 @@ DAST 為深度學習模型，無法直接輸出 Random Forest 式的特徵重要
 
 ---
 
-*本報告由自動化分析腳本產出，所有圖表儲存於 `analysis/figures/` 目錄。*
+*本報告由自動化分析腳本產出，所有圖表儲存於 `experiments/fd004_operating_condition_analysis/figures/current/` 目錄。*
 """
 
 # Write report

@@ -1,0 +1,36 @@
+{
+  "cmapss": {
+    "dataset": "FD001",
+    "data_path": "data/raw/cmapss/local",
+    "output_path": "data/processed/cmapss_legacy/local",
+    "window_size": 40,
+    "rul_max": 125.0,
+    "feature_len": 14,
+    "condition_scaling_enabled": false,
+    "condition_scaling_method": "zscore",
+    "condition_cluster_count": 6
+  },
+  "training": {
+    "batch_size": 256,
+    "epochs": 100,
+    "learning_rate": 0.001,
+    "grad_clip_enabled": false,
+    "grad_clip_max_norm": 1.0,
+    "lr_warmup_enabled": false,
+    "lr_warmup_epochs": 10,
+    "model_save_path": "experiments/cmapss_no_clip_no_warmup/checkpoints",
+    "seed": 42,
+    "experiment_name": "cmapss_no_clip_no_warmup"
+  },
+  "model": {
+    "dec_seq_len": 4,
+    "out_seq_len": 1,
+    "dim_val": 64,
+    "dim_attn": 64,
+    "n_encoder_layers": 2,
+    "n_decoder_layers": 1,
+    "n_heads": 4,
+    "dropout": 0.2,
+    "use_full_features_for_time_encoder": false
+  }
+}

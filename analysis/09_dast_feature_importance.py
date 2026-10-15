@@ -31,7 +31,7 @@ plt.rcParams.update({'font.size': 11, 'axes.titlesize': 12,
                      'axes.labelsize': 11, 'figure.dpi': 130})
 
 # ── Paths & config ────────────────────────────────────────────────────────────
-ROOT = r"C:\Users\hjs92\Desktop\DAST_test"
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, ROOT)
 
 from DAST_Network import DAST
@@ -43,8 +43,8 @@ _mdl = cfg["model"]
 
 DATASET    = _ds["dataset"]
 RUL_MAX    = float(RUL_CAP)
-DATA_DIR   = os.path.join(ROOT, "train_dataset")
-MODEL_PATH = os.path.join(ROOT, f"dast_{DATASET}_best.pth")
+DATA_DIR   = os.path.join(ROOT, "data", "processed", "cmapss_legacy", "local")
+MODEL_PATH = os.path.join(ROOT, "experiments", "cmapss_legacy_runs", "checkpoints", "local", f"dast_{DATASET}_best.pth")
 
 # ── Sensor labels (14 sensors remaining after preprocessing) ─────────────────
 # Original 26 cols: unit, cycle, op1,op2,op3, s1-s21

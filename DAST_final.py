@@ -14,7 +14,7 @@ from sklearn.cluster import KMeans
 # ============================================================
 # 可調參數區
 # ============================================================
-DATA_ROOT   = r"CMAPSSData"
+DATA_ROOT   = r"data/raw/cmapss/local"
 DATASET     = "FD002"   # 可選："FD001" / "FD002" / "FD003" / "FD004"
 
 WINDOW_SIZE = 60
@@ -598,7 +598,9 @@ def main():
                         shuffle=True, num_workers=0)
 
     best_rmse = 1e9
-    best_path = os.path.join(root, f"best_DAST_{fd}_PAPER_DROPOUT.pth")
+    checkpoint_dir = os.path.join("experiments", "dast_paper_dropout", "checkpoints")
+    os.makedirs(checkpoint_dir, exist_ok=True)
+    best_path = os.path.join(checkpoint_dir, f"best_DAST_{fd}_PAPER_DROPOUT.pth")
 
     # 6. Training loop
     for ep in range(1, EPOCHS + 1):

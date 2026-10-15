@@ -63,3 +63,11 @@ Strong success criteria let you loop independently. Weak criteria ("make it work
 ---
 
 **These guidelines are working if:** fewer unnecessary changes in diffs, fewer rewrites due to overcomplication, and clarifying questions come before implementation rather than after mistakes.
+<!-- ARIS:BEGIN -->
+## ARIS Skill Scope
+ARIS skills installed in this project: 83 entries.
+Manifest: `.aris/installed-skills.txt` (lists every skill ARIS installed and its upstream target).
+For ARIS workflows, prefer the project-local skills under `.claude/skills/` over global skills.
+Do not modify or delete files inside any skill that is a symlink (symlinks point into `/c/Users/hjs92/aris_repo`).
+Update with: `bash /c/Users/hjs92/aris_repo/tools/install_aris.sh`  (re-runnable; reconciles new/removed skills).
+<!-- ARIS:END -->
