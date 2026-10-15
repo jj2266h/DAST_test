@@ -44,7 +44,7 @@ python run_cmapss_sweep.py --config config.json --datasets FD004 --epochs 1 --li
 
 ## 保留的限制
 
-- `DAST_test.py` 在 Git index 仍為 UU，整理未選擇合併版本；執行的是原工作檔加必要路徑修改。
+- 過去整理時 `DAST_test.py` 曾為 UU；目前是否有衝突以 `git ls-files --unmerged` 檢查結果為準。
 - 19 個模型原本已在工作區缺失；未恢復或刪除 Git 紀錄。
 - 歷史 test-selected 與 validation／holdout 結果分開保存；資料夾整理不改變證據限制。
 - 原始報告保持內容；部分 analysis 報告另有 `_relocated.md` 閱讀副本修正圖連結。
@@ -54,6 +54,8 @@ python run_cmapss_sweep.py --config config.json --datasets FD004 --epochs 1 --li
 
 ## 版本控制
 
-本次未 stage／commit／解決衝突。只明確加入需要的程式、設定與索引，禁止 `git add .`。權重、處理資料、結果、圖、logs、快照與備份由新 `.gitignore` 規則排除。歷史設定與 research 文件應另定提交範圍。
+遠端目前版本只追蹤根目錄的主要程式、`config.json`、`requirements.txt`、`README.md`、本索引、`.gitignore`，以及 `tests/` 的四個測試。完整清單由 `.gitignore` 的允許規則列出。實驗設定、資料、權重、輸出、logs、研究文件及備份仍留在本機，不加入後續提交。提交時只明確指定檔案，不使用 `git add .`。
+
+停止追蹤只影響新的提交；先前已推送的內容仍在 Git 歷史中。若需清除舊版歷史，須另行評估歷史改寫與協作者同步。
 
 [搬移前 A–G 方案](docs/organization_2026-10-07/整理方案.md) · [執行報告](docs/organization_2026-10-07/執行報告.md)
